@@ -1,0 +1,147 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+jfibo:Counterfactual a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim about what would have happened under conditions that did not occur in the cited evidence."@en ;
+    skos:prefLabel "counterfactual"@en,
+        "反実仮想"@ja ;
+    skos:scopeNote "Always outside direct disclosure; useful for analysis but not for auditable explanation unless clearly marked."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Disclosed a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A fact stated in an official disclosure document or other cited public source."@en ;
+    skos:prefLabel "disclosed"@en,
+        "開示済み"@ja ;
+    skos:scopeNote "Does not by itself assert the fact is economically causal or predictive."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:EvidenceBackedInferred a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim inferred from cited evidence under an explicit rule or pattern."@en ;
+    skos:prefLabel "evidence-backed inferred"@en,
+        "証拠付き推論"@ja ;
+    skos:scopeNote "Must cite the rule or evidence pattern and must not be collapsed into disclosed fact."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Hypothesized a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A plausible but not evidence-sufficient claim."@en ;
+    skos:prefLabel "hypothesized"@en,
+        "仮説"@ja ;
+    skos:scopeNote "Use for exploratory institutional patterns such as main-bank candidates before SHACL evidence thresholds are met."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationBoundary a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "A boundary describing which information is inside the auditable evidence set for an explanation and which information is outside it."@en ;
+    skos:prefLabel "information boundary"@en,
+        "情報境界"@ja ;
+    skos:scopeNote "Reasoning may explore outside-boundary hypotheses, but claims outside the boundary must not be presented as evidence-backed explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationSet a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "The bounded set of records, observations, disclosures, and derivations available to an explanation at a stated time."@en ;
+    skos:prefLabel "information set"@en,
+        "情報集合"@ja ;
+    skos:scopeNote "Use to separate auditable evidence from unavailable latent variables, counterfactuals, and predictions."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Observed a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A fact directly observed in machine-readable data or curated evidence."@en ;
+    skos:prefLabel "observed"@en,
+        "観測済み"@ja ;
+    skos:scopeNote "Stronger than disclosed when the fact is directly available as structured data."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:OutsideInformationBoundary a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim whose required evidence is not inside the stated information set."@en ;
+    skos:prefLabel "outside information boundary"@en,
+        "情報境界外"@ja ;
+    skos:scopeNote "Use to prevent latent belief, hidden negotiation, or unsupported causal claims from being represented as auditable explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Predicted a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A forward-looking claim produced by a model or analyst rather than reported as a historical fact."@en ;
+    skos:prefLabel "predicted"@en,
+        "予測"@ja ;
+    skos:scopeNote "Predictions may be stored but should not be confused with explanations of disclosed historical events."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:informationStatus a owl:ObjectProperty ;
+    dcterms:source <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subPropertyOf dcterms:type ;
+    skos:definition "Relates a claim to its J-FIBO information status."@en ;
+    skos:prefLabel "information status"@en,
+        "情報状態"@ja ;
+    skos:scopeNote "Range should be one of the named individuals of jfibo:InformationStatus."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:withinInformationSet a owl:ObjectProperty ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+    skos:definition "Relates a claim to the information set inside whose boundary it is auditable."@en ;
+    skos:prefLabel "within information set"@en,
+        "情報集合内"@ja ;
+    skos:scopeNote "Use together with jfibo:informationStatus to prevent outside-boundary explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationStatus a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "Closed status vocabulary for whether a claim is observed, disclosed, inferred, hypothesized, counterfactual, predicted, or outside the information boundary."@en ;
+    skos:prefLabel "information status"@en,
+        "情報状態"@ja ;
+    skos:scopeNote "Use the named individuals in this scheme on jfibo:informationStatus."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+<https://w3id.org/jfibo/ontology/JP/information-status/> a owl:Ontology ;
+    rdfs:label "J-FIBO Information Status"@en,
+        "金融意味基盤・日本版 情報状態"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/information-status/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+

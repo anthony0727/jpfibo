@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Official source packages are reproducible via scripts/download_edinet_taxonomy.py
+data/sources/
+
+# Raw EDINET API pulls (daily document lists + filing ZIPs) and intermediate
+# per-filing JSON are reproducible via the scripts; only the materialized
+# J-FIBO RDF claims and the focused taxonomy view are committed.
+data/edinet/raw/
+data/edinet/lists/
+data/edinet/extracted/

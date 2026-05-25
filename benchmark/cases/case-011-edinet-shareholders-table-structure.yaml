@@ -1,0 +1,61 @@
+id: case-011-edinet-shareholders-table-structure
+title: EDINET major-shareholders dimensional structure (1st..15th shareholder)
+title_ja: EDINETタクソノミの大株主ディメンション構造
+domain: cross_shareholding
+source:
+  filer: Any reporting company
+  document: EDINET taxonomy 2026 (jpcrp_cor 2025-11-01)
+  cited_section: "「大株主の状況」テーブルおよびディメンション (No.1..No.15)"
+  taxonomy_url: https://www.fsa.go.jp/search/20251111.html
+  notes: |
+    The EDINET taxonomy expresses the ranked-shareholders structure as a
+    typed XBRL hypercube with an axis "MajorShareholdersAxis" and members
+    "No1MajorShareholdersMember".."No15MajorShareholdersMember". Vanilla
+    FIBO can model a Share but cannot model the *ranked, taxonomy-grounded*
+    shareholder structure that EDINET disclosures use.
+raw_claim: |
+  The reporting company's major-shareholders disclosure is expressed in
+  EDINET as a ranked hypercube (rank 1..15) with name, address, number of
+  shares, and percentage; this dimensional structure is the structural
+  source of cross-shareholding evidence.
+edinet_elements:
+  - jpcrp_cor:MajorShareholdersTextBlock
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+expected_semantic_fields:
+  - reporting_entity
+  - shareholder_name
+  - shareholder_address
+  - shareholder_rank
+  - share_count
+  - ownership_percentage
+  - taxonomy_evidence
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - reporting_entity
+    - shareholder_name
+    - share_count
+  cannot_represent_without_extension:
+    - shareholder_rank
+    - shareholder_address
+    - ownership_percentage
+    - taxonomy_evidence
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:CrossShareholdingClaim
+  represents:
+    - reporting_entity
+    - shareholder_name
+    - shareholder_address
+    - shareholder_rank
+    - share_count
+    - ownership_percentage
+    - taxonomy_evidence
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

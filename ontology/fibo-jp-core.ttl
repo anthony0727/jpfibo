@@ -1,0 +1,425 @@
+@prefix cmns-org: <https://www.omg.org/spec/Commons/Organizations/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fibo-be-le-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/> .
+@prefix fibo-sec-eq-eq: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+jfibo:Counterfactual a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim about what would have happened under conditions that did not occur in the cited evidence."@en ;
+    skos:prefLabel "counterfactual"@en,
+        "反実仮想"@ja ;
+    skos:scopeNote "Always outside direct disclosure; useful for analysis but not for auditable explanation unless clearly marked."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:CrossShareholdingClaim a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
+    skos:definition "An evidence-backed claim that two entities each hold shares or economically meaningful ownership interests in the other."@en ;
+    skos:prefLabel "cross-shareholding claim"@en,
+        "相互保有主張"@ja ;
+    skos:scopeNote "Requires two separately evidenced holding claims; do not infer stable alliance, control, or future support solely from mutual holdings."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Disclosed a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A fact stated in an official disclosure document or other cited public source."@en ;
+    skos:prefLabel "disclosed"@en,
+        "開示済み"@ja ;
+    skos:scopeNote "Does not by itself assert the fact is economically causal or predictive."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:EDINETDisclosureDocument a owl:Class ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "A disclosure document submitted through EDINET and used as evidence for J-FIBO disclosure claims."@en ;
+    skos:prefLabel "EDINET disclosure document"@en,
+        "EDINET開示書類"@ja ;
+    skos:scopeNote "Represents the document as an evidence object; document type, filer, and taxonomy facts should be modeled separately."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:EvidenceBackedInferred a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim inferred from cited evidence under an explicit rule or pattern."@en ;
+    skos:prefLabel "evidence-backed inferred"@en,
+        "証拠付き推論"@ja ;
+    skos:scopeNote "Must cite the rule or evidence pattern and must not be collapsed into disclosed fact."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:EvidenceItem a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
+        <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "A cited source fragment, taxonomy fact, table row, text block, or document section used to support a disclosure claim."@en ;
+    skos:prefLabel "evidence item"@en,
+        "証拠項目"@ja ;
+    skos:scopeNote "Evidence items should retain the EDINET element name or source locator whenever available."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:GodoKaisha a owl:Class ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3206> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf cmns-org:FormalOrganization ;
+    skos:definition "Japanese limited liability company under the Companies Act of Japan, modeled as a formal organization with member equity interests."@en ;
+    skos:prefLabel "godo kaisha"@en,
+        "合同会社"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo:Hypothesized a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A plausible but not evidence-sufficient claim."@en ;
+    skos:prefLabel "hypothesized"@en,
+        "仮説"@ja ;
+    skos:scopeNote "Use for exploratory institutional patterns such as main-bank candidates before SHACL evidence thresholds are met."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationBoundary a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "A boundary describing which information is inside the auditable evidence set for an explanation and which information is outside it."@en ;
+    skos:prefLabel "information boundary"@en,
+        "情報境界"@ja ;
+    skos:scopeNote "Reasoning may explore outside-boundary hypotheses, but claims outside the boundary must not be presented as evidence-backed explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationSet a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "The bounded set of records, observations, disclosures, and derivations available to an explanation at a stated time."@en ;
+    skos:prefLabel "information set"@en,
+        "情報集合"@ja ;
+    skos:scopeNote "Use to separate auditable evidence from unavailable latent variables, counterfactuals, and predictions."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InstitutionalRelationshipHypothesis a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
+    skos:definition "A hypothesis about a Japanese institutional finance relationship, represented separately from disclosed legal, accounting, or ownership facts."@en ;
+    skos:prefLabel "institutional relationship hypothesis"@en,
+        "制度的関係仮説"@ja ;
+    skos:scopeNote "Keep this outside factual disclosure unless evidence thresholds and information status explicitly justify an inferred claim."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:JapaneseListedShare a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf fibo-sec-eq-eq:ListedShare ;
+    skos:definition "A listed share of an issuer whose disclosure is represented in Japanese securities reporting data."@en ;
+    skos:prefLabel "Japanese listed share"@en,
+        "日本上場株式"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo:KabushikiKaisha a owl:Class ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3206> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf fibo-be-le-cb:Corporation ;
+    skos:definition "Japanese stock company under the Companies Act of Japan, modeled as a corporation whose ownership interests are divided into shares."@en ;
+    skos:prefLabel "kabushiki kaisha"@en,
+        "株式会社"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo:MainBankCandidate a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
+        <https://www.nber.org/papers/w23715> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
+    skos:definition "An evidence-backed hypothesis that a bank may function as a primary lender, monitor, or distress-coordination counterparty for an entity."@en ;
+    skos:prefLabel "main-bank candidate"@en,
+        "メインバンク候補"@ja ;
+    skos:scopeNote "Not a contractual relation and not a future support guarantee; instantiate only from disclosed borrowing, shareholding, persistence, or explicit narrative evidence."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:Observed a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A fact directly observed in machine-readable data or curated evidence."@en ;
+    skos:prefLabel "observed"@en,
+        "観測済み"@ja ;
+    skos:scopeNote "Stronger than disclosed when the fact is directly available as structured data."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:OutsideInformationBoundary a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A claim whose required evidence is not inside the stated information set."@en ;
+    skos:prefLabel "outside information boundary"@en,
+        "情報境界外"@ja ;
+    skos:scopeNote "Use to prevent latent belief, hidden negotiation, or unsupported causal claims from being represented as auditable explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:PolicyShareholding a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
+        <https://www.jpx.co.jp/english/equities/listing/cg/index.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
+    skos:definition "A disclosed shareholding held for purposes other than pure investment, represented as an evidence-backed disclosure claim rather than as a bare ownership edge."@en ;
+    skos:prefLabel "policy shareholding"@en,
+        "政策保有株式"@ja ;
+    skos:scopeNote "Aligns to EDINET elements for specified investment shares held for purposes other than pure investment; use jfibo:hasHoldingPurpose and cited evidence."@en ;
+    jfibo:level "propose" ;
+    jfibo:mapsToEdinetElement jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:status "proposed" .
+
+jfibo:Predicted a owl:NamedIndividual,
+        jfibo:InformationStatus ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    skos:definition "A forward-looking claim produced by a model or analyst rather than reported as a historical fact."@en ;
+    skos:prefLabel "predicted"@en,
+        "予測"@ja ;
+    skos:scopeNote "Predictions may be stored but should not be confused with explanations of disclosed historical events."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:hasCarryingAmount a owl:DatatypeProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subPropertyOf rdf:value ;
+    skos:definition "Reported balance-sheet carrying amount for a disclosed shareholding or related evidence item."@en ;
+    skos:prefLabel "has carrying amount"@en,
+        "貸借対照表計上額"@ja ;
+    skos:scopeNote "Currency/unit and reporting date must be carried in the evidence or observation context."@en ;
+    jfibo:level "propose" ;
+    jfibo:mapsToEdinetElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:status "proposed" .
+
+jfibo:hasEvidenceElement a owl:ObjectProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+    skos:definition "Relates a claim or evidence item to the EDINET taxonomy element from which it was extracted."@en ;
+    skos:prefLabel "has evidence element"@en,
+        "証拠EDINET要素"@ja ;
+    skos:scopeNote "Use for claim-level traceability down to an XBRL concept or text block."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:hasHoldingPurpose a owl:DatatypeProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subPropertyOf skos:note ;
+    skos:definition "Textual disclosed purpose of holding a share, especially for shares held for purposes other than pure investment."@en ;
+    skos:prefLabel "has holding purpose"@en,
+        "保有目的"@ja ;
+    skos:scopeNote "Preserve source wording; later controlled purpose taxonomies may be aligned separately."@en ;
+    jfibo:level "propose" ;
+    jfibo:mapsToEdinetElement jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:status "proposed" .
+
+jfibo:hasInvestor a owl:ObjectProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subPropertyOf prov:wasAttributedTo ;
+    skos:definition "Relates a shareholding claim to the entity reported or inferred to hold the shares."@en ;
+    skos:prefLabel "has investor"@en,
+        "投資者"@ja ;
+    skos:scopeNote "Use only on claims/evidence, not as a direct timeless ownership fact."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:hasIssuer a owl:ObjectProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subPropertyOf dcterms:subject ;
+    skos:definition "Relates a shareholding claim to the issuer of the held shares."@en ;
+    skos:prefLabel "has issuer"@en,
+        "発行者"@ja ;
+    skos:scopeNote "Use with a cited security name, EDINET code, security code, or entity resolver output."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:hasShareCount a owl:DatatypeProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subPropertyOf rdf:value ;
+    skos:definition "Reported number of shares in a disclosed shareholding claim."@en ;
+    skos:prefLabel "has share count"@en,
+        "株式数"@ja ;
+    skos:scopeNote "Unit should be shares; reported thresholds and omissions are modeled as evidence status, not guessed values."@en ;
+    jfibo:level "propose" ;
+    jfibo:mapsToEdinetElement jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:status "proposed" .
+
+jfibo:informationStatus a owl:ObjectProperty ;
+    dcterms:source <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subPropertyOf dcterms:type ;
+    skos:definition "Relates a claim to its J-FIBO information status."@en ;
+    skos:prefLabel "information status"@en,
+        "情報状態"@ja ;
+    skos:scopeNote "Range should be one of the named individuals of jfibo:InformationStatus."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:mapsToEdinetElement a owl:ObjectProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf skos:relatedMatch ;
+    skos:definition "Links a J-FIBO term or evidence item to an EDINET taxonomy element used as its official reporting source."@en ;
+    skos:prefLabel "maps to EDINET element"@en,
+        "EDINET要素に対応"@ja ;
+    skos:scopeNote "This is an alignment assertion, not a replacement for the official XBRL taxonomy."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:withinInformationSet a owl:ObjectProperty ;
+    dcterms:source <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subPropertyOf prov:wasDerivedFrom ;
+    skos:definition "Relates a claim to the information set inside whose boundary it is auditable."@en ;
+    skos:prefLabel "within information set"@en,
+        "情報集合内"@ja ;
+    skos:scopeNote "Use together with jfibo:informationStatus to prevent outside-boundary explanations."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:notation "jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+
+jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:notation "jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable" ;
+    skos:prefLabel "DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable"@en .
+
+jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:notation "jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+
+jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:notation "jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+
+jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:notation "jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+
+<https://w3id.org/jfibo/ontology/JP/institutional-context/> a owl:Ontology ;
+    rdfs:label "J-FIBO Institutional Context"@en,
+        "金融意味基盤・日本版 制度的文脈"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/institutional-context/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+
+jfibo: a owl:Ontology ;
+    rdfs:label "J-FIBO Core"@en,
+        "金融意味基盤・日本版 コア"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/core/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+
+jfibo:DisclosureClaim a owl:Class ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/>,
+        <https://www.w3.org/TR/prov-o/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "An auditable claim extracted from, or inferred from, a disclosure document with source, time, validity, and information status."@en ;
+    skos:prefLabel "disclosure claim"@en,
+        "開示主張"@ja ;
+    skos:scopeNote "Use for atomic claims rather than entire filings; each claim must carry provenance and information-boundary status."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:EDINETTaxonomyElement a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "An XBRL taxonomy element from the EDINET taxonomy, represented as a SKOS concept for alignment and benchmark traceability."@en ;
+    skos:prefLabel "EDINET taxonomy element"@en,
+        "EDINETタクソノミ要素"@ja ;
+    skos:scopeNote "This is an alignment handle; the authoritative element remains the FSA-published EDINET XBRL taxonomy."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:InformationStatus a owl:Class ;
+    dcterms:source <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/information-status/> ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "Closed status vocabulary for whether a claim is observed, disclosed, inferred, hypothesized, counterfactual, predicted, or outside the information boundary."@en ;
+    skos:prefLabel "information status"@en,
+        "情報状態"@ja ;
+    skos:scopeNote "Use the named individuals in this scheme on jfibo:informationStatus."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+<https://w3id.org/jfibo/ontology/JP/disclosure-claim/> a owl:Ontology ;
+    rdfs:label "J-FIBO Disclosure Claim"@en,
+        "金融意味基盤・日本版 開示主張"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/disclosure-claim/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+
+<https://w3id.org/jfibo/ontology/JP/edinet-alignment/> a owl:Ontology ;
+    rdfs:label "J-FIBO EDINET Alignment"@en,
+        "金融意味基盤・日本版 EDINET整合"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/>,
+        <https://www.fsa.go.jp/search/20251111.html> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/edinet-alignment/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+
+<https://w3id.org/jfibo/ontology/JP/information-status/> a owl:Ontology ;
+    rdfs:label "J-FIBO Information Status"@en,
+        "金融意味基盤・日本版 情報状態"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/information-status/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+

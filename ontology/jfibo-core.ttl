@@ -1,0 +1,59 @@
+@prefix cmns-org: <https://www.omg.org/spec/Commons/Organizations/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fibo-be-le-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/> .
+@prefix fibo-sec-eq-eq: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+jfibo:EDINETDisclosureDocument a owl:Class ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf prov:Entity ;
+    skos:definition "A disclosure document submitted through EDINET and used as evidence for J-FIBO disclosure claims."@en ;
+    skos:prefLabel "EDINET disclosure document"@en,
+        "EDINET開示書類"@ja ;
+    skos:scopeNote "Represents the document as an evidence object; document type, filer, and taxonomy facts should be modeled separately."@en ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:GodoKaisha a owl:Class ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3206> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf cmns-org:FormalOrganization ;
+    skos:definition "Japanese limited liability company under the Companies Act of Japan, modeled as a formal organization with member equity interests."@en ;
+    skos:prefLabel "godo kaisha"@en,
+        "合同会社"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo:JapaneseListedShare a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf fibo-sec-eq-eq:ListedShare ;
+    skos:definition "A listed share of an issuer whose disclosure is represented in Japanese securities reporting data."@en ;
+    skos:prefLabel "Japanese listed share"@en,
+        "日本上場株式"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo:KabushikiKaisha a owl:Class ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3206> ;
+    rdfs:isDefinedBy jfibo: ;
+    rdfs:subClassOf fibo-be-le-cb:Corporation ;
+    skos:definition "Japanese stock company under the Companies Act of Japan, modeled as a corporation whose ownership interests are divided into shares."@en ;
+    skos:prefLabel "kabushiki kaisha"@en,
+        "株式会社"@ja ;
+    jfibo:level "align" ;
+    jfibo:status "proposed" .
+
+jfibo: a owl:Ontology ;
+    rdfs:label "J-FIBO Core"@en,
+        "金融意味基盤・日本版 コア"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/core/0.1.0/> ;
+    owl:versionInfo "0.1.0" .
+

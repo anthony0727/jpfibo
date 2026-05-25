@@ -1,0 +1,13 @@
+[project]
+name = "jfibo"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "lxml>=6.1.1",
+    "openpyxl>=3.1.5",
+    "pyshacl>=0.31.0",
+    "pytest>=9.0.3",
+    "pyyaml>=6.0.3",
+    "rdflib>=7.6.0",
+    "requests>=2.34.2",
+]

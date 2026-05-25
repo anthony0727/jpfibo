@@ -1,0 +1,54 @@
+id: case-003-softbank-group-cross-shareholding
+title: SoftBank Group cross-shareholding pattern within group structure
+title_ja: ソフトバンクグループにおける相互保有構造
+domain: cross_shareholding
+source:
+  filer: SoftBank Group Corp.
+  filer_edinet_code: E02778
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「株式の保有状況」「大株主の状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Cross-shareholding-style relationships between SoftBank Group and its
+    listed subsidiaries / partner entities are disclosed as policy
+    shareholdings on one side and reported in major-shareholders tables on
+    the other.
+raw_claim: |
+  SoftBank Group and a partner listed entity each appear in the other's
+  disclosure: one as a policy shareholding, the other as an entry in the
+  major-shareholders table.
+edinet_elements:
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+  - jpcrp_cor:MajorShareholdersTextBlock
+expected_semantic_fields:
+  - entity_a
+  - entity_b
+  - holding_a_to_b
+  - holding_b_to_a
+  - holding_purpose
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+  cannot_represent_without_extension:
+    - holding_purpose
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:CrossShareholdingClaim
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+    - holding_purpose
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

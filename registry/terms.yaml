@@ -1,0 +1,401 @@
+# J-FIBO registry: controlled source for generated OWL/RDFS/SHACL-facing vocabulary.
+#
+# Policy:
+#   reuse   = use official IRI directly; no J-FIBO class minted unless needed for local handles
+#   align   = Japanese specialization of a verified official parent
+#   propose = new Japanese finance/information-boundary term with source + scope note
+#
+# Parents and mapped official prefixes are explicit; no builder-generated vocabulary is
+# accepted without a source and bilingual labels.
+
+base_iri: https://w3id.org/jfibo/ontology/JP/
+version: 0.1.0
+prefix: jfibo
+prefix_iri: https://w3id.org/jfibo/ontology/JP/core/
+
+modules:
+  core:
+    path: ontology/jfibo-core.ttl
+    iri: https://w3id.org/jfibo/ontology/JP/core/
+    label_en: J-FIBO Core
+    label_ja: 金融意味基盤・日本版 コア
+  information-status:
+    path: ontology/jfibo-information-status.ttl
+    iri: https://w3id.org/jfibo/ontology/JP/information-status/
+    label_en: J-FIBO Information Status
+    label_ja: 金融意味基盤・日本版 情報状態
+  disclosure-claim:
+    path: ontology/jfibo-disclosure-claim.ttl
+    iri: https://w3id.org/jfibo/ontology/JP/disclosure-claim/
+    label_en: J-FIBO Disclosure Claim
+    label_ja: 金融意味基盤・日本版 開示主張
+  institutional-context:
+    path: ontology/jfibo-institutional-context.ttl
+    iri: https://w3id.org/jfibo/ontology/JP/institutional-context/
+    label_en: J-FIBO Institutional Context
+    label_ja: 金融意味基盤・日本版 制度的文脈
+  edinet-alignment:
+    path: ontology/jfibo-edinet-alignment.ttl
+    iri: https://w3id.org/jfibo/ontology/JP/edinet-alignment/
+    label_en: J-FIBO EDINET Alignment
+    label_ja: 金融意味基盤・日本版 EDINET整合
+
+terms:
+  # --- Core Japanese legal / market entities ---
+  - id: KabushikiKaisha
+    module: core
+    kind: class
+    level: align
+    parent: fibo-be-le-cb:Corporation
+    labels: {ja: 株式会社, en: kabushiki kaisha}
+    definition_en: Japanese stock company under the Companies Act of Japan, modeled as a corporation whose ownership interests are divided into shares.
+    sources:
+      - https://www.japaneselawtranslation.go.jp/en/laws/view/3206
+    status: proposed
+
+  - id: GodoKaisha
+    module: core
+    kind: class
+    level: align
+    parent: cmns-org:FormalOrganization
+    labels: {ja: 合同会社, en: godo kaisha}
+    definition_en: Japanese limited liability company under the Companies Act of Japan, modeled as a formal organization with member equity interests.
+    sources:
+      - https://www.japaneselawtranslation.go.jp/en/laws/view/3206
+    status: proposed
+
+  - id: JapaneseListedShare
+    module: core
+    kind: class
+    level: align
+    parent: fibo-sec-eq-eq:ListedShare
+    labels: {ja: 日本上場株式, en: Japanese listed share}
+    definition_en: A listed share of an issuer whose disclosure is represented in Japanese securities reporting data.
+    sources:
+      - https://www.fsa.go.jp/search/20251111.html
+    status: proposed
+
+  - id: EDINETDisclosureDocument
+    module: core
+    kind: class
+    level: propose
+    parent: prov:Entity
+    labels: {ja: EDINET開示書類, en: EDINET disclosure document}
+    definition_en: A disclosure document submitted through EDINET and used as evidence for J-FIBO disclosure claims.
+    scope_note_en: Represents the document as an evidence object; document type, filer, and taxonomy facts should be modeled separately.
+    sources:
+      - https://disclosure2.edinet-fsa.go.jp/
+    status: proposed
+
+  - id: EDINETTaxonomyElement
+    module: edinet-alignment
+    kind: class
+    level: propose
+    parent: skos:Concept
+    labels: {ja: EDINETタクソノミ要素, en: EDINET taxonomy element}
+    definition_en: An XBRL taxonomy element from the EDINET taxonomy, represented as a SKOS concept for alignment and benchmark traceability.
+    scope_note_en: This is an alignment handle; the authoritative element remains the FSA-published EDINET XBRL taxonomy.
+    sources:
+      - https://www.fsa.go.jp/search/20251111.html
+    status: proposed
+
+  # --- Information boundary / status ---
+  - id: InformationSet
+    module: information-status
+    kind: class
+    level: propose
+    parent: prov:Entity
+    labels: {ja: 情報集合, en: information set}
+    definition_en: The bounded set of records, observations, disclosures, and derivations available to an explanation at a stated time.
+    scope_note_en: Use to separate auditable evidence from unavailable latent variables, counterfactuals, and predictions.
+    sources:
+      - https://www.w3.org/TR/prov-o/
+    status: proposed
+
+  - id: InformationBoundary
+    module: information-status
+    kind: class
+    level: propose
+    parent: prov:Entity
+    labels: {ja: 情報境界, en: information boundary}
+    definition_en: A boundary describing which information is inside the auditable evidence set for an explanation and which information is outside it.
+    scope_note_en: Reasoning may explore outside-boundary hypotheses, but claims outside the boundary must not be presented as evidence-backed explanations.
+    sources:
+      - https://www.w3.org/TR/prov-o/
+    status: proposed
+
+  - id: InformationStatus
+    module: information-status
+    kind: class
+    level: propose
+    parent: skos:Concept
+    labels: {ja: 情報状態, en: information status}
+    definition_en: Closed status vocabulary for whether a claim is observed, disclosed, inferred, hypothesized, counterfactual, predicted, or outside the information boundary.
+    scope_note_en: Use the named individuals in this scheme on jfibo:informationStatus.
+    sources:
+      - https://www.w3.org/TR/skos-reference/
+    status: proposed
+
+  - id: Observed
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 観測済み, en: observed}
+    definition_en: A fact directly observed in machine-readable data or curated evidence.
+    scope_note_en: Stronger than disclosed when the fact is directly available as structured data.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: Disclosed
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 開示済み, en: disclosed}
+    definition_en: A fact stated in an official disclosure document or other cited public source.
+    scope_note_en: Does not by itself assert the fact is economically causal or predictive.
+    sources: [https://disclosure2.edinet-fsa.go.jp/]
+    status: proposed
+
+  - id: EvidenceBackedInferred
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 証拠付き推論, en: evidence-backed inferred}
+    definition_en: A claim inferred from cited evidence under an explicit rule or pattern.
+    scope_note_en: Must cite the rule or evidence pattern and must not be collapsed into disclosed fact.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: Hypothesized
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 仮説, en: hypothesized}
+    definition_en: A plausible but not evidence-sufficient claim.
+    scope_note_en: Use for exploratory institutional patterns such as main-bank candidates before SHACL evidence thresholds are met.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: Counterfactual
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 反実仮想, en: counterfactual}
+    definition_en: A claim about what would have happened under conditions that did not occur in the cited evidence.
+    scope_note_en: Always outside direct disclosure; useful for analysis but not for auditable explanation unless clearly marked.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: Predicted
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 予測, en: predicted}
+    definition_en: A forward-looking claim produced by a model or analyst rather than reported as a historical fact.
+    scope_note_en: Predictions may be stored but should not be confused with explanations of disclosed historical events.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: OutsideInformationBoundary
+    module: information-status
+    kind: individual
+    type: InformationStatus
+    level: propose
+    labels: {ja: 情報境界外, en: outside information boundary}
+    definition_en: A claim whose required evidence is not inside the stated information set.
+    scope_note_en: Use to prevent latent belief, hidden negotiation, or unsupported causal claims from being represented as auditable explanations.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  # --- Claims and evidence ---
+  - id: DisclosureClaim
+    module: disclosure-claim
+    kind: class
+    level: propose
+    parent: prov:Entity
+    labels: {ja: 開示主張, en: disclosure claim}
+    definition_en: An auditable claim extracted from, or inferred from, a disclosure document with source, time, validity, and information status.
+    scope_note_en: Use for atomic claims rather than entire filings; each claim must carry provenance and information-boundary status.
+    sources:
+      - https://www.w3.org/TR/prov-o/
+      - https://disclosure2.edinet-fsa.go.jp/
+    status: proposed
+
+  - id: EvidenceItem
+    module: disclosure-claim
+    kind: class
+    level: propose
+    parent: prov:Entity
+    labels: {ja: 証拠項目, en: evidence item}
+    definition_en: A cited source fragment, taxonomy fact, table row, text block, or document section used to support a disclosure claim.
+    scope_note_en: Evidence items should retain the EDINET element name or source locator whenever available.
+    sources:
+      - https://www.w3.org/TR/prov-o/
+      - https://www.fsa.go.jp/search/20251111.html
+    status: proposed
+
+  - id: PolicyShareholding
+    module: disclosure-claim
+    kind: class
+    level: propose
+    parent: DisclosureClaim
+    labels: {ja: 政策保有株式, en: policy shareholding}
+    definition_en: A disclosed shareholding held for purposes other than pure investment, represented as an evidence-backed disclosure claim rather than as a bare ownership edge.
+    scope_note_en: Aligns to EDINET elements for specified investment shares held for purposes other than pure investment; use jfibo:hasHoldingPurpose and cited evidence.
+    sources:
+      - https://www.fsa.go.jp/search/20251111.html
+      - https://www.jpx.co.jp/english/equities/listing/cg/index.html
+    status: proposed
+    edinet_elements:
+      - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+      - jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+      - jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany
+
+  - id: CrossShareholdingClaim
+    module: institutional-context
+    kind: class
+    level: propose
+    parent: DisclosureClaim
+    labels: {ja: 相互保有主張, en: cross-shareholding claim}
+    definition_en: An evidence-backed claim that two entities each hold shares or economically meaningful ownership interests in the other.
+    scope_note_en: Requires two separately evidenced holding claims; do not infer stable alliance, control, or future support solely from mutual holdings.
+    sources:
+      - https://www.fsa.go.jp/search/20251111.html
+    status: proposed
+
+  - id: MainBankCandidate
+    module: institutional-context
+    kind: class
+    level: propose
+    parent: DisclosureClaim
+    labels: {ja: メインバンク候補, en: main-bank candidate}
+    definition_en: An evidence-backed hypothesis that a bank may function as a primary lender, monitor, or distress-coordination counterparty for an entity.
+    scope_note_en: Not a contractual relation and not a future support guarantee; instantiate only from disclosed borrowing, shareholding, persistence, or explicit narrative evidence.
+    sources:
+      - https://www.nber.org/papers/w23715
+      - https://www.fsa.go.jp/search/20251111.html
+    status: proposed
+
+  - id: InstitutionalRelationshipHypothesis
+    module: institutional-context
+    kind: class
+    level: propose
+    parent: DisclosureClaim
+    labels: {ja: 制度的関係仮説, en: institutional relationship hypothesis}
+    definition_en: A hypothesis about a Japanese institutional finance relationship, represented separately from disclosed legal, accounting, or ownership facts.
+    scope_note_en: Keep this outside factual disclosure unless evidence thresholds and information status explicitly justify an inferred claim.
+    sources:
+      - https://www.w3.org/TR/prov-o/
+    status: proposed
+
+  # --- Properties ---
+  - id: informationStatus
+    module: information-status
+    kind: object_property
+    level: propose
+    parent: dcterms:type
+    labels: {ja: 情報状態, en: information status}
+    definition_en: Relates a claim to its J-FIBO information status.
+    scope_note_en: Range should be one of the named individuals of jfibo:InformationStatus.
+    sources: [https://www.w3.org/TR/skos-reference/]
+    status: proposed
+
+  - id: withinInformationSet
+    module: information-status
+    kind: object_property
+    level: propose
+    parent: prov:wasDerivedFrom
+    labels: {ja: 情報集合内, en: within information set}
+    definition_en: Relates a claim to the information set inside whose boundary it is auditable.
+    scope_note_en: Use together with jfibo:informationStatus to prevent outside-boundary explanations.
+    sources: [https://www.w3.org/TR/prov-o/]
+    status: proposed
+
+  - id: mapsToEdinetElement
+    module: edinet-alignment
+    kind: object_property
+    level: propose
+    parent: skos:relatedMatch
+    labels: {ja: EDINET要素に対応, en: maps to EDINET element}
+    definition_en: Links a J-FIBO term or evidence item to an EDINET taxonomy element used as its official reporting source.
+    scope_note_en: This is an alignment assertion, not a replacement for the official XBRL taxonomy.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+
+  - id: hasInvestor
+    module: disclosure-claim
+    kind: object_property
+    level: propose
+    parent: prov:wasAttributedTo
+    labels: {ja: 投資者, en: has investor}
+    definition_en: Relates a shareholding claim to the entity reported or inferred to hold the shares.
+    scope_note_en: Use only on claims/evidence, not as a direct timeless ownership fact.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+
+  - id: hasIssuer
+    module: disclosure-claim
+    kind: object_property
+    level: propose
+    parent: dcterms:subject
+    labels: {ja: 発行者, en: has issuer}
+    definition_en: Relates a shareholding claim to the issuer of the held shares.
+    scope_note_en: Use with a cited security name, EDINET code, security code, or entity resolver output.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+
+  - id: hasHoldingPurpose
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: skos:note
+    labels: {ja: 保有目的, en: has holding purpose}
+    definition_en: Textual disclosed purpose of holding a share, especially for shares held for purposes other than pure investment.
+    scope_note_en: Preserve source wording; later controlled purpose taxonomies may be aligned separately.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+    edinet_elements:
+      - jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+
+  - id: hasCarryingAmount
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 貸借対照表計上額, en: has carrying amount}
+    definition_en: Reported balance-sheet carrying amount for a disclosed shareholding or related evidence item.
+    scope_note_en: Currency/unit and reporting date must be carried in the evidence or observation context.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+    edinet_elements:
+      - jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+
+  - id: hasShareCount
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 株式数, en: has share count}
+    definition_en: Reported number of shares in a disclosed shareholding claim.
+    scope_note_en: Unit should be shares; reported thresholds and omissions are modeled as evidence status, not guessed values.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed
+    edinet_elements:
+      - jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+
+  - id: hasEvidenceElement
+    module: edinet-alignment
+    kind: object_property
+    level: propose
+    parent: prov:wasDerivedFrom
+    labels: {ja: 証拠EDINET要素, en: has evidence element}
+    definition_en: Relates a claim or evidence item to the EDINET taxonomy element from which it was extracted.
+    scope_note_en: Use for claim-level traceability down to an XBRL concept or text block.
+    sources: [https://www.fsa.go.jp/search/20251111.html]
+    status: proposed

@@ -1,0 +1,54 @@
+id: case-008-honda-policy-shareholding-reduction
+title: Honda policy-shareholding reduction disclosure
+title_ja: 本田技研工業による政策保有株式の縮減
+domain: policy_shareholding
+source:
+  filer: Honda Motor Co., Ltd.
+  filer_edinet_code: E02165
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「株式の保有状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Reduction disclosures explicitly contain the reason for share-count
+    increase or decrease, which is a J-FIBO-relevant semantic field absent
+    from vanilla FIBO.
+raw_claim: |
+  Honda reports a reduction in number of shares held in a previously-held
+  policy shareholding, with a stated reason and updated carrying amount.
+edinet_elements:
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+  - jpcrp_cor:ReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany
+expected_semantic_fields:
+  - investor
+  - issuer
+  - share_count
+  - carrying_amount
+  - holding_purpose
+  - share_count_change_reason
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - investor
+    - issuer
+    - share_count
+  cannot_represent_without_extension:
+    - holding_purpose
+    - share_count_change_reason
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:PolicyShareholding
+  represents:
+    - investor
+    - issuer
+    - share_count
+    - carrying_amount
+    - holding_purpose
+    - share_count_change_reason
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

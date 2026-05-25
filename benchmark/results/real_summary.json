@@ -1,0 +1,30 @@
+{
+  "claims": 176,
+  "mean_vanilla_coverage": 0.2943181818181818,
+  "mean_jfibo_coverage": 0.9659090909090909,
+  "mean_semantic_loss_rate": 0.7056818181818181,
+  "mean_jfibo_gain": 0.671590909090909,
+  "by_doc": {
+    "S100VWVY": {
+      "claims": 43,
+      "mean_jfibo_coverage": 0.944186046511628,
+      "mean_vanilla_coverage": 0.29767441860465116,
+      "share_with_holding_purpose": 0.4883720930232558,
+      "share_with_reciprocal_marker": 1.0
+    },
+    "S100VYN4": {
+      "claims": 67,
+      "mean_jfibo_coverage": 0.9462686567164179,
+      "mean_vanilla_coverage": 0.2865671641791045,
+      "share_with_holding_purpose": 0.8656716417910447,
+      "share_with_reciprocal_marker": 0.8656716417910447
+    },
+    "S100W4FB": {
+      "claims": 66,
+      "mean_jfibo_coverage": 1.0,
+      "mean_vanilla_coverage": 0.3,
+      "share_with_holding_purpose": 1.0,
+      "share_with_reciprocal_marker": 1.0
+    }
+  }
+}

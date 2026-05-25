@@ -1,0 +1,48 @@
+id: case-013-information-boundary-soros-reflexivity
+title: Information-boundary marking for reflexive-belief claims
+title_ja: 情報境界マーキング（反射的信念に関する主張）
+domain: institutional_relationship
+source:
+  filer: N/A
+  document: Conceptual benchmark
+  cited_section: information-boundary methodology
+  notes: |
+    Soros-style reflexive-belief claims (e.g. "the market believes Bank X
+    will support Company Y in distress") cannot be observed from filings.
+    Vanilla FIBO does not warn the consumer that the claim is outside the
+    information boundary; J-FIBO requires explicit information-status
+    marking and forbids passing such claims as evidence-backed inferences.
+raw_claim: |
+  "The market believes Bank X will provide implicit support to Company Y
+  in distress." This is a reflexive-belief claim and is outside the
+  information boundary of any specific filing.
+edinet_elements: []
+expected_semantic_fields:
+  - belief_subject
+  - belief_target
+  - belief_content
+  - outside_boundary_marking
+  - information_status_outside_boundary
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: cmns-org:FormalOrganization
+  represents:
+    - belief_subject
+    - belief_target
+  cannot_represent_without_extension:
+    - belief_content
+    - outside_boundary_marking
+    - information_status_outside_boundary
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:InstitutionalRelationshipHypothesis
+  represents:
+    - belief_subject
+    - belief_target
+    - belief_content
+    - outside_boundary_marking
+    - information_status_outside_boundary
+    - evidence_locator
+    - reporting_period_validity
