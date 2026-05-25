@@ -1,4 +1,4 @@
-@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo:  <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
 
 <urn:example:claim/policy-shareholding/002>

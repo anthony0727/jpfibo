@@ -1,18 +1,18 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
-@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank01> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank01> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jfibo:issuer-fallback:c593fbed3fb5794e> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:c593fbed3fb5794e> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 29.68 ;
     jpfibo:hasShareCount 426661000 ;
     jpfibo:hasShareholderRank 1 ;
@@ -20,13 +20,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank02> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank02> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/1010001075076> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/1010001075076> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 17.15 ;
     jpfibo:hasShareCount 246540000 ;
     jpfibo:hasShareholderRank 2 ;
@@ -34,13 +34,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank03> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank03> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/8010001143625> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/8010001143625> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 7.18 ;
     jpfibo:hasShareCount 103235000 ;
     jpfibo:hasShareholderRank 3 ;
@@ -48,13 +48,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank04> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank04> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 2.02 ;
     jpfibo:hasShareCount 29066000 ;
     jpfibo:hasShareholderRank 4 ;
@@ -62,13 +62,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank05> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank05> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jfibo:issuer-fallback:117ea126366cbee6> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:117ea126366cbee6> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.8 ;
     jpfibo:hasShareCount 25889000 ;
     jpfibo:hasShareholderRank 5 ;
@@ -76,13 +76,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank06> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank06> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jfibo:issuer-fallback:3ca337d8ada88d69> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:3ca337d8ada88d69> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.33 ;
     jpfibo:hasShareCount 19060000 ;
     jpfibo:hasShareholderRank 6 ;
@@ -90,13 +90,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank07> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank07> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.31 ;
     jpfibo:hasShareCount 18817000 ;
     jpfibo:hasShareholderRank 7 ;
@@ -104,13 +104,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank08> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank08> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jfibo:issuer-fallback:609b2ce2ecb9ae3e> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:609b2ce2ecb9ae3e> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.29 ;
     jpfibo:hasShareCount 18504000 ;
     jpfibo:hasShareholderRank 8 ;
@@ -118,13 +118,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank09> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank09> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.23 ;
     jpfibo:hasShareCount 17659000 ;
     jpfibo:hasShareholderRank 9 ;
@@ -132,13 +132,13 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<urn:jfibo:claim:S100W4HN/major-shareholder/rank10> a jpfibo:MajorShareholderClaim ;
+<urn:jpfibo:claim:S100W4HN/major-shareholder/rank10> a jpfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.112839+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> ;
     jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jfibo:issuer-fallback:a53f029b8143378f> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02778> ;
+    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:a53f029b8143378f> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02778> ;
     jpfibo:hasOwnershipPercentage 1.12 ;
     jpfibo:hasShareCount 16072000 ;
     jpfibo:hasShareholderRank 10 ;
@@ -146,30 +146,30 @@
     jpfibo:informationStatus jpfibo:Disclosed ;
     jpfibo:normativeStatus jpfibo:AccountingDisclosure .
 
-<https://w3id.org/jfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行㈱（信託口）"@ja .
+<https://w3id.org/jpfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行㈱（信託口）"@ja .
 
-<https://w3id.org/jfibo/entity/jcn/8010001143625> skos:prefLabel "㈱日本カストディ銀行（信託口）"@ja .
+<https://w3id.org/jpfibo/entity/jcn/8010001143625> skos:prefLabel "㈱日本カストディ銀行（信託口）"@ja .
 
-<urn:jfibo:issuer-fallback:117ea126366cbee6> skos:prefLabel """HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES
+<urn:jpfibo:issuer-fallback:117ea126366cbee6> skos:prefLabel """HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES
 （常任代理人 香港上海銀行東京支店）"""@ja .
 
-<urn:jfibo:issuer-fallback:3ca337d8ada88d69> skos:prefLabel "孫コーポレーション合同会社"@ja .
+<urn:jpfibo:issuer-fallback:3ca337d8ada88d69> skos:prefLabel "孫コーポレーション合同会社"@ja .
 
-<urn:jfibo:issuer-fallback:609b2ce2ecb9ae3e> skos:prefLabel "孫アセットマネージメント合同会社"@ja .
+<urn:jpfibo:issuer-fallback:609b2ce2ecb9ae3e> skos:prefLabel "孫アセットマネージメント合同会社"@ja .
 
-<urn:jfibo:issuer-fallback:a53f029b8143378f> skos:prefLabel """GOVERNMENT OF NORWAY
+<urn:jpfibo:issuer-fallback:a53f029b8143378f> skos:prefLabel """GOVERNMENT OF NORWAY
 （常任代理人 シティバンク、エヌ・エイ東京支店）"""@ja .
 
-<urn:jfibo:issuer-fallback:c593fbed3fb5794e> skos:prefLabel "孫　正義"@ja .
+<urn:jpfibo:issuer-fallback:c593fbed3fb5794e> skos:prefLabel "孫　正義"@ja .
 
-<https://w3id.org/jfibo/entity/jcn/7010001008844> skos:prefLabel """JP MORGAN CHASE BANK 380763
+<https://w3id.org/jpfibo/entity/jcn/7010001008844> skos:prefLabel """JP MORGAN CHASE BANK 380763
 （常任代理人 ㈱みずほ銀行決済営業部）"""@ja .
 
 <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> a jpfibo:EDINETDisclosureDocument ;
     dcterms:identifier "S100W4HN" ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> .
 
-<https://w3id.org/jfibo/entity/edinet/E02778> a jpfibo:KabushikiKaisha ;
-    owl:sameAs <https://w3id.org/jfibo/entity/jcn/9010401052465> ;
+<https://w3id.org/jpfibo/entity/edinet/E02778> a jpfibo:KabushikiKaisha ;
+    owl:sameAs <https://w3id.org/jpfibo/entity/jcn/9010401052465> ;
     skos:prefLabel "ソフトバンクグループ株式会社"@ja .
 

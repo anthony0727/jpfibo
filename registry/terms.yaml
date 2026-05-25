@@ -15,55 +15,55 @@
 #     session (id from contributors.yaml).  This drives PROV emission and the
 #     building-trajectory diagram.
 
-base_iri:    https://w3id.org/jfibo/ontology/JP/
+base_iri:    https://w3id.org/jpfibo/ontology/JP/
 version:     0.2.0
 prefix:      jpfibo
-prefix_iri:  https://w3id.org/jfibo/ontology/JP/core/
+prefix_iri:  https://w3id.org/jpfibo/ontology/JP/core/
 
 modules:
   core:
     path: ontology/jpfibo-core.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/core/
+    iri:  https://w3id.org/jpfibo/ontology/JP/core/
     label_en: J-FIBO Core
     label_ja: 金融意味基盤・日本版 コア
   information-status:
     path: ontology/jpfibo-information-status.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/information-status/
+    iri:  https://w3id.org/jpfibo/ontology/JP/information-status/
     label_en: J-FIBO Information Status
     label_ja: 金融意味基盤・日本版 情報状態
   normative-status:
     path: ontology/jpfibo-normative-status.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/normative-status/
+    iri:  https://w3id.org/jpfibo/ontology/JP/normative-status/
     label_en: J-FIBO Normative Status
     label_ja: 金融意味基盤・日本版 規範ステータス
   reporting-regime:
     path: ontology/jpfibo-reporting-regime.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/reporting-regime/
+    iri:  https://w3id.org/jpfibo/ontology/JP/reporting-regime/
     label_en: J-FIBO Reporting Regime
     label_ja: 金融意味基盤・日本版 報告規制
   document-type:
     path: ontology/jpfibo-document-type.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/document-type/
+    iri:  https://w3id.org/jpfibo/ontology/JP/document-type/
     label_en: J-FIBO Document Type
     label_ja: 金融意味基盤・日本版 開示書類種別
   holder-role:
     path: ontology/jpfibo-holder-role.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/holder-role/
+    iri:  https://w3id.org/jpfibo/ontology/JP/holder-role/
     label_en: J-FIBO Holder Role
     label_ja: 金融意味基盤・日本版 保有者役割
   disclosure-claim:
     path: ontology/jpfibo-disclosure-claim.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/disclosure-claim/
+    iri:  https://w3id.org/jpfibo/ontology/JP/disclosure-claim/
     label_en: J-FIBO Disclosure Claim
     label_ja: 金融意味基盤・日本版 開示主張
   institutional-context:
     path: ontology/jpfibo-institutional-context.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/institutional-context/
+    iri:  https://w3id.org/jpfibo/ontology/JP/institutional-context/
     label_en: J-FIBO Institutional Context
     label_ja: 金融意味基盤・日本版 制度的文脈
   edinet-alignment:
     path: ontology/jpfibo-edinet-alignment.ttl
-    iri:  https://w3id.org/jfibo/ontology/JP/edinet-alignment/
+    iri:  https://w3id.org/jpfibo/ontology/JP/edinet-alignment/
     label_en: J-FIBO EDINET Alignment
     label_ja: 金融意味基盤・日本版 EDINET整合
 
@@ -80,7 +80,7 @@ terms:
     definition_en: Japanese stock company under the Companies Act of Japan, modeled as a corporation whose ownership interests are divided into shares.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/3206"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: GodoKaisha
@@ -92,7 +92,7 @@ terms:
     definition_en: Japanese limited liability company under the Companies Act of Japan, modeled as a formal organization with member equity interests.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/3206"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: SougouShousha
@@ -105,7 +105,7 @@ terms:
     scope_note_en: Use only when the entity's primary self-identification is sougou shousha; this is a customary classification, not a statutory legal form.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: JapaneseListedShare
@@ -117,7 +117,7 @@ terms:
     definition_en: A listed share of an issuer whose disclosure is represented in Japanese securities reporting data.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: EDINETDisclosureDocument
@@ -130,7 +130,7 @@ terms:
     scope_note_en: Represents the document as an evidence object; document type, filer, and taxonomy facts should be modeled separately.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: EDINETTaxonomyElement
@@ -143,7 +143,7 @@ terms:
     scope_note_en: This is an alignment handle; the authoritative element remains the FSA-published EDINET XBRL taxonomy.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   # =========================================================================
@@ -159,7 +159,7 @@ terms:
     scope_note_en: Use to separate auditable evidence from unavailable latent variables, counterfactuals, and predictions.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: InformationBoundary
@@ -172,7 +172,7 @@ terms:
     scope_note_en: Reasoning may explore outside-boundary hypotheses, but claims outside the boundary must not be presented as evidence-backed explanations.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: InformationStatus
@@ -185,7 +185,7 @@ terms:
     scope_note_en: Use the named individuals in this scheme on jpfibo:informationStatus.
     sources: ["https://www.w3.org/TR/skos-reference/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: Observed
@@ -198,7 +198,7 @@ terms:
     scope_note_en: Stronger than disclosed when the fact is directly available as structured data.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: Disclosed
@@ -211,7 +211,7 @@ terms:
     scope_note_en: Does not by itself assert the fact is economically causal or predictive.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: EvidenceBackedInferred
@@ -224,7 +224,7 @@ terms:
     scope_note_en: Must cite the rule or evidence pattern and must not be collapsed into disclosed fact.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: Hypothesized
@@ -237,7 +237,7 @@ terms:
     scope_note_en: Use for exploratory institutional patterns such as main-bank candidates before SHACL evidence thresholds are met.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: Counterfactual
@@ -250,7 +250,7 @@ terms:
     scope_note_en: Always outside direct disclosure; useful for analysis but not for auditable explanation unless clearly marked.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: Predicted
@@ -263,7 +263,7 @@ terms:
     scope_note_en: Predictions may be stored but should not be confused with explanations of disclosed historical events.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: OutsideInformationBoundary
@@ -276,7 +276,7 @@ terms:
     scope_note_en: Use to prevent latent belief, hidden negotiation, or unsupported causal claims from being represented as auditable explanations.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   # =========================================================================
@@ -293,7 +293,7 @@ terms:
     scope_note_en: Orthogonal to informationStatus. A claim may be Disclosed (information) and an AccountingDisclosure (normative force) at the same time.
     sources: ["https://www.w3.org/TR/skos-reference/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: LegalObligation
@@ -306,7 +306,7 @@ terms:
     scope_note_en: Use only for duties whose source is a cited statute or regulation; do not use for accounting-treatment disclosures.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/3206"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: AccountingDisclosure
@@ -319,7 +319,7 @@ terms:
     scope_note_en: Use for balance-sheet line items, borrowings schedules, and other quantitative financial-statement evidence.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: GovernanceDisclosure
@@ -332,7 +332,7 @@ terms:
     scope_note_en: Use for policy-shareholding disclosures, board-composition, and other Principle-1.4-style governance items.
     sources: ["https://www.jpx.co.jp/english/equities/listing/cg/index.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: InstitutionalExpectation
@@ -345,7 +345,7 @@ terms:
     scope_note_en: Always pair with informationStatus = Hypothesized or EvidenceBackedInferred; never use this as a substitute for a legal obligation.
     sources: ["https://www.nber.org/papers/w23715"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: InferredHypothesis
@@ -358,7 +358,7 @@ terms:
     scope_note_en: Pair with informationStatus = Hypothesized; the SHACL shape for MainBankCandidate already enforces this.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   # =========================================================================
@@ -373,7 +373,7 @@ terms:
     definition_en: Closed vocabulary identifying the Japanese reporting regime under which a claim is required or disclosed.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Sourced from the FSA EDINET taxonomy and supporting cabinet-office ordinances and JPX listing rules.
 
@@ -387,7 +387,7 @@ terms:
     scope_note_en: Use for corporate-form claims, statutory-officer claims, AGM resolutions, share-issuance authorizations.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/3206"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: FinancialInstrumentsAndExchangeAct
@@ -400,7 +400,7 @@ terms:
     scope_note_en: Use for EDINET-filed disclosures driven by FIEL and Cabinet Office Ordinance on Disclosure of Corporate Affairs.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/2355"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: CabinetOfficeOrdinanceOnCorporateDisclosure
@@ -413,7 +413,7 @@ terms:
     scope_note_en: Use to anchor specific form/section evidence; many EDINET concepts cite a specific 様式 of this ordinance.
     sources: ["https://elaws.e-gov.go.jp/document?lawid=348M50000040005"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: JPXListingRules
@@ -425,7 +425,7 @@ terms:
     definition_en: Tokyo Stock Exchange listing rules and timely-disclosure rules under which listed-company-only disclosure obligations arise.
     sources: ["https://www.jpx.co.jp/english/equities/listing/index.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Use only for TSE-listing-driven disclosures; non-listed entity disclosures should not cite this regime.
 
@@ -439,7 +439,7 @@ terms:
     scope_note_en: Comply-or-explain in nature; pair with normativeStatus = GovernanceDisclosure or InstitutionalExpectation.
     sources: ["https://www.jpx.co.jp/english/equities/listing/cg/index.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: BankingActOfJapan
@@ -451,7 +451,7 @@ terms:
     definition_en: The Banking Act (銀行法) regime, governing licensed banks, holding-company structures, and disclosures specific to depository institutions.
     sources: ["https://www.japaneselawtranslation.go.jp/en/laws/view/3403"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Use for bank-only disclosure paths (e.g., 銀行業の業種別表 in EDINET).
 
@@ -467,7 +467,7 @@ terms:
     definition_en: Closed vocabulary for Japanese disclosure document forms (有価証券報告書, 四半期報告書, コーポレート・ガバナンス報告書, 大量保有報告書, 臨時報告書).
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Aligned to the EDINET document-type codes that appear in jpdei_cor:DocumentTypeDEI.
 
@@ -481,7 +481,7 @@ terms:
     scope_note_en: EDINET docTypeCode 120; the primary J-FIBO evidence-source document.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: QuarterlySecuritiesReport
@@ -494,7 +494,7 @@ terms:
     scope_note_en: EDINET docTypeCode 140.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: SemiAnnualSecuritiesReport
@@ -507,7 +507,7 @@ terms:
     scope_note_en: EDINET docTypeCode 160 (post-2024 replacement of 四半期報告書 for many filers).
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: CorporateGovernanceReport
@@ -520,7 +520,7 @@ terms:
     scope_note_en: Not an EDINET document; filed through TDnet. Use as evidence source for governance and policy-shareholding claims.
     sources: ["https://www.jpx.co.jp/english/equities/listing/cg/index.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: LargeShareholdingReport
@@ -533,7 +533,7 @@ terms:
     scope_note_en: EDINET docTypeCode 350 / 360; critical for cross-shareholding evidence beyond the securities-report top-10 table.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: ExtraordinaryReport
@@ -546,7 +546,7 @@ terms:
     scope_note_en: EDINET docTypeCode 180; can carry M&A consideration, third-party-allotment shareholders, and dissolution events.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   # =========================================================================
@@ -562,7 +562,7 @@ terms:
     scope_note_en: This distinction is critical in Japanese MajorShareholders tables; trust banks (信託口) and custody banks frequently appear as the largest registered holders without being the beneficial owners.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: BeneficialHolder
@@ -575,7 +575,7 @@ terms:
     scope_note_en: Often inferred rather than directly disclosed; pair with informationStatus = EvidenceBackedInferred unless disclosed via large-shareholding report.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: RegisteredHolder
@@ -588,7 +588,7 @@ terms:
     scope_note_en: This is the role the MajorShareholders table primarily reports.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: Trustee
@@ -601,7 +601,7 @@ terms:
     scope_note_en: Typical examples include 日本マスタートラスト信託銀行（信託口）and 日本カストディ銀行（信託口）.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: CustodyBank
@@ -613,7 +613,7 @@ terms:
     definition_en: A custodian bank holding shares on behalf of foreign or institutional investors.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Custody banks should not be conflated with beneficial owners in cross-shareholding analyses.
 
@@ -627,7 +627,7 @@ terms:
     scope_note_en: "Common pattern: foreign custodian as the registered holder with a Japanese megabank as the standing proxy."
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: ADRDepositary
@@ -640,7 +640,7 @@ terms:
     scope_note_en: "Typical example: The Bank of New York Mellon as depositary; the disclosed holder is the depositary, not the ADR holders."
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: IndividualShareholder
@@ -653,7 +653,7 @@ terms:
     scope_note_en: Used for founder-shareholders, family-office holders, and other named individuals.
     sources: ["https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   # =========================================================================
@@ -669,7 +669,7 @@ terms:
     scope_note_en: Atomic; use subclasses for specific claim shapes (PolicyShareholding, MajorShareholderClaim, BorrowingsClaim, MainBankCandidate, CrossShareholdingClaim).
     sources: ["https://www.w3.org/TR/prov-o/", "https://disclosure2.edinet-fsa.go.jp/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: EvidenceItem
@@ -682,7 +682,7 @@ terms:
     scope_note_en: Evidence items should retain the EDINET element name or source locator whenever available.
     sources: ["https://www.w3.org/TR/prov-o/", "https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: PolicyShareholding
@@ -697,7 +697,7 @@ terms:
       - https://www.fsa.go.jp/search/20251111.html
       - https://www.jpx.co.jp/english/equities/listing/cg/index.html
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
     edinet_elements:
       - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
@@ -714,7 +714,7 @@ terms:
     scope_note_en: Always pair with a HolderRole; registered-holder rows from trust banks must not be conflated with beneficial ownership.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     edinet_elements:
       - jpcrp_cor:MajorShareholdersTextBlock
@@ -729,7 +729,7 @@ terms:
     scope_note_en: Use the borrowings schedule (借入金等明細表) as evidence; lender role should be tagged when distinct from a vanilla bank-corporate loan.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     edinet_elements:
       - jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock
@@ -745,7 +745,7 @@ terms:
     scope_note_en: Requires two separately evidenced holding claims (PolicyShareholding or MajorShareholderClaim); do not infer stable alliance, control, or future support solely from mutual holdings.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: MainBankCandidate
@@ -758,7 +758,7 @@ terms:
     scope_note_en: Not a contractual relation and not a future support guarantee; instantiate only from disclosed borrowing, shareholding, persistence, or explicit narrative evidence.
     sources: ["https://www.nber.org/papers/w23715", "https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: InstitutionalRelationshipHypothesis
@@ -771,7 +771,7 @@ terms:
     scope_note_en: Keep this outside factual disclosure unless evidence thresholds and information status explicitly justify an inferred claim.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   # =========================================================================
@@ -789,7 +789,7 @@ terms:
     status: proposed
     domain: DisclosureClaim
     range:  InformationStatus
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: normativeStatus
@@ -804,7 +804,7 @@ terms:
     status: proposed
     domain: DisclosureClaim
     range:  NormativeStatus
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: reportingRegime
@@ -818,7 +818,7 @@ terms:
     status: proposed
     domain: DisclosureClaim
     range:  ReportingRegime
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: May be omitted when the regime is implied by the document type.
 
@@ -833,7 +833,7 @@ terms:
     status: proposed
     domain: EDINETDisclosureDocument
     range:  DocumentType
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: Should match the EDINET docTypeCode metadata when present.
 
@@ -849,7 +849,7 @@ terms:
     status: proposed
     domain: MajorShareholderClaim
     range:  HolderRole
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: withinInformationSet
@@ -862,7 +862,7 @@ terms:
     scope_note_en: Use together with jpfibo:informationStatus to prevent outside-boundary explanations.
     sources: ["https://www.w3.org/TR/prov-o/"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: mapsToEdinetElement
@@ -875,7 +875,7 @@ terms:
     scope_note_en: This is an alignment assertion, not a replacement for the official XBRL taxonomy.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: hasInvestor
@@ -889,7 +889,7 @@ terms:
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
     domain: DisclosureClaim
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: hasIssuer
@@ -902,7 +902,7 @@ terms:
     scope_note_en: Use with a cited security name, EDINET code, security code, or entity resolver output.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
 
   - id: hasHolder
@@ -916,7 +916,7 @@ terms:
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
     domain: MajorShareholderClaim
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: hasLender
@@ -930,7 +930,7 @@ terms:
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
     domain: BorrowingsClaim
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: hasBorrower
@@ -944,7 +944,7 @@ terms:
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
     domain: BorrowingsClaim
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: hasHoldingPurpose
@@ -957,7 +957,7 @@ terms:
     scope_note_en: Preserve source wording; later controlled purpose taxonomies may be aligned separately.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
     edinet_elements:
       - jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
@@ -972,7 +972,7 @@ terms:
     scope_note_en: Currency/unit and reporting date must be carried in the evidence or observation context.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
     edinet_elements:
       - jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
@@ -987,7 +987,7 @@ terms:
     scope_note_en: Unit should be shares; reported thresholds and omissions are modeled as evidence status, not guessed values.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
     edinet_elements:
       - jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
@@ -1002,7 +1002,7 @@ terms:
     scope_note_en: Decimal value; the basis (issued shares excluding/including treasury) should be carried in the evidence context.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
 
   - id: hasShareholderRank
@@ -1014,7 +1014,7 @@ terms:
     definition_en: 1-based rank in the 大株主の状況 ordered list.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.2-finalize
     scope_note_en: When ties exist, use the order given in the table; do not invent ranks.
 
@@ -1028,5 +1028,5 @@ terms:
     scope_note_en: Use for claim-level traceability down to an XBRL concept or text block.
     sources: ["https://www.fsa.go.jp/search/20251111.html"]
     status: proposed
-    contributed_by: jfibo-wg-bootstrap
+    contributed_by: jpfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap

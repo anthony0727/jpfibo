@@ -11,7 +11,7 @@ from rdflib.namespace import OWL, RDF, RDFS, SKOS, PROV
 REPO = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = REPO / "ontology"
 REGISTRY = REPO / "registry" / "terms.yaml"
-JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
 
 
 def load_aggregate() -> Graph:
