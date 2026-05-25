@@ -93,4 +93,4 @@ j-fibo/
 
 ## License
 
-[MIT](LICENSE). The ontology modules under `ontology/` and `shapes/` are released under the same terms; if you need the FIBO-conventional CC-BY-4.0 for the ontology specifically, open an issue.
+[MIT](LICENSE) — both code and ontology. This matches upstream FIBO, which the EDM Council also distributes under the MIT License.
