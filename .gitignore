@@ -12,3 +12,7 @@ data/sources/
 data/edinet/raw/
 data/edinet/lists/
 data/edinet/extracted/
+
+# Secrets (defense in depth; .env is read from $HOME, never from repo)
+.env
+.env.*
