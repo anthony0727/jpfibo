@@ -10,7 +10,7 @@ it becomes the J-FIBO Working Group's ontology over time, but as of now:
   or participated.
 - No formal working group exists.
 
-The `registry/contributors.yaml` slot named `jfibo-wg-bootstrap` is a
+The `registry/contributors.yaml` slot named `jpfibo-wg-bootstrap` is a
 placeholder for the eventual working group. The Japanese-bodies list in
 its note is illustrative ("if such a group ever forms, these are the
 bodies who might steward it"), not a participation claim.

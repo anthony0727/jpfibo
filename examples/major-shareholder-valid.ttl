@@ -1,4 +1,4 @@
-@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo:  <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .

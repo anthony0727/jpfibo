@@ -31,7 +31,6 @@ REPO = Path(__file__).resolve().parents[1]
 REGISTRY = REPO / "registry" / "terms.yaml"
 CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
 AGGREGATE_OUT = REPO / "ontology" / "jpfibo.ttl"
-LEGACY_AGGREGATE_OUT = REPO / "ontology" / "jfibo.ttl"  # back-compat
 
 # Official / upstream prefix table.
 PREFIX_TABLE: dict[str, Namespace] = {
@@ -78,9 +77,9 @@ VALID_STATUS = {"proposed", "reviewed", "stable"}
 VALID_LEVEL = {"reuse", "align", "propose"}
 VALID_KIND = {"class", "object_property", "datatype_property", "annotation_property", "individual"}
 
-JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
-CONTRIBUTOR_BASE = "https://w3id.org/jfibo/contributor/"
-SESSION_BASE = "https://w3id.org/jfibo/session/"
+JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
+CONTRIBUTOR_BASE = "https://w3id.org/jpfibo/contributor/"
+SESSION_BASE = "https://w3id.org/jpfibo/session/"
 
 
 def require(condition: bool, message: str) -> None:
@@ -366,9 +365,7 @@ def write_outputs(graphs: dict[str, Graph], registry: dict[str, Any]) -> None:
             aggregate.add(triple)
 
     aggregate.serialize(destination=AGGREGATE_OUT, format="turtle")
-    aggregate.serialize(destination=LEGACY_AGGREGATE_OUT, format="turtle")
     print(f"wrote {AGGREGATE_OUT.relative_to(REPO)} ({len(aggregate)} triples)")
-    print(f"wrote {LEGACY_AGGREGATE_OUT.relative_to(REPO)} ({len(aggregate)} triples; back-compat)")
 
 
 def main() -> int:

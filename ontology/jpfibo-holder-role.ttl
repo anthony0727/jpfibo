@@ -1,5 +1,5 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -8,127 +8,127 @@
 jpfibo:ADRDepositary a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "A depositary bank holding shares as the underlying for an American Depositary Receipt program."@en ;
     skos:prefLabel "ADR depositary"@en,
         "ＡＤＲ預託機関"@ja ;
     skos:scopeNote "Typical example: The Bank of New York Mellon as depositary; the disclosed holder is the depositary, not the ADR holders."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:BeneficialHolder a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "The ultimate beneficial owner of the shares."@en ;
     skos:prefLabel "beneficial holder"@en,
         "実質株主"@ja ;
     skos:scopeNote "Often inferred rather than directly disclosed; pair with informationStatus = EvidenceBackedInferred unless disclosed via large-shareholding report."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:CustodyBank a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "A custodian bank holding shares on behalf of foreign or institutional investors."@en ;
     skos:prefLabel "custody bank"@en,
         "カストディ銀行"@ja ;
     skos:scopeNote "Custody banks should not be conflated with beneficial owners in cross-shareholding analyses."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:IndividualShareholder a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "A natural person holding shares in their own name."@en ;
     skos:prefLabel "individual shareholder"@en,
         "個人株主"@ja ;
     skos:scopeNote "Used for founder-shareholders, family-office holders, and other named individuals."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:RegisteredHolder a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "The holder of record in the shareholder registry, regardless of beneficial ownership."@en ;
     skos:prefLabel "registered holder"@en,
         "名義株主"@ja ;
     skos:scopeNote "This is the role the MajorShareholders table primarily reports."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:StandingProxy a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "A Japanese bank or securities firm acting as the standing proxy for a non-Japanese registered holder."@en ;
     skos:prefLabel "standing proxy"@en,
         "常任代理人"@ja ;
     skos:scopeNote "Common pattern: foreign custodian as the registered holder with a Japanese megabank as the standing proxy."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:Trustee a owl:NamedIndividual,
         jpfibo:HolderRole ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     skos:definition "A trust bank holding shares in a trust account on behalf of one or more beneficial owners."@en ;
     skos:prefLabel "trustee (trust-account holder)"@en,
         "信託口名義人"@ja ;
     skos:scopeNote "Typical examples include 日本マスタートラスト信託銀行（信託口）and 日本カストディ銀行（信託口）."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:holderRole a owl:ObjectProperty ;
     dcterms:source <https://www.w3.org/TR/skos-reference/> ;
     rdfs:domain jpfibo:MajorShareholderClaim ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     rdfs:range jpfibo:HolderRole ;
     rdfs:subPropertyOf dcterms:type ;
     skos:definition "Relates a major-shareholder claim to the role its holder plays."@en ;
     skos:prefLabel "holder role"@en,
         "保有者役割"@ja ;
     skos:scopeNote "Range should be one of the named individuals of jpfibo:HolderRole; defaults to RegisteredHolder when the disclosure is silent."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:HolderRole a owl:Class ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/holder-role/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/holder-role/> ;
     rdfs:subClassOf skos:Concept ;
     skos:definition "Closed vocabulary for the role a shareholder plays — beneficial owner, registered holder, trustee, custody bank, standing proxy, ADR depositary, or individual shareholder."@en ;
     skos:prefLabel "holder role"@en,
         "保有者役割"@ja ;
     skos:scopeNote "This distinction is critical in Japanese MajorShareholders tables; trust banks (信託口) and custody banks frequently appear as the largest registered holders without being the beneficial owners."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
-<https://w3id.org/jfibo/ontology/JP/holder-role/> a owl:Ontology ;
+<https://w3id.org/jpfibo/ontology/JP/holder-role/> a owl:Ontology ;
     rdfs:label "J-FIBO Holder Role"@en,
         "金融意味基盤・日本版 保有者役割"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/> ;
-    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/holder-role/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/holder-role/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

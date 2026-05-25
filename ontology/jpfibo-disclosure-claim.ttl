@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
-@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -10,28 +10,28 @@
 jpfibo:EvidenceItem a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
         <https://www.w3.org/TR/prov-o/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "A cited source fragment, taxonomy fact, table row, text block, or document section used to support a disclosure claim."@en ;
     skos:prefLabel "evidence item"@en,
         "証拠項目"@ja ;
     skos:scopeNote "Evidence items should retain the EDINET element name or source locator whenever available."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:PolicyShareholding a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
         <https://www.jpx.co.jp/english/equities/listing/cg/index.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subClassOf jpfibo:DisclosureClaim ;
     skos:definition "A disclosed shareholding held for purposes other than pure investment, represented as an evidence-backed disclosure claim rather than as a bare ownership edge."@en ;
     skos:prefLabel "policy shareholding"@en,
         "政策保有株式"@ja ;
     skos:scopeNote "Aligns to EDINET elements for specified investment shares held for purposes other than pure investment; use jpfibo:hasHoldingPurpose and cited evidence."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
@@ -41,27 +41,27 @@ jpfibo:PolicyShareholding a owl:Class ;
 jpfibo:hasBorrower a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
     rdfs:domain jpfibo:BorrowingsClaim ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf dcterms:subject ;
     skos:definition "Relates a borrowings claim to the borrower entity (typically the reporting company)."@en ;
     skos:prefLabel "has borrower"@en,
         "借入元"@ja ;
     skos:scopeNote "Use only on borrowings claims; the borrower is typically the EDINET reporting company."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasCarryingAmount a owl:DatatypeProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf rdf:value ;
     skos:definition "Reported balance-sheet carrying amount for a disclosed shareholding or related evidence item."@en ;
     skos:prefLabel "has carrying amount"@en,
         "貸借対照表計上額"@ja ;
     skos:scopeNote "Currency/unit and reporting date must be carried in the evidence or observation context."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
     jpfibo:status "proposed" .
@@ -69,27 +69,27 @@ jpfibo:hasCarryingAmount a owl:DatatypeProperty ;
 jpfibo:hasHolder a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
     rdfs:domain jpfibo:MajorShareholderClaim ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf prov:wasAttributedTo ;
     skos:definition "Relates a major-shareholder claim to the entity (or natural person) named in the registered-holder column."@en ;
     skos:prefLabel "has registered holder"@en,
         "名義株主"@ja ;
     skos:scopeNote "This is the registered holder, not necessarily the beneficial owner; pair with hasHolderRole."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasHoldingPurpose a owl:DatatypeProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf skos:note ;
     skos:definition "Textual disclosed purpose of holding a share, especially for shares held for purposes other than pure investment."@en ;
     skos:prefLabel "has holding purpose"@en,
         "保有目的"@ja ;
     skos:scopeNote "Preserve source wording; later controlled purpose taxonomies may be aligned separately."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
     jpfibo:status "proposed" .
@@ -97,108 +97,108 @@ jpfibo:hasHoldingPurpose a owl:DatatypeProperty ;
 jpfibo:hasInvestor a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
     rdfs:domain jpfibo:DisclosureClaim ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf prov:wasAttributedTo ;
     skos:definition "Relates a shareholding claim to the entity reported or inferred to hold the shares."@en ;
     skos:prefLabel "has investor"@en,
         "投資者"@ja ;
     skos:scopeNote "Use only on claims/evidence, not as a direct timeless ownership fact."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasIssuer a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf dcterms:subject ;
     skos:definition "Relates a shareholding claim to the issuer of the held shares."@en ;
     skos:prefLabel "has issuer"@en,
         "発行者"@ja ;
     skos:scopeNote "Use with a cited security name, EDINET code, security code, or entity resolver output."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasLender a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
     rdfs:domain jpfibo:BorrowingsClaim ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf prov:wasAttributedTo ;
     skos:definition "Relates a borrowings claim to the lender entity."@en ;
     skos:prefLabel "has lender"@en,
         "貸出元"@ja ;
     skos:scopeNote "Use only on borrowings claims; pair with an entity resolver output for the lender."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasOwnershipPercentage a owl:DatatypeProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf rdf:value ;
     skos:definition "Reported percentage of issued shares represented by a holder's position."@en ;
     skos:prefLabel "has ownership percentage"@en,
         "所有株式数の割合"@ja ;
     skos:scopeNote "Decimal value; the basis (issued shares excluding/including treasury) should be carried in the evidence context."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:hasShareCount a owl:DatatypeProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf rdf:value ;
     skos:definition "Reported number of shares in a disclosed shareholding claim."@en ;
     skos:prefLabel "has share count"@en,
         "株式数"@ja ;
     skos:scopeNote "Unit should be shares; reported thresholds and omissions are modeled as evidence status, not guessed values."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
     jpfibo:status "proposed" .
 
 jpfibo:hasShareholderRank a owl:DatatypeProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subPropertyOf rdf:value ;
     skos:definition "1-based rank in the 大株主の状況 ordered list."@en ;
     skos:prefLabel "has shareholder rank"@en,
         "大株主順位"@ja ;
     skos:scopeNote "When ties exist, use the order given in the table; do not invent ranks."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
 jpfibo:MajorShareholderClaim a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subClassOf jpfibo:DisclosureClaim ;
     skos:definition "A disclosed ranked entry in a 大株主の状況 table, recording a registered holder, address, shareholding count, ownership percentage, and rank."@en ;
     skos:prefLabel "major shareholder claim"@en,
         "大株主主張"@ja ;
     skos:scopeNote "Always pair with a HolderRole; registered-holder rows from trust banks must not be conflated with beneficial ownership."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:MajorShareholdersTextBlock ;
     jpfibo:status "proposed" .
 
 jpfibo:BorrowingsClaim a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subClassOf jpfibo:DisclosureClaim ;
     skos:definition "A disclosed borrowing from a named lender, with balance, weighted-average rate, and repayment period."@en ;
     skos:prefLabel "borrowings claim"@en,
         "借入金主張"@ja ;
     skos:scopeNote "Use the borrowings schedule (借入金等明細表) as evidence; lender role should be tagged when distinct from a vanilla bank-corporate loan."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "propose" ;
     jpfibo:mapsToEdinetElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock,
         jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock ;
@@ -207,22 +207,22 @@ jpfibo:BorrowingsClaim a owl:Class ;
 jpfibo:DisclosureClaim a owl:Class ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/>,
         <https://www.w3.org/TR/prov-o/> ;
-    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/disclosure-claim/> ;
+    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "An auditable claim extracted from, or inferred from, a disclosure document with source, time, validity, information status, and (optionally) normative status."@en ;
     skos:prefLabel "disclosure claim"@en,
         "開示主張"@ja ;
     skos:scopeNote "Atomic; use subclasses for specific claim shapes (PolicyShareholding, MajorShareholderClaim, BorrowingsClaim, MainBankCandidate, CrossShareholdingClaim)."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
-<https://w3id.org/jfibo/ontology/JP/disclosure-claim/> a owl:Ontology ;
+<https://w3id.org/jpfibo/ontology/JP/disclosure-claim/> a owl:Ontology ;
     rdfs:label "J-FIBO Disclosure Claim"@en,
         "金融意味基盤・日本版 開示主張"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/> ;
-    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/disclosure-claim/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/disclosure-claim/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

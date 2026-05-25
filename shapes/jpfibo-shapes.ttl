@@ -6,7 +6,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix time:    <http://www.w3.org/2006/time#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo:  <https://w3id.org/jpfibo/ontology/JP/core/> .
 
 # Every J-FIBO disclosure claim must carry the provenance, time validity, and
 # information-status metadata that makes the claim auditable across the

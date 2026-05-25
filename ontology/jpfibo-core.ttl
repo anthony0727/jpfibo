@@ -3,7 +3,7 @@
 @prefix fibo-be-le-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/> .
 @prefix fibo-sec-eq-eq: <https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -18,8 +18,8 @@ jpfibo:EDINETDisclosureDocument a owl:Class ;
     skos:prefLabel "EDINET disclosure document"@en,
         "EDINET開示書類"@ja ;
     skos:scopeNote "Represents the document as an evidence object; document type, filer, and taxonomy facts should be modeled separately."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "propose" ;
     jpfibo:status "proposed" .
 
@@ -30,8 +30,8 @@ jpfibo:GodoKaisha a owl:Class ;
     skos:definition "Japanese limited liability company under the Companies Act of Japan, modeled as a formal organization with member equity interests."@en ;
     skos:prefLabel "godo kaisha"@en,
         "合同会社"@ja ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "align" ;
     jpfibo:status "proposed" .
 
@@ -42,8 +42,8 @@ jpfibo:JapaneseListedShare a owl:Class ;
     skos:definition "A listed share of an issuer whose disclosure is represented in Japanese securities reporting data."@en ;
     skos:prefLabel "Japanese listed share"@en,
         "日本上場株式"@ja ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "align" ;
     jpfibo:status "proposed" .
 
@@ -54,8 +54,8 @@ jpfibo:KabushikiKaisha a owl:Class ;
     skos:definition "Japanese stock company under the Companies Act of Japan, modeled as a corporation whose ownership interests are divided into shares."@en ;
     skos:prefLabel "kabushiki kaisha"@en,
         "株式会社"@ja ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
     jpfibo:level "align" ;
     jpfibo:status "proposed" .
 
@@ -67,26 +67,26 @@ jpfibo:SougouShousha a owl:Class ;
     skos:prefLabel "sougou shousha (general trading company)"@en,
         "総合商社"@ja ;
     skos:scopeNote "Use only when the entity's primary self-identification is sougou shousha; this is a customary classification, not a statutory legal form."@en ;
-    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
     jpfibo:level "align" ;
     jpfibo:status "proposed" .
 
-<https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> a prov:Activity ;
+<https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> a prov:Activity ;
     dcterms:date "2026-05-25"^^xsd:date ;
     rdfs:isDefinedBy jpfibo: ;
     skos:definition "Finalize ontology with normative-status / reporting-regime / document-type / holder-role vocab, atomic claim types, and the EDINET-family `jpfibo:` prefix."@en ;
     prov:startedAtTime "2026-05-25T00:00:00+09:00"^^xsd:dateTime ;
-    prov:wasAssociatedWith <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> .
+    prov:wasAssociatedWith <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> .
 
-<https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> a prov:Activity ;
+<https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> a prov:Activity ;
     dcterms:date "2026-05-25"^^xsd:date ;
     rdfs:isDefinedBy jpfibo: ;
     skos:definition "Bootstrap J-FIBO v0.1 with EDINET alignment and information-status vocabulary."@en ;
     prov:startedAtTime "2026-05-25T00:00:00+09:00"^^xsd:dateTime ;
-    prov:wasAssociatedWith <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> .
+    prov:wasAssociatedWith <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> .
 
-<https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> a prov:Agent,
+<https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> a prov:Agent,
         foaf:Agent ;
     rdfs:isDefinedBy jpfibo: ;
     skos:prefLabel "J-FIBO Working Group (bootstrap)"@en,
@@ -107,6 +107,6 @@ jpfibo: a owl:Ontology ;
         "金融意味基盤・日本版 コア"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/> ;
-    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/core/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/core/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

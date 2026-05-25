@@ -25,7 +25,7 @@ CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
 REGISTRY = REPO / "registry" / "terms.yaml"
 OUT = REPO / "docs" / "building-trajectory.md"
 
-JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
 
 
 def main() -> int:

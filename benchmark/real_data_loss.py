@@ -35,7 +35,7 @@ REPO = Path(__file__).resolve().parents[1]
 CLAIMS_DIR = REPO / "data" / "edinet" / "claims"
 RESULTS_DIR = REPO / "benchmark" / "results"
 
-JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
 
 POLICY_EXPECTED = [
     "investor", "issuer", "share_count", "carrying_amount", "holding_purpose",

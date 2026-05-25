@@ -1,17 +1,17 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:jfibo:claim:cross-shareholding/E02144-E03606> a jpfibo:CrossShareholdingClaim ;
+<urn:jpfibo:claim:cross-shareholding/E02144-E03606> a jpfibo:CrossShareholdingClaim ;
     dcterms:valid "2026-05-25"^^xsd:date ;
     skos:note "triangulation: policy_x_policy"@en ;
-    prov:generatedAtTime "2026-05-25T08:18:14.972427+00:00"^^xsd:dateTime ;
+    prov:generatedAtTime "2026-05-25T09:44:05.344384+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VWVY>,
         <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02144> ;
-    jpfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02144> ;
+    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
     jpfibo:informationStatus jpfibo:EvidenceBackedInferred ;
     jpfibo:normativeStatus jpfibo:InferredHypothesis .
 

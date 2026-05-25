@@ -24,7 +24,7 @@ Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `
 
 ## Contributors
 
-### jfibo-wg-bootstrap
+### jpfibo-wg-bootstrap
 
 - role: editor
 - organization: J-FIBO Working Group (provisional)
