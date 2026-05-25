@@ -81,9 +81,10 @@ Group governance layer — explicit attribution of vocabulary contributions,
 so that future merges, splits, and ratifications can be traced like
 FIBO/EDM Council should but doesn't.
 
-Provisional contributor: `jfibo-wg-bootstrap`. Names of institutional
-contributors (Digital Agency, FSA, JPX, EDM Council Japan Chapter / FDUA /
-FISC) replace it as the working group formalizes.
+Provisional contributor: `jfibo-wg-bootstrap` (a single-author research
+seed; no Japanese institutional body has endorsed or participated). See
+[docs/governance-status.md](governance-status.md) for the explicit
+posture.
 
 ## Scope of v0.2
 

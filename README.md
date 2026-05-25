@@ -35,6 +35,7 @@ uv run python benchmark/real_data_loss.py
 ## Documentation
 
 * [docs/vision.md](docs/vision.md)
+* [docs/governance-status.md](docs/governance-status.md) (read this first)
 * [docs/modeling-principles.md](docs/modeling-principles.md)
 * [docs/information-boundary.md](docs/information-boundary.md)
 * [docs/semantic-loss-benchmark.md](docs/semantic-loss-benchmark.md)

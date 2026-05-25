@@ -56,6 +56,11 @@ def main() -> int:
         "in `ontology/jpfibo.ttl`, so this view is also queryable via SPARQL."
     )
     lines.append("")
+    lines.append(
+        "> **Governance status**: J-FIBO is currently a single-author research "
+        "seed. No Japanese institutional body has endorsed, reviewed, or "
+        "participated. See [governance-status.md](governance-status.md).")
+    lines.append("")
     lines.append("## Sessions")
     lines.append("")
     for s_id, s in sessions.items():

@@ -2,6 +2,8 @@
 
 Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `registry/contributors.yaml`. Every minted term carries the same attribution as `prov:wasAttributedTo` + `prov:wasGeneratedBy` triples in `ontology/jpfibo.ttl`, so this view is also queryable via SPARQL.
 
+> **Governance status**: J-FIBO is currently a single-author research seed. No Japanese institutional body has endorsed, reviewed, or participated. See [governance-status.md](governance-status.md).
+
 ## Sessions
 
 ### 2026-05-25-v0.1-bootstrap
@@ -28,9 +30,14 @@ Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `
 - organization: J-FIBO Working Group (provisional)
 - terms attributed: 70
 
-> Provisional editorial group seeding v0.x. Replace with named institutional
-contributors as the working group formalizes (Digital Agency, FSA, JPX,
-EDM Council Japan Chapter / FDUA / FISC).
+> Provisional, single-author editorial seed for v0.x. NO Japanese
+institutional body has endorsed, reviewed, or participated in J-FIBO.
+The contributor / session model exists so that, if a working group
+ever forms, term-level attribution can be added without restructuring
+the ontology. The bodies that could plausibly play stewardship roles
+(Digital Agency, FSA, JPX, FISC, FDUA, an EDM Council Japan Chapter)
+are mentioned only as examples of where such attribution could go;
+none have been contacted.
 
 ## Mermaid timeline
 
