@@ -22,13 +22,21 @@ Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `
 - modules: holder-role=9, reporting-regime=8, document-type=8, normative-status=7, disclosure-claim=7, core=1
 - kinds: individual=24, class=7, object_property=7, datatype_property=2
 
+### 2026-05-25-v0.5-coverage
+
+- date: 2026-05-25
+- goal: Increase EDINET coverage (width + depth); honor official EDINET bilingual labels and XBRL metadata on alignment concepts; materialize BorrowingsClaim and add CommercialPaperClaim from real MUFG schedule; reframe README around roles / responsibilities / regimes / relationships.
+- terms contributed: 12
+- modules: disclosure-claim=7, edinet-alignment=5
+- kinds: datatype_property=6, annotation_property=5, class=1
+
 ## Contributors
 
 ### jfibo-wg-bootstrap
 
 - role: editor
 - organization: J-FIBO Working Group (provisional)
-- terms attributed: 70
+- terms attributed: 82
 
 > Provisional, single-author editorial seed for v0.x. NO Japanese
 institutional body has endorsed, reviewed, or participated in J-FIBO.
@@ -47,4 +55,5 @@ timeline
     2026-05-25
         : 2026-05-25-v0.1-bootstrap (+30 terms)
         : 2026-05-25-v0.2-finalize (+40 terms)
+        : 2026-05-25-v0.5-coverage (+12 terms)
 ```

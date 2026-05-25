@@ -1,0 +1,76 @@
+{
+  "doc_id": "S100W4FB",
+  "edinet_code": {
+    "value": "E03606",
+    "period": {
+      "instant": "2025-06-25"
+    }
+  },
+  "filer_name_ja": "株式会社 三菱ＵＦＪフィナンシャル・グループ",
+  "kind": "consolidated",
+  "rows": [
+    {
+      "row_index": 0,
+      "class_label_ja": "借用金",
+      "opening_balance_million_jpy": 25955961,
+      "closing_balance_million_jpy": 22101954,
+      "average_rate_percent": 0.68,
+      "repayment_deadline_ja": null,
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    },
+    {
+      "row_index": 1,
+      "class_label_ja": "借入金",
+      "opening_balance_million_jpy": 25955961,
+      "closing_balance_million_jpy": 22101954,
+      "average_rate_percent": 0.68,
+      "repayment_deadline_ja": "2024年 1月～ 2051年 10月",
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    },
+    {
+      "row_index": 2,
+      "class_label_ja": "リース債務",
+      "opening_balance_million_jpy": 69738,
+      "closing_balance_million_jpy": 90694,
+      "average_rate_percent": null,
+      "repayment_deadline_ja": "2024年 2月～ 2044年 9月",
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    },
+    {
+      "row_index": 3,
+      "class_label_ja": "借入金",
+      "opening_balance_million_jpy": 18356855,
+      "closing_balance_million_jpy": 470428,
+      "average_rate_percent": null,
+      "repayment_deadline_ja": null,
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    },
+    {
+      "row_index": 4,
+      "class_label_ja": "リース債務",
+      "opening_balance_million_jpy": 16472,
+      "closing_balance_million_jpy": 16940,
+      "average_rate_percent": null,
+      "repayment_deadline_ja": null,
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    }
+  ],
+  "commercial_paper": [
+    {
+      "row_index": 5,
+      "class_label_ja": "コマーシャル・ペーパー",
+      "opening_balance_million_jpy": 3105779,
+      "closing_balance_million_jpy": 3475042,
+      "average_rate_percent": 4.23,
+      "repayment_deadline_ja": null,
+      "unit_label_ja": "百万円",
+      "rate_unit_label_ja": "％"
+    }
+  ],
+  "source_text_chars": 807
+}

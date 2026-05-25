@@ -1,94 +1,133 @@
 # J-FIBO Vision
 
-J-FIBO is a Japanese-finance extension of FIBO whose immediate goal is to make
-Japanese corporate disclosures *auditable across the information boundary* —
-not just structurally mapped.
+J-FIBO is a **Japanese-finance extension of FIBO**: a canonical OWL/SHACL
+dictionary of the roles, responsibilities, reporting regimes, and
+relationships specific to the Japanese securities-disclosure system, with
+verbatim alignment to the FSA-published EDINET XBRL taxonomy.
 
-## North star
+J-FIBO is a **dictionary**, not an application. It says what a 政策保有株式
+disclosure means, who is the holder of record vs the beneficial holder,
+which regime (FIEL / Companies Act / JPX Listing Rules / Corporate
+Governance Code) governs which disclosure, and which EDINET XBRL element
+is the official source of which fact. It does not say anything about how
+a consumer should reason, summarize, score, or back-trace those facts.
 
-> EDINET tells us what was disclosed.
-> FIBO tells us what formal financial object it refers to.
-> J-FIBO tells us what Japanese institutional status the claim has — legal
-> obligation, accounting disclosure, governance relationship, institutional
-> expectation, or inferred hypothesis — and whether the claim sits inside
-> the information boundary.
+## What J-FIBO is
 
-## Why not just use FIBO
+* **A canonical dictionary.** Roles, responsibilities, regimes,
+  relationships, instrument types, holder-role distinctions
+  (信託口 / カストディ / 常任代理人 / ADR預託機関 / 個人株主), and
+  atomic disclosure-claim types (`MajorShareholderClaim`,
+  `BorrowingsClaim`, `CommercialPaperClaim`, `PolicyShareholding`,
+  `CrossShareholdingClaim`, `MainBankCandidate`).
 
-Vanilla FIBO types financial objects (Share, Bank, LegalEntity). Japanese
-securities reports encode several semantic fields that are structurally
-absent from FIBO classes:
+* **A faithful alignment layer over the FSA EDINET XBRL taxonomy.**
+  Every aligned element carries the FSA-published 標準ラベル in 日本語
+  AND English, the 冗長ラベル, the XBRL `periodType`, the XBRL item
+  `type`, the abstract flag, and the EDINET prefix family — verbatim,
+  no fabrication, no silent translation. When the FSA leaves a cell
+  blank, J-FIBO leaves it blank too.
 
-1. **Holding purpose** (保有目的) — disclosed verbatim per policy shareholding.
-2. **Non-pure-investment status** (純投資目的以外) — a regulatory class.
-3. **Reciprocal-holding marker** (株式の相互保有) — a boolean-bearing concept.
-4. **Quantitative effects of shareholding** (定量的な保有効果) — narrative.
-5. **Reason for share-count change** (株式数が増加した理由) — narrative.
-6. **Holder role** (信託口 / カストディ / 常任代理人 / ADR預託機関 / 個人株主) —
-   the trustee-vs-beneficial-vs-custody distinction that vanilla FIBO erases.
-7. **Information status** — observed / disclosed / evidence-backed inferred /
-   hypothesized / counterfactual / predicted / outside information boundary.
-8. **Normative status** — legal obligation / accounting disclosure /
-   governance disclosure / institutional expectation / inferred hypothesis.
-9. **Reporting regime** — Companies Act / FIEL / JPX listing rules /
-   Cabinet-office ordinance / Japan CG Code / Banking Act.
-10. **Document type** — annual / quarterly / semi-annual / governance /
-    large-shareholding / extraordinary, mapped to EDINET document codes.
-11. **Evidence locator** — the EDINET XBRL element underlying the claim.
-12. **Reporting period validity** — the fiscal year the claim refers to.
+* **A claim-level provenance + SHACL discipline.** Every claim carries
+  `prov:wasDerivedFrom`, `prov:generatedAtTime`, `dcterms:valid`, an
+  `informationStatus` from a closed vocabulary, and may carry a
+  `normativeStatus`. SHACL shapes enforce these as guarantees so a
+  downstream consumer can rely on them.
 
-A naïve FIBO mapping silently drops most of these and lets the consumer
-mistake a *narrative policy holding* for a *bare ownership edge*.
+## What J-FIBO is NOT
 
-## Why the `jfibo:` prefix
+* J-FIBO is **not** an information-flow framework, an audit framework,
+  a backtracer, a causal-discovery engine, or a hallucination guard.
+  These are *applications* a consumer can build *on top of* J-FIBO. The
+  ontology stays out of that layer so different consumers can wire
+  different applications to the same canonical facts.
 
-The EDINET vocabulary family uses `jpcrp / jpdei / jppfs / jpigp / jpsps /
-jplvh / jpaud / jpctl`. An FSA or Digital Agency engineer reading Turtle
-decides "native vs foreign" in the first five seconds based on the prefix.
-`jfibo:` reads as a member of that family.
+* J-FIBO is **not** an interpretation of what a disclosure *means*
+  economically. It states what the disclosure *says*, who the named
+  parties are, which regime requires it, and what the FSA's official
+  label is. Whether a particular 主要株主 entry indicates a strategic
+  alliance or a pure-investment position is a downstream judgement.
 
-The brand "J-FIBO" stays (matches EDM Council Profile-naming conventions);
-the Japanese formal name 金融意味基盤・日本版 stays. Only the RDF prefix
-changed from `jfibo:` to `jfibo:` for ecosystem affinity.
+* J-FIBO is **not** endorsed by the FSA, Digital Agency, JPX, BOJ,
+  FISC, FDUA, EDM Council, or OMG. It is a single-author research
+  artifact. See [`governance-status.md`](governance-status.md).
 
-## Quantification: semantic-loss benchmark
+## What an application built on J-FIBO might do
 
-We score two coverage numbers on each claim:
+Examples — **not** part of the ontology, deliberately outside scope:
 
-* `vanilla_coverage` = fraction of the expected semantic fields representable
-  natively in vanilla FIBO.
-* `jfibo_coverage`   = fraction representable in J-FIBO + EDINET alignment.
+* Information-flow / information-boundary reasoning: distinguishing
+  disclosed facts from analyst inferences from counterfactuals; this is
+  exactly the kind of consumer-side discipline `informationStatus`
+  exists to *enable*, but the ontology does not enforce which boundary
+  a consumer draws.
+* Cross-shareholding triangulation across filers (our materializer
+  ships one such application as a demo).
+* Backtracing from a market event to candidate causal disclosures.
+* LLM grounding / hallucination control.
+* Translation QA against EDINET English filings.
 
-Running v0.2 on real EDINET FY2024 disclosures (Toyota, ITOCHU, MUFG,
-SoftBank Group) over **217 materialized claims** (176 PolicyShareholding +
-40 MajorShareholderClaim + 1 triangulated CrossShareholdingClaim):
+## Why the `jfibo:` prefix and J-FIBO brand
+
+* Brand `J-FIBO` follows the J-REIT / J-GAAP / J-SOX pattern: instantly
+  legible to a Japanese finance audience as "the Japan version of FIBO".
+* Technical prefix `jfibo:` is short and brand-direct. Pre-v0.4 we
+  briefly used `jpfibo:` to rhyme with EDINET XBRL prefixes
+  (`jpcrp` / `jpdei` / `jppfs`), but those rhyme inside the XBRL/XML
+  layer; J-FIBO is OWL/RDF; XBRL ↔ RDF interoperability is achieved by
+  URI mapping (`owl:equivalentClass` between full IRIs), not prefix
+  letters. The shorter, brand-direct `jfibo:` wins on every surface
+  that actually matters.
+
+## Semantic-loss benchmark — what it measures
+
+The benchmark scores **per-claim semantic-field coverage** of vanilla
+FIBO vs J-FIBO. It does **not** benchmark any LLM, agent, or pipeline.
+It measures *what fraction of the disclosed semantic content can be
+represented at all* in each ontology.
 
 ```
-mean vanilla FIBO coverage:  0.285
-mean J-FIBO coverage:        0.975
-mean J-FIBO gain:            0.690
+vanilla_coverage  = |fields representable in FIBO|        / |expected fields|
+jfibo_coverage    = |fields representable in J-FIBO|      / |expected fields|
+jfibo_gain        = jfibo_coverage − vanilla_coverage
 ```
 
-Curated benchmark (15 cases): vanilla `0.34` → J-FIBO `1.00` → gain `0.66`.
+Latest curated benchmark (19 cases):
+```
+mean vanilla FIBO coverage:  0.297
+mean J-FIBO coverage:        1.000
+mean J-FIBO gain:            0.703
+```
 
-## Building-trajectory layer
+Latest real-EDINET benchmark (223 materialized claims across Toyota /
+ITOCHU / MUFG / SoftBank FY2024 annual securities reports):
+```
+mean vanilla FIBO coverage:  0.280
+mean J-FIBO coverage:        0.973
+mean J-FIBO gain:            0.693
+```
 
-Every minted term carries `prov:wasAttributedTo` (a contributor) and
-`prov:wasGeneratedBy` (a session). The aggregate Turtle is queryable as RDF,
-and `scripts/build_trajectory.py` renders a human-readable timeline at
-`docs/building-trajectory.md`. This is the seed for a future J-FIBO Working
-Group governance layer — explicit attribution of vocabulary contributions,
-so that future merges, splits, and ratifications can be traced like
-FIBO/EDM Council should but doesn't.
+By claim kind (real-data):
+```
+PolicyShareholding       176  vanilla 0.268  jfibo 0.969  gain 0.701
+MajorShareholderClaim     40  vanilla 0.364  jfibo 1.000  gain 0.636
+CrossShareholdingClaim     1  vanilla 0.286  jfibo 1.000  gain 0.714
+BorrowingsClaim            5  vanilla 0.083  jfibo 0.900  gain 0.817
+CommercialPaperClaim       1  vanilla 0.091  jfibo 1.000  gain 0.909
+```
 
-Provisional contributor: `jfibo-wg-bootstrap` (a single-author research
-seed; no Japanese institutional body has endorsed or participated). See
-[docs/governance-status.md](governance-status.md) for the explicit
-posture.
+## Building-trajectory PROV
 
-## Scope of v0.2
+Every minted term carries `prov:wasAttributedTo <contributor>` and
+`prov:wasGeneratedBy <session>` so the J-FIBO trajectory is queryable
+as RDF and the markdown view at
+[`docs/building-trajectory.md`](building-trajectory.md) is generated
+from the same triples.
 
-Modules:
+Provisional contributor: `jfibo-wg-bootstrap` (a single-author
+editorial seed). See `registry/contributors.yaml`.
+
+## Modules
 
 ```
 ontology/jfibo-core.ttl
@@ -100,35 +139,21 @@ ontology/jfibo-holder-role.ttl
 ontology/jfibo-disclosure-claim.ttl
 ontology/jfibo-institutional-context.ttl
 ontology/jfibo-edinet-alignment.ttl
+ontology/jfibo.ttl                    # aggregate, generated
+shapes/jfibo-shapes.ttl               # SHACL discipline
 ```
 
-Claim families: `PolicyShareholding`, `MajorShareholderClaim`,
-`BorrowingsClaim`, `CrossShareholdingClaim`, `MainBankCandidate`,
-`InstitutionalRelationshipHypothesis`. All subclasses of `DisclosureClaim`.
-
-Pipelines:
+## Pipeline modules
 
 ```
-scripts/download_edinet_taxonomy.py     # FSA taxonomy
-scripts/build_edinet_focus.py           # focused taxonomy view
-scripts/edinet_client.py                # EDINET v2 API (uses EDINET_API_KEY)
-scripts/find_target_filings.py
-scripts/extract_xbrl_facts.py           # XBRL -> per-filing JSON
-scripts/parse_major_shareholders.py     # MajorShareholders HTML -> rows
-scripts/materialize_claims.py           # JSON -> J-FIBO RDF + triangulation
-scripts/build_ontology.py               # registry -> modular OWL/TTL
-scripts/validate.py                     # SHACL validation
-scripts/build_trajectory.py             # Mermaid timeline
-benchmark/semantic_loss.py              # curated benchmark
-benchmark/real_data_loss.py             # real-EDINET benchmark
+scripts/build_ontology.py             # registry YAML → OWL/TTL modules
+scripts/build_edinet_focus.py         # EDINET XBRL XLSX → focused JSON view
+scripts/download_edinet_taxonomy.py   # fetch FSA taxonomy zip + xlsx
+scripts/find_target_filings.py        # EDINET API → target docID list
+scripts/edinet_client.py              # EDINET API helper
+scripts/extract_xbrl_facts.py         # iXBRL → typed rows + text blocks
+scripts/parse_major_shareholders.py   # 大株主の状況 → JSON
+scripts/parse_borrowings.py           # 借入金等明細表 → JSON
+scripts/materialize_claims.py         # JSON → J-FIBO RDF + cross-shareholding triangulation
+scripts/build_trajectory.py           # RDF → Markdown/Mermaid view
 ```
-
-## What v0.2 deliberately does not do
-
-* No hard-asserted main-bank or keiretsu relations.
-* No prediction layer; explanation/audit-first.
-* No entity resolution against the National Tax Agency 法人番号 registry's
-  full master list; the curated `registry/entities.yaml` covers the
-  ~20 entities that the current benchmark corpus touches.
-* No automated OWL-RL materialization layer (rdflib supports it; v0.2
-  validates with SHACL only).

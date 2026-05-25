@@ -1,0 +1,53 @@
+id: case-018-edinet-bilingual-label-fidelity
+title: EDINET element labels round-trip in both 日本語 and English
+title_ja: EDINET要素ラベルの日英バイリンガル忠実度
+domain: edinet_alignment
+source:
+  filer: N/A (taxonomy structure)
+  document: EDINET taxonomy 2025-11-01 — 1e_ElementList.xlsx
+  cited_section: "標準ラベル（日本語/英語）"
+  edinet_url: https://www.fsa.go.jp/search/20251111.html
+  notes: |
+    Vanilla FIBO does not carry EDINET-issued bilingual labels or the
+    XBRL periodType/type/abstract metadata. J-FIBO copies the FSA-published
+    standard label (both ja and en), the terse label (as altLabel / official
+    Japanese label), and the XBRL metadata verbatim, so an EDINET-element
+    URI in the J-FIBO graph is self-describing without re-fetching the
+    XBRL schema.
+raw_claim: |
+  Every EDINET element minted by J-FIBO carries the FSA standard label
+  in 日本語 and English, the terse Japanese label, the XBRL periodType,
+  the XBRL item type, the abstract flag, and the EDINET prefix family.
+edinet_elements:
+  - jpcrp_cor:MajorShareholdersTextBlock
+  - jpcrp_cor:BusinessRisksTextBlock
+  - jpdei_cor:EDINETCodeDEI
+expected_semantic_fields:
+  - standard_label_en
+  - standard_label_ja
+  - terse_label_ja
+  - xbrl_period_type
+  - xbrl_type
+  - xbrl_abstract_flag
+  - xbrl_prefix_family
+vanilla_fibo_mapping:
+  primary_class: skos:Concept
+  represents: []
+  cannot_represent_without_extension:
+    - standard_label_en
+    - standard_label_ja
+    - terse_label_ja
+    - xbrl_period_type
+    - xbrl_type
+    - xbrl_abstract_flag
+    - xbrl_prefix_family
+jfibo_mapping:
+  primary_class: jfibo:EDINETTaxonomyElement
+  represents:
+    - standard_label_en
+    - standard_label_ja
+    - terse_label_ja
+    - xbrl_period_type
+    - xbrl_type
+    - xbrl_abstract_flag
+    - xbrl_prefix_family

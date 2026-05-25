@@ -1,0 +1,13 @@
+@prefix jfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Missing: hasBorrower, hasClosingBalance, hasEvidenceElement.
+<urn:example:claim/commercial-paper/002>
+  a jfibo:CommercialPaperClaim ;
+  jfibo:hasOpeningBalance "3105779"^^xsd:decimal ;
+  prov:wasDerivedFrom <urn:example:edinet/S100W4FB> ;
+  jfibo:informationStatus jfibo:Disclosed ;
+  prov:generatedAtTime "2025-06-25T15:30:00+09:00"^^xsd:dateTime ;
+  dcterms:valid "2025-03-31"^^xsd:date .

@@ -1,6 +1,9 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
+@prefix jpdei_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor#> .
+@prefix jplvh_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor#> .
+@prefix jppfs_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,57 +13,693 @@ jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock a skos:Concep
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Annexed consolidated detailed schedule of borrowings [text block]"@en ;
     skos:notation "jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock" ;
-    skos:prefLabel "AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock"@en .
+    skos:prefLabel "Annexed consolidated detailed schedule of borrowings"@en,
+        "借入金等明細表"@ja ;
+    jfibo:hasOfficialJapaneseLabel "借入金等明細表、連結財務諸表 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
 
 jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Annexed detailed schedule of borrowings, Financial statements [text block]"@en ;
     skos:notation "jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock" ;
-    skos:prefLabel "AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock"@en .
+    skos:prefLabel "Annexed detailed schedule of borrowings"@en,
+        "借入金等明細表"@ja ;
+    jfibo:hasOfficialJapaneseLabel "借入金等明細表、財務諸表 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
 
 jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Carrying amount, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
     skos:notation "jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
-    skos:prefLabel "BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+    skos:prefLabel "Carrying amount"@en ;
+    jfibo:hasOfficialJapaneseLabel "貸借対照表計上額、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jpcrp_cor:BusinessRisksTextBlock a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Business risks [text block]"@en ;
+    skos:notation "jpcrp_cor:BusinessRisksTextBlock" ;
+    skos:prefLabel "Business risks"@en,
+        "事業等のリスク"@ja ;
+    jfibo:hasOfficialJapaneseLabel "事業等のリスク [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
 
 jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Details of specified investment shares held for purposes other than pure investment, Reporting company [table]"@en ;
     skos:notation "jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable" ;
-    skos:prefLabel "DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable"@en .
+    skos:prefLabel "Details of specified investment shares held for purposes other than pure investment"@en ;
+    jfibo:hasOfficialJapaneseLabel "保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社 [表]"@ja ;
+    jfibo:xbrlAbstract "true" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
 
 jpcrp_cor:MajorShareholdersTextBlock a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Major shareholders [text block]"@en ;
     skos:notation "jpcrp_cor:MajorShareholdersTextBlock" ;
-    skos:prefLabel "MajorShareholdersTextBlock"@en .
+    skos:prefLabel "Major shareholders"@en,
+        "大株主の状況"@ja ;
+    jfibo:hasOfficialJapaneseLabel "大株主の状況 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
+
+jpcrp_cor:ManagementAnalysisOfFinancialPositionOperatingResultsAndCashFlowsTextBlock a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Management analysis of financial position, operating results and cash flows [text block]"@en ;
+    skos:notation "jpcrp_cor:ManagementAnalysisOfFinancialPositionOperatingResultsAndCashFlowsTextBlock" ;
+    skos:prefLabel "Management analysis of financial position, operating results and cash flows"@en,
+        "経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析"@ja ;
+    jfibo:hasOfficialJapaneseLabel "経営者による財政状態、経営成績及びキャッシュ・フローの状況の分析 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
+
+jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Issue, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
+    skos:notation "jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "Issue"@en ;
+    jfibo:hasOfficialJapaneseLabel "銘柄、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
 
 jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Number of shares, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
     skos:notation "jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
-    skos:prefLabel "NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+    skos:prefLabel "Number of shares"@en ;
+    jfibo:hasOfficialJapaneseLabel "株式数、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:sharesItemType" .
+
+jpcrp_cor:OverviewOfBusinessAllianceDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Overview of business alliance, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
+    skos:notation "jpcrp_cor:OverviewOfBusinessAllianceDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "Overview of business alliance"@en ;
+    jfibo:hasOfficialJapaneseLabel "業務提携等の概要、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpcrp_cor:OverviewOfCorporateGovernanceTextBlock a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Overview of corporate governance [text block]"@en ;
+    skos:notation "jpcrp_cor:OverviewOfCorporateGovernanceTextBlock" ;
+    skos:prefLabel "Overview of corporate governance"@en,
+        "コーポレート・ガバナンスの概要"@ja ;
+    jfibo:hasOfficialJapaneseLabel "コーポレート・ガバナンスの概要 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
 
 jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Purpose of shareholding, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
     skos:notation "jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
-    skos:prefLabel "PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+    skos:prefLabel "Purpose of shareholding"@en ;
+    jfibo:hasOfficialJapaneseLabel "保有目的、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
 
 jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
         jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Quantitative effects of shareholding, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
     skos:notation "jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
-    skos:prefLabel "QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
+    skos:prefLabel "Quantitative effects of shareholding"@en ;
+    jfibo:hasOfficialJapaneseLabel "定量的な保有効果、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpcrp_cor:ReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Reason for increase in number of shares, Details of specified investment shares held for purposes other than pure investment, Reporting company"@en ;
+    skos:notation "jpcrp_cor:ReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
+    skos:prefLabel "Reason for increase in number of shares"@en ;
+    jfibo:hasOfficialJapaneseLabel "株式数が増加した理由、保有目的が純投資目的以外の目的である特定投資株式の明細、提出会社"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpcrp_cor:ShareholdingsTextBlock a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Shareholdings [text block]"@en ;
+    skos:notation "jpcrp_cor:ShareholdingsTextBlock" ;
+    skos:prefLabel "Shareholdings"@en,
+        "株式の保有状況"@ja ;
+    jfibo:hasOfficialJapaneseLabel "株式の保有状況 [テキストブロック]"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpcrp_cor" ;
+    jfibo:xbrlType "nonnum:textBlockItemType" .
+
+jpdei_cor:AccountingStandardsDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Accounting standards, DEI"@en ;
+    skos:notation "jpdei_cor:AccountingStandardsDEI" ;
+    skos:prefLabel "Accounting standards"@en,
+        "会計基準"@ja ;
+    jfibo:hasOfficialJapaneseLabel "会計基準、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:AmendmentFlagDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Amendment flag, DEI"@en ;
+    skos:notation "jpdei_cor:AmendmentFlagDEI" ;
+    skos:prefLabel "Amendment flag"@en,
+        "訂正の有無"@ja ;
+    jfibo:hasOfficialJapaneseLabel "訂正の有無、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:booleanItemType" .
+
+jpdei_cor:CabinetOfficeOrdinanceDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Cabinet office ordinance, DEI"@en ;
+    skos:notation "jpdei_cor:CabinetOfficeOrdinanceDEI" ;
+    skos:prefLabel "Cabinet office ordinance"@en,
+        "府令"@ja ;
+    jfibo:hasOfficialJapaneseLabel "府令、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:CurrentFiscalYearEndDateDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Current fiscal year end date, DEI"@en ;
+    skos:notation "jpdei_cor:CurrentFiscalYearEndDateDEI" ;
+    skos:prefLabel "Current fiscal year end date"@en,
+        "当事業年度終了日"@ja ;
+    jfibo:hasOfficialJapaneseLabel "当事業年度終了日、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:dateItemType" .
+
+jpdei_cor:CurrentFiscalYearStartDateDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Current fiscal year start date, DEI"@en ;
+    skos:notation "jpdei_cor:CurrentFiscalYearStartDateDEI" ;
+    skos:prefLabel "Current fiscal year start date"@en,
+        "当事業年度開始日"@ja ;
+    jfibo:hasOfficialJapaneseLabel "当事業年度開始日、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:dateItemType" .
+
+jpdei_cor:DocumentTypeDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Document type, DEI"@en ;
+    skos:notation "jpdei_cor:DocumentTypeDEI" ;
+    skos:prefLabel "Document type"@en,
+        "様式"@ja ;
+    jfibo:hasOfficialJapaneseLabel "様式、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:EDINETCodeDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "EDINET code, DEI"@en ;
+    skos:notation "jpdei_cor:EDINETCodeDEI" ;
+    skos:prefLabel "EDINET code"@en,
+        "EDINETコード"@ja ;
+    jfibo:hasOfficialJapaneseLabel "EDINETコード、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:FilerNameInEnglishDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Filer name in English, DEI"@en ;
+    skos:notation "jpdei_cor:FilerNameInEnglishDEI" ;
+    skos:prefLabel "Filer name in English"@en,
+        "提出者名（英語表記）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "提出者名（英語表記）、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:FilerNameInJapaneseDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Filer name in Japanese, DEI"@en ;
+    skos:notation "jpdei_cor:FilerNameInJapaneseDEI" ;
+    skos:prefLabel "Filer name in Japanese"@en,
+        "提出者名（日本語表記）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "提出者名（日本語表記）、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:PreviousFiscalYearEndDateDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Previous fiscal year end date, DEI"@en ;
+    skos:notation "jpdei_cor:PreviousFiscalYearEndDateDEI" ;
+    skos:prefLabel "Previous fiscal year end date"@en,
+        "前事業年度終了日"@ja ;
+    jfibo:hasOfficialJapaneseLabel "前事業年度終了日、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:dateItemType" .
+
+jpdei_cor:PreviousFiscalYearStartDateDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Previous fiscal year start date, DEI"@en ;
+    skos:notation "jpdei_cor:PreviousFiscalYearStartDateDEI" ;
+    skos:prefLabel "Previous fiscal year start date"@en,
+        "前事業年度開始日"@ja ;
+    jfibo:hasOfficialJapaneseLabel "前事業年度開始日、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:dateItemType" .
+
+jpdei_cor:ReportAmendmentFlagDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Report amendment flag, DEI"@en ;
+    skos:notation "jpdei_cor:ReportAmendmentFlagDEI" ;
+    skos:prefLabel "Report amendment flag"@en,
+        "記載事項訂正のフラグ"@ja ;
+    jfibo:hasOfficialJapaneseLabel "記載事項訂正のフラグ、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:booleanItemType" .
+
+jpdei_cor:SecurityCodeDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Security code, DEI"@en ;
+    skos:notation "jpdei_cor:SecurityCodeDEI" ;
+    skos:prefLabel "Security code"@en,
+        "証券コード"@ja ;
+    jfibo:hasOfficialJapaneseLabel "証券コード、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jpdei_cor:WhetherConsolidatedFinancialStatementsArePreparedDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Whether consolidated financial statements are prepared, DEI"@en ;
+    skos:notation "jpdei_cor:WhetherConsolidatedFinancialStatementsArePreparedDEI" ;
+    skos:prefLabel "Whether consolidated financial statements are prepared"@en,
+        "連結決算の有無"@ja ;
+    jfibo:hasOfficialJapaneseLabel "連結決算の有無、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:booleanItemType" .
+
+jpdei_cor:XBRLAmendmentFlagDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "XBRL amendment flag, DEI"@en ;
+    skos:notation "jpdei_cor:XBRLAmendmentFlagDEI" ;
+    skos:prefLabel "XBRL amendment flag"@en,
+        "XBRL訂正のフラグ"@ja ;
+    jfibo:hasOfficialJapaneseLabel "XBRL訂正のフラグ、DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jpdei_cor" ;
+    jfibo:xbrlType "xbrli:booleanItemType" .
+
+jplvh_cor:EDINETCodeDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "EDINET code, LVHDEI"@en ;
+    skos:notation "jplvh_cor:EDINETCodeDEI" ;
+    skos:prefLabel "EDINET code"@en,
+        "EDINETコード"@ja ;
+    jfibo:hasOfficialJapaneseLabel "EDINETコード、大量保有DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jplvh_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jplvh_cor:FilerNameInEnglishDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Filer name in English, LVHDEI"@en ;
+    skos:notation "jplvh_cor:FilerNameInEnglishDEI" ;
+    skos:prefLabel "Filer name in English"@en,
+        "氏名又は名称（英語表記）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "氏名又は名称（英語表記）、大量保有DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jplvh_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jplvh_cor:FilerNameInJapaneseDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Filer name in Japanese, LVHDEI"@en ;
+    skos:notation "jplvh_cor:FilerNameInJapaneseDEI" ;
+    skos:prefLabel "Filer name in Japanese"@en,
+        "氏名又は名称（日本語表記）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "氏名又は名称（日本語表記）、大量保有DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jplvh_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jplvh_cor:SecurityCodeDEI a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Security code, LVHDEI"@en ;
+    skos:notation "jplvh_cor:SecurityCodeDEI" ;
+    skos:prefLabel "Security code"@en,
+        "証券コード"@ja ;
+    jfibo:hasOfficialJapaneseLabel "証券コード、大量保有DEI"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jplvh_cor" ;
+    jfibo:xbrlType "xbrli:stringItemType" .
+
+jppfs_cor:Assets a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Assets"@en ;
+    skos:notation "jppfs_cor:Assets" ;
+    skos:prefLabel "Assets"@en,
+        "資産"@ja ;
+    jfibo:hasOfficialJapaneseLabel "資産"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:BillsRediscountedBorrowedMoneyLiabilitiesBNK a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Bills rediscounted-borrowed money-liabilities-BNK"@en ;
+    skos:notation "jppfs_cor:BillsRediscountedBorrowedMoneyLiabilitiesBNK" ;
+    skos:prefLabel "Bills rediscounted"@en,
+        "再割引手形"@ja ;
+    jfibo:hasOfficialJapaneseLabel "再割引手形、借用金、負債の部、銀行業"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:BorrowedMoneyLiabilitiesBNK a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Borrowed money-liabilities-BNK"@en ;
+    skos:notation "jppfs_cor:BorrowedMoneyLiabilitiesBNK" ;
+    skos:prefLabel "Borrowed money"@en,
+        "借用金"@ja ;
+    jfibo:hasOfficialJapaneseLabel "借用金、負債の部、銀行業"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:CashAndDeposits a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Cash and deposits"@en ;
+    skos:notation "jppfs_cor:CashAndDeposits" ;
+    skos:prefLabel "Cash and deposits"@en,
+        "現金及び預金"@ja ;
+    jfibo:hasOfficialJapaneseLabel "現金及び預金"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:CommercialPapersLiabilities a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Commercial papers-liabilities"@en ;
+    skos:notation "jppfs_cor:CommercialPapersLiabilities" ;
+    skos:prefLabel "Commercial papers"@en,
+        "コマーシャル・ペーパー"@ja ;
+    jfibo:hasOfficialJapaneseLabel "コマーシャル・ペーパー"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:CurrentPortionOfLongTermLoansPayable a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Current portion of long-term borrowings"@en ;
+    skos:notation "jppfs_cor:CurrentPortionOfLongTermLoansPayable" ;
+    skos:prefLabel "Current portion of long-term borrowings"@en,
+        "１年内返済予定の長期借入金"@ja ;
+    jfibo:hasOfficialJapaneseLabel "１年内返済予定の長期借入金"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:LeaseObligationsCL a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Lease liabilities - CL"@en ;
+    skos:notation "jppfs_cor:LeaseObligationsCL" ;
+    skos:prefLabel "Lease liabilities"@en,
+        "リース負債"@ja ;
+    jfibo:hasOfficialJapaneseLabel "リース負債、流動負債"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:LeaseObligationsNCL a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Lease liabilities - NCL"@en ;
+    skos:notation "jppfs_cor:LeaseObligationsNCL" ;
+    skos:prefLabel "Lease liabilities"@en,
+        "リース負債"@ja ;
+    jfibo:hasOfficialJapaneseLabel "リース負債、固定負債"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:Liabilities a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Liabilities"@en ;
+    skos:notation "jppfs_cor:Liabilities" ;
+    skos:prefLabel "Liabilities"@en,
+        "負債"@ja ;
+    jfibo:hasOfficialJapaneseLabel "負債"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:LongTermLoansPayable a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Long-term borrowings"@en ;
+    skos:notation "jppfs_cor:LongTermLoansPayable" ;
+    skos:prefLabel "Long-term borrowings"@en,
+        "長期借入金"@ja ;
+    jfibo:hasOfficialJapaneseLabel "長期借入金"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:NetAssets a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Net assets"@en ;
+    skos:notation "jppfs_cor:NetAssets" ;
+    skos:prefLabel "Net assets"@en,
+        "純資産"@ja ;
+    jfibo:hasOfficialJapaneseLabel "純資産"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:NetSales a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Net sales"@en ;
+    skos:notation "jppfs_cor:NetSales" ;
+    skos:prefLabel "Net sales"@en,
+        "売上高"@ja ;
+    jfibo:hasOfficialJapaneseLabel "売上高"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:OperatingIncome a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Operating profit (loss)"@en ;
+    skos:notation "jppfs_cor:OperatingIncome" ;
+    skos:prefLabel "Operating profit (loss)"@en,
+        "営業利益又は営業損失（△）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "営業利益又は営業損失（△）"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:OrdinaryIncome a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Ordinary profit (loss)"@en ;
+    skos:notation "jppfs_cor:OrdinaryIncome" ;
+    skos:prefLabel "Ordinary profit (loss)"@en,
+        "経常利益又は経常損失（△）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "経常利益又は経常損失（△）"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:ProfitLoss a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Profit (loss) (after amendment dated 2014-03-28)"@en ;
+    skos:notation "jppfs_cor:ProfitLoss" ;
+    skos:prefLabel "Profit (loss)"@en,
+        "当期純利益又は当期純損失（△）"@ja ;
+    jfibo:hasOfficialJapaneseLabel "当期純利益又は当期純損失（△）（平成26年3月28日財規等改正後）"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "duration" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
+
+jppfs_cor:ShortTermLoansPayable a skos:Concept,
+        jfibo:EDINETTaxonomyElement ;
+    dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    skos:altLabel "Short-term borrowings"@en ;
+    skos:notation "jppfs_cor:ShortTermLoansPayable" ;
+    skos:prefLabel "Short-term borrowings"@en,
+        "短期借入金"@ja ;
+    jfibo:hasOfficialJapaneseLabel "短期借入金"@ja ;
+    jfibo:xbrlAbstract "false" ;
+    jfibo:xbrlPeriodType "instant" ;
+    jfibo:xbrlPrefix "jppfs_cor" ;
+    jfibo:xbrlType "xbrli:monetaryItemType" .
 
 jfibo:hasEvidenceElement a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
@@ -75,6 +714,19 @@ jfibo:hasEvidenceElement a owl:ObjectProperty ;
     jfibo:level "propose" ;
     jfibo:status "proposed" .
 
+jfibo:hasOfficialJapaneseLabel a owl:AnnotationProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf skos:altLabel ;
+    skos:definition "The \"terse\" Japanese label (冗長ラベル) declared by the FSA for an EDINET taxonomy element, carried verbatim so consumers can join on the exact disclosure wording."@en ;
+    skos:prefLabel "has official Japanese label"@en,
+        "公式日本語ラベル"@ja ;
+    skos:scopeNote "Distinct from skos:prefLabel@ja because the terse/redundant Japanese label often differs from the heading-style standard label."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
 jfibo:mapsToEdinetElement a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
     rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
@@ -85,6 +737,58 @@ jfibo:mapsToEdinetElement a owl:ObjectProperty ;
     skos:scopeNote "This is an alignment assertion, not a replacement for the official XBRL taxonomy."@en ;
     prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
     prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:xbrlAbstract a owl:AnnotationProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:definition "Whether the EDINET taxonomy element is marked abstract (a tree node, not directly reportable). Carried verbatim from the official taxonomy."@en ;
+    skos:prefLabel "XBRL abstract flag"@en,
+        "XBRL抽象要素"@ja ;
+    skos:scopeNote "Abstract elements are organizational headers; consumers should not expect a reported value."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:xbrlPeriodType a owl:AnnotationProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:definition "The XBRL periodType attribute (`instant` or `duration`) declared by the official EDINET taxonomy for an aligned element. Carried verbatim so consumers can validate temporal semantics without re-fetching the XBRL schema."@en ;
+    skos:prefLabel "XBRL period type"@en,
+        "XBRL期間区分"@ja ;
+    skos:scopeNote "Read this as evidence about the source element, not as a constraint J-FIBO imposes."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:xbrlPrefix a owl:AnnotationProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:definition "The EDINET XBRL namespace prefix family (e.g. jpdei_cor, jpcrp_cor, jppfs_cor) of the aligned element."@en ;
+    skos:prefLabel "XBRL namespace prefix"@en,
+        "XBRLプレフィックス"@ja ;
+    skos:scopeNote "Use to group elements by EDINET prefix family (jpdei_cor, jpcrp_cor, jppfs_cor, jpsps_cor, jplvh_cor, jpaud_cor, jpctl_cor, jpigp_cor)."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
+
+jfibo:xbrlType a owl:AnnotationProperty ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:definition "The XBRL `type` attribute (e.g. `xbrli:stringItemType`, `xbrli:monetaryItemType`) declared by the official EDINET taxonomy for an aligned element."@en ;
+    skos:prefLabel "XBRL item type"@en,
+        "XBRLデータ型"@ja ;
+    skos:scopeNote "Faithful copy from the EDINET XBRL schema; not interpreted by J-FIBO."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> ;
     jfibo:level "propose" ;
     jfibo:status "proposed" .
 

@@ -1,0 +1,50 @@
+id: case-016-mufg-commercial-paper-issuance
+title: MUFG commercial-paper issuance disclosed alongside borrowings schedule
+title_ja: 三菱ＵＦＪフィナンシャル・グループのコマーシャル・ペーパー発行
+domain: borrowings_evidence
+source:
+  filer: Mitsubishi UFJ Financial Group, Inc.
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」 (参考: コマーシャル・ペーパーの発行状況)"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB
+  notes: |
+    Banks disclose CP issuance as a parenthetical alongside the borrowings
+    schedule rather than as a row within 借入金等明細表. The CP balance is
+    distinct from 借入金 and must be modeled separately so totals are not
+    double-counted by downstream consumers.
+raw_claim: |
+  MUFG discloses CP opening balance 3,105,779 百万円, closing balance
+  3,475,042 百万円, weighted-average rate 4.23%, as a parenthetical
+  beneath the consolidated 借入金等明細表.
+edinet_elements:
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jppfs_cor:CommercialPapersLiabilities
+expected_semantic_fields:
+  - issuer_name
+  - instrument_class_label
+  - opening_balance
+  - closing_balance
+  - average_interest_rate
+  - currency_unit_label
+  - evidence_text_block
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fi-fi:Security
+  represents:
+    - issuer_name
+    - instrument_class_label
+  cannot_represent_without_extension:
+    - opening_balance
+    - closing_balance
+    - average_interest_rate
+    - currency_unit_label
+    - evidence_text_block
+jfibo_mapping:
+  primary_class: jfibo:CommercialPaperClaim
+  represents:
+    - issuer_name
+    - instrument_class_label
+    - opening_balance
+    - closing_balance
+    - average_interest_rate
+    - currency_unit_label
+    - evidence_text_block

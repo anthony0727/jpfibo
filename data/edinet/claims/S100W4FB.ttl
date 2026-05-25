@@ -6,6 +6,89 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<urn:jfibo:claim:S100W4FB/borrowings/row00> a jfibo:BorrowingsClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasAverageRate 0.68 ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "借用金"@ja ;
+    jfibo:hasClosingBalance 22101954.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 25955961.0 ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
+<urn:jfibo:claim:S100W4FB/borrowings/row01> a jfibo:BorrowingsClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasAverageRate 0.68 ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "借入金"@ja ;
+    jfibo:hasClosingBalance 22101954.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 25955961.0 ;
+    jfibo:hasRepaymentDeadline "2024年 1月～ 2051年 10月"@ja ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
+<urn:jfibo:claim:S100W4FB/borrowings/row02> a jfibo:BorrowingsClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "リース債務"@ja ;
+    jfibo:hasClosingBalance 90694.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 69738.0 ;
+    jfibo:hasRepaymentDeadline "2024年 2月～ 2044年 9月"@ja ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
+<urn:jfibo:claim:S100W4FB/borrowings/row03> a jfibo:BorrowingsClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "借入金"@ja ;
+    jfibo:hasClosingBalance 470428.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 18356855.0 ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
+<urn:jfibo:claim:S100W4FB/borrowings/row04> a jfibo:BorrowingsClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "リース債務"@ja ;
+    jfibo:hasClosingBalance 16940.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 16472.0 ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
+<urn:jfibo:claim:S100W4FB/commercial-paper/row05> a jfibo:CommercialPaperClaim ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
+    jfibo:hasAverageRate 4.23 ;
+    jfibo:hasBorrower <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasBorrowingsClassLabel "コマーシャル・ペーパー"@ja ;
+    jfibo:hasClosingBalance 3475042.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+    jfibo:hasOpeningBalance 3105779.0 ;
+    jfibo:hasUnitLabel "百万円"@ja ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
+
 <urn:jfibo:claim:S100W4FB/major-shareholder/rank01> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;

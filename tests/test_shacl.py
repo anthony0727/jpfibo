@@ -19,6 +19,8 @@ def _run(*args: str) -> subprocess.CompletedProcess:
     "examples/policy-shareholding-valid.ttl",
     "examples/main-bank-candidate-valid.ttl",
     "examples/major-shareholder-valid.ttl",
+    "examples/borrowings-valid.ttl",
+    "examples/commercial-paper-valid.ttl",
 ])
 def test_valid_examples_conform(fixture: str) -> None:
     r = _run(fixture)
@@ -29,6 +31,8 @@ def test_valid_examples_conform(fixture: str) -> None:
     "examples/policy-shareholding-invalid.ttl",
     "examples/main-bank-candidate-invalid.ttl",
     "examples/major-shareholder-invalid.ttl",
+    "examples/borrowings-invalid.ttl",
+    "examples/commercial-paper-invalid.ttl",
 ])
 def test_invalid_examples_fail(fixture: str) -> None:
     r = _run(fixture, "--expect-fail")

@@ -1,0 +1,21 @@
+@prefix jfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Modelled on MUFG's FY2024 parenthetical CP issuance.
+<urn:example:claim/commercial-paper/001>
+  a jfibo:CommercialPaperClaim ;
+  jfibo:hasBorrower <urn:example:entity/edinet/E03606> ;
+  jfibo:hasBorrowingsClassLabel "コマーシャル・ペーパー"@ja ;
+  jfibo:hasOpeningBalance "3105779"^^xsd:decimal ;
+  jfibo:hasClosingBalance "3475042"^^xsd:decimal ;
+  jfibo:hasAverageRate    "4.23"^^xsd:decimal ;
+  jfibo:hasUnitLabel "百万円"@ja ;
+  jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+  prov:wasDerivedFrom <urn:example:edinet/S100W4FB> ;
+  jfibo:informationStatus jfibo:Disclosed ;
+  jfibo:normativeStatus   jfibo:AccountingDisclosure ;
+  prov:generatedAtTime "2025-06-25T15:30:00+09:00"^^xsd:dateTime ;
+  dcterms:valid "2025-03-31"^^xsd:date .

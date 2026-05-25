@@ -209,28 +209,90 @@
       "jfibo_gain": 0.6,
       "evidence_traceability": 1.0,
       "information_boundary_marked": true
+    },
+    {
+      "id": "case-016-mufg-commercial-paper-issuance",
+      "domain": "borrowings_evidence",
+      "expected": 7,
+      "vanilla_represents": 2,
+      "vanilla_missing": 5,
+      "jfibo_represents": 7,
+      "vanilla_coverage": 0.2857142857142857,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 0.7142857142857143,
+      "jfibo_gain": 0.7142857142857143,
+      "evidence_traceability": 0.0,
+      "information_boundary_marked": false
+    },
+    {
+      "id": "case-017-mufg-aggregated-borrowings-row",
+      "domain": "borrowings_evidence",
+      "expected": 8,
+      "vanilla_represents": 1,
+      "vanilla_missing": 7,
+      "jfibo_represents": 8,
+      "vanilla_coverage": 0.125,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 0.875,
+      "jfibo_gain": 0.875,
+      "evidence_traceability": 0.0,
+      "information_boundary_marked": false
+    },
+    {
+      "id": "case-018-edinet-bilingual-label-fidelity",
+      "domain": "edinet_alignment",
+      "expected": 7,
+      "vanilla_represents": 0,
+      "vanilla_missing": 7,
+      "jfibo_represents": 7,
+      "vanilla_coverage": 0.0,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 1.0,
+      "jfibo_gain": 1.0,
+      "evidence_traceability": 0.0,
+      "information_boundary_marked": false
+    },
+    {
+      "id": "case-019-banking-borrowings-vs-corporate-borrowings",
+      "domain": "borrowings_evidence",
+      "expected": 6,
+      "vanilla_represents": 1,
+      "vanilla_missing": 5,
+      "jfibo_represents": 6,
+      "vanilla_coverage": 0.16666666666666666,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 0.8333333333333334,
+      "jfibo_gain": 0.8333333333333334,
+      "evidence_traceability": 0.0,
+      "information_boundary_marked": false
     }
   ],
   "cohort": {
-    "cases": 15,
-    "mean_vanilla_coverage": 0.3383140933140933,
+    "cases": 19,
+    "mean_vanilla_coverage": 0.2974785448469659,
     "mean_jfibo_coverage": 1.0,
-    "mean_semantic_loss_rate": 0.611921596921597,
-    "mean_jfibo_gain": 0.6616859066859068,
-    "share_with_evidence_traceability": 0.9333333333333333,
-    "share_with_information_boundary_marked": 1.0,
+    "mean_semantic_loss_rate": 0.6632338421812106,
+    "mean_jfibo_gain": 0.7025214551530341,
+    "share_with_evidence_traceability": 0.7368421052631579,
+    "share_with_information_boundary_marked": 0.7894736842105263,
     "by_domain": {
       "borrowings_evidence": {
-        "cases": 2,
-        "mean_vanilla_coverage": 0.31666666666666665,
+        "cases": 5,
+        "mean_vanilla_coverage": 0.24214285714285713,
         "mean_jfibo_coverage": 1.0,
-        "mean_jfibo_gain": 0.6833333333333333
+        "mean_jfibo_gain": 0.7578571428571429
       },
       "cross_shareholding": {
         "cases": 6,
         "mean_vanilla_coverage": 0.4199074074074074,
         "mean_jfibo_coverage": 1.0,
         "mean_jfibo_gain": 0.5800925925925926
+      },
+      "edinet_alignment": {
+        "cases": 1,
+        "mean_vanilla_coverage": 0.0,
+        "mean_jfibo_coverage": 1.0,
+        "mean_jfibo_gain": 1.0
       },
       "institutional_relationship": {
         "cases": 2,

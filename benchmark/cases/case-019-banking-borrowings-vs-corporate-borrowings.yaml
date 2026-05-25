@@ -1,0 +1,52 @@
+id: case-019-banking-borrowings-vs-corporate-borrowings
+title: 借用金 (banking-form aggregate) vs 借入金 (general aggregate) distinction
+title_ja: 銀行業の「借用金」と一般事業会社の「借入金」の区別
+domain: borrowings_evidence
+source:
+  filer: Bank holding company vs general industrial filer
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    The FSA-published EDINET taxonomy uses different anchor elements for
+    bank-industry borrowings (BorrowingsCA / BorrowingsNCA, label 借用金)
+    vs general-industry borrowings (ShortTermLoansPayable / LongTermLoansPayable,
+    label 借入金). Vanilla FIBO does not distinguish, so the bank/non-bank
+    semantics are lost; J-FIBO preserves the distinction via the verbatim
+    class label and the evidence-element pointer.
+raw_claim: |
+  A bank's 借用金 line on the consolidated 借入金等明細表 is semantically
+  distinct from a general-industry 借入金 row, even though both can map to
+  a generic "borrowing" concept in FIBO.
+edinet_elements:
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jppfs_cor:BorrowedMoneyLiabilitiesBNK
+  - jppfs_cor:BillsRediscountedBorrowedMoneyLiabilitiesBNK
+  - jppfs_cor:ShortTermLoansPayable
+  - jppfs_cor:LongTermLoansPayable
+expected_semantic_fields:
+  - borrower_name
+  - banking_form_vs_general_form
+  - class_label_verbatim
+  - opening_balance
+  - closing_balance
+  - evidence_text_block
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fi-fi:Security
+  represents:
+    - borrower_name
+  cannot_represent_without_extension:
+    - banking_form_vs_general_form
+    - class_label_verbatim
+    - opening_balance
+    - closing_balance
+    - evidence_text_block
+jfibo_mapping:
+  primary_class: jfibo:BorrowingsClaim
+  represents:
+    - borrower_name
+    - banking_form_vs_general_form
+    - class_label_verbatim
+    - opening_balance
+    - closing_balance
+    - evidence_text_block
