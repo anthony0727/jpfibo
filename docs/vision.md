@@ -40,16 +40,16 @@ absent from FIBO classes:
 A naïve FIBO mapping silently drops most of these and lets the consumer
 mistake a *narrative policy holding* for a *bare ownership edge*.
 
-## Why the `jpfibo:` prefix
+## Why the `jfibo:` prefix
 
 The EDINET vocabulary family uses `jpcrp / jpdei / jppfs / jpigp / jpsps /
 jplvh / jpaud / jpctl`. An FSA or Digital Agency engineer reading Turtle
 decides "native vs foreign" in the first five seconds based on the prefix.
-`jpfibo:` reads as a member of that family.
+`jfibo:` reads as a member of that family.
 
 The brand "J-FIBO" stays (matches EDM Council Profile-naming conventions);
 the Japanese formal name 金融意味基盤・日本版 stays. Only the RDF prefix
-changed from `jfibo:` to `jpfibo:` for ecosystem affinity.
+changed from `jfibo:` to `jfibo:` for ecosystem affinity.
 
 ## Quantification: semantic-loss benchmark
 
@@ -81,7 +81,7 @@ Group governance layer — explicit attribution of vocabulary contributions,
 so that future merges, splits, and ratifications can be traced like
 FIBO/EDM Council should but doesn't.
 
-Provisional contributor: `jpfibo-wg-bootstrap` (a single-author research
+Provisional contributor: `jfibo-wg-bootstrap` (a single-author research
 seed; no Japanese institutional body has endorsed or participated). See
 [docs/governance-status.md](governance-status.md) for the explicit
 posture.
@@ -91,15 +91,15 @@ posture.
 Modules:
 
 ```
-ontology/jpfibo-core.ttl
-ontology/jpfibo-information-status.ttl
-ontology/jpfibo-normative-status.ttl
-ontology/jpfibo-reporting-regime.ttl
-ontology/jpfibo-document-type.ttl
-ontology/jpfibo-holder-role.ttl
-ontology/jpfibo-disclosure-claim.ttl
-ontology/jpfibo-institutional-context.ttl
-ontology/jpfibo-edinet-alignment.ttl
+ontology/jfibo-core.ttl
+ontology/jfibo-information-status.ttl
+ontology/jfibo-normative-status.ttl
+ontology/jfibo-reporting-regime.ttl
+ontology/jfibo-document-type.ttl
+ontology/jfibo-holder-role.ttl
+ontology/jfibo-disclosure-claim.ttl
+ontology/jfibo-institutional-context.ttl
+ontology/jfibo-edinet-alignment.ttl
 ```
 
 Claim families: `PolicyShareholding`, `MajorShareholderClaim`,

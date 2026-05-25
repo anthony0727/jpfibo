@@ -1,112 +1,112 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
-@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock" ;
     skos:prefLabel "AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock"@en .
 
 jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock" ;
     skos:prefLabel "AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock"@en .
 
 jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
     skos:prefLabel "BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
 
 jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable" ;
     skos:prefLabel "DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable"@en .
 
 jpcrp_cor:MajorShareholdersTextBlock a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:MajorShareholdersTextBlock" ;
     skos:prefLabel "MajorShareholdersTextBlock"@en .
 
 jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
     skos:prefLabel "NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
 
 jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
     skos:prefLabel "PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
 
 jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany a skos:Concept,
-        jpfibo:EDINETTaxonomyElement ;
+        jfibo:EDINETTaxonomyElement ;
     dcterms:source <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     skos:notation "jpcrp_cor:QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany" ;
     skos:prefLabel "QuantitativeEffectsOfShareholdingDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany"@en .
 
-jpfibo:hasEvidenceElement a owl:ObjectProperty ;
+jfibo:hasEvidenceElement a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     rdfs:subPropertyOf prov:wasDerivedFrom ;
     skos:definition "Relates a claim or evidence item to the EDINET taxonomy element from which it was extracted."@en ;
     skos:prefLabel "has evidence element"@en,
         "証拠EDINET要素"@ja ;
     skos:scopeNote "Use for claim-level traceability down to an XBRL concept or text block."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:mapsToEdinetElement a owl:ObjectProperty ;
+jfibo:mapsToEdinetElement a owl:ObjectProperty ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     rdfs:subPropertyOf skos:relatedMatch ;
     skos:definition "Links a J-FIBO term or evidence item to an EDINET taxonomy element used as its official reporting source."@en ;
     skos:prefLabel "maps to EDINET element"@en,
         "EDINET要素に対応"@ja ;
     skos:scopeNote "This is an alignment assertion, not a replacement for the official XBRL taxonomy."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:EDINETTaxonomyElement a owl:Class ;
+jfibo:EDINETTaxonomyElement a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/edinet-alignment/> ;
     rdfs:subClassOf skos:Concept ;
     skos:definition "An XBRL taxonomy element from the EDINET taxonomy, represented as a SKOS concept for alignment and benchmark traceability."@en ;
     skos:prefLabel "EDINET taxonomy element"@en,
         "EDINETタクソノミ要素"@ja ;
     skos:scopeNote "This is an alignment handle; the authoritative element remains the FSA-published EDINET XBRL taxonomy."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-<https://w3id.org/jpfibo/ontology/JP/edinet-alignment/> a owl:Ontology ;
+<https://w3id.org/jfibo/ontology/JP/edinet-alignment/> a owl:Ontology ;
     rdfs:label "J-FIBO EDINET Alignment"@en,
         "金融意味基盤・日本版 EDINET整合"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/>,
         <https://www.fsa.go.jp/search/20251111.html> ;
-    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/edinet-alignment/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/edinet-alignment/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

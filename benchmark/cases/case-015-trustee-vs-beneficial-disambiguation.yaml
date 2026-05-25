@@ -42,7 +42,7 @@ vanilla_fibo_mapping:
     - evidence_locator
     - reporting_period_validity
 jfibo_mapping:
-  primary_class: jpfibo:MajorShareholderClaim
+  primary_class: jfibo:MajorShareholderClaim
   represents:
     - issuer
     - holder_name

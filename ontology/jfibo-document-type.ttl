@@ -1,121 +1,121 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-jpfibo:AnnualSecuritiesReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:AnnualSecuritiesReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "The annual securities report (有報) filed under FIEL."@en ;
     skos:prefLabel "annual securities report"@en,
         "有価証券報告書"@ja ;
     skos:scopeNote "EDINET docTypeCode 120; the primary J-FIBO evidence-source document."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:CorporateGovernanceReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:CorporateGovernanceReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://www.jpx.co.jp/english/equities/listing/cg/index.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "Corporate Governance Report filed under JPX listing rules."@en ;
     skos:prefLabel "corporate governance report"@en,
         "コーポレート・ガバナンス報告書"@ja ;
     skos:scopeNote "Not an EDINET document; filed through TDnet. Use as evidence source for governance and policy-shareholding claims."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:ExtraordinaryReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:ExtraordinaryReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "Extraordinary report filed under FIEL when material events occur."@en ;
     skos:prefLabel "extraordinary report"@en,
         "臨時報告書"@ja ;
     skos:scopeNote "EDINET docTypeCode 180; can carry M&A consideration, third-party-allotment shareholders, and dissolution events."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:LargeShareholdingReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:LargeShareholdingReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "Large-shareholding report (5% Rule) filed under FIEL."@en ;
     skos:prefLabel "large-shareholding report"@en,
         "大量保有報告書"@ja ;
     skos:scopeNote "EDINET docTypeCode 350 / 360; critical for cross-shareholding evidence beyond the securities-report top-10 table."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:QuarterlySecuritiesReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:QuarterlySecuritiesReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "Quarterly securities report under FIEL."@en ;
     skos:prefLabel "quarterly securities report"@en,
         "四半期報告書"@ja ;
     skos:scopeNote "EDINET docTypeCode 140."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:SemiAnnualSecuritiesReport a owl:NamedIndividual,
-        jpfibo:DocumentType ;
+jfibo:SemiAnnualSecuritiesReport a owl:NamedIndividual,
+        jfibo:DocumentType ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     skos:definition "Semi-annual securities report under FIEL."@en ;
     skos:prefLabel "semi-annual securities report"@en,
         "半期報告書"@ja ;
     skos:scopeNote "EDINET docTypeCode 160 (post-2024 replacement of 四半期報告書 for many filers)."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:documentType a owl:ObjectProperty ;
+jfibo:documentType a owl:ObjectProperty ;
     dcterms:source <https://www.w3.org/TR/skos-reference/> ;
-    rdfs:domain jpfibo:EDINETDisclosureDocument ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
-    rdfs:range jpfibo:DocumentType ;
+    rdfs:domain jfibo:EDINETDisclosureDocument ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
+    rdfs:range jfibo:DocumentType ;
     rdfs:subPropertyOf dcterms:type ;
     skos:definition "Relates an EDINET disclosure document to its J-FIBO document type."@en ;
     skos:prefLabel "document type"@en,
         "開示書類種別"@ja ;
     skos:scopeNote "Should match the EDINET docTypeCode metadata when present."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:DocumentType a owl:Class ;
+jfibo:DocumentType a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/document-type/> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/document-type/> ;
     rdfs:subClassOf skos:Concept ;
     skos:definition "Closed vocabulary for Japanese disclosure document forms (有価証券報告書, 四半期報告書, コーポレート・ガバナンス報告書, 大量保有報告書, 臨時報告書)."@en ;
     skos:prefLabel "disclosure document type"@en,
         "開示書類種別"@ja ;
     skos:scopeNote "Aligned to the EDINET document-type codes that appear in jpdei_cor:DocumentTypeDEI."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.2-finalize> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-<https://w3id.org/jpfibo/ontology/JP/document-type/> a owl:Ontology ;
+<https://w3id.org/jfibo/ontology/JP/document-type/> a owl:Ontology ;
     rdfs:label "J-FIBO Document Type"@en,
         "金融意味基盤・日本版 開示書類種別"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/> ;
-    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/document-type/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/document-type/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

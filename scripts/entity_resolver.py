@@ -19,9 +19,9 @@ import yaml
 REPO = Path(__file__).resolve().parents[1]
 ENTITIES = REPO / "registry" / "entities.yaml"
 
-ENTITY_BASE = "urn:jpfibo:entity:"
-JCN_BASE = "https://w3id.org/jpfibo/entity/jcn/"
-FALLBACK_BASE = "urn:jpfibo:issuer-fallback:"
+ENTITY_BASE = "urn:jfibo:entity:"
+JCN_BASE = "https://w3id.org/jfibo/entity/jcn/"
+FALLBACK_BASE = "urn:jfibo:issuer-fallback:"
 
 TRUSTEE_SUFFIXES = ["（信託口）", "(信託口)", "信託口", "（証券口）"]
 

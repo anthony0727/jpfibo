@@ -22,10 +22,10 @@ hypothesized | counterfactual | predicted | outside information boundary
 
 The SHACL shapes enforce this:
 
-* `jpfibo:DisclosureClaim` requires exactly one `jpfibo:informationStatus`
+* `jfibo:DisclosureClaim` requires exactly one `jfibo:informationStatus`
   from the closed vocabulary above.
-* `jpfibo:MainBankCandidate` is forbidden from using `jpfibo:Disclosed` or
-  `jpfibo:Observed`; it must use `Hypothesized`,
+* `jfibo:MainBankCandidate` is forbidden from using `jfibo:Disclosed` or
+  `jfibo:Observed`; it must use `Hypothesized`,
   `EvidenceBackedInferred`, `Counterfactual`, or
   `OutsideInformationBoundary`.
 
@@ -39,4 +39,4 @@ The SHACL shapes enforce this:
   to disclosed evidence is sufficient and honest.
 
 When prediction is required, predicted claims must be tagged with
-`jpfibo:Predicted` so consumers cannot conflate them with disclosed facts.
+`jfibo:Predicted` so consumers cannot conflate them with disclosed facts.

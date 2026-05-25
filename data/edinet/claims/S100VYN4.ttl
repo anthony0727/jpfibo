@@ -1,348 +1,348 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
-@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank01> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank01> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/1010001075076> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 16.36 ;
-    jpfibo:hasShareCount 232181000 ;
-    jpfibo:hasShareholderRank 1 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/1010001075076> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 16.36 ;
+    jfibo:hasShareCount 232181000 ;
+    jfibo:hasShareholderRank 1 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank02> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank02> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/5010001008846> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 10.29 ;
-    jpfibo:hasShareCount 146102000 ;
-    jpfibo:hasShareholderRank 2 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/5010001008846> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 10.29 ;
+    jfibo:hasShareCount 146102000 ;
+    jfibo:hasShareholderRank 2 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank03> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank03> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/8010001143625> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 5.14 ;
-    jpfibo:hasShareCount 72943000 ;
-    jpfibo:hasShareholderRank 3 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/8010001143625> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 5.14 ;
+    jfibo:hasShareCount 72943000 ;
+    jfibo:hasShareholderRank 3 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank04> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank04> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:b1f1cb475956952c> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 2.58 ;
-    jpfibo:hasShareCount 36655000 ;
-    jpfibo:hasShareholderRank 4 ;
-    jpfibo:holderRole jpfibo:RegisteredHolder ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <urn:jfibo:issuer-fallback:b1f1cb475956952c> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 2.58 ;
+    jfibo:hasShareCount 36655000 ;
+    jfibo:hasShareholderRank 4 ;
+    jfibo:holderRole jfibo:RegisteredHolder ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank05> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank05> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7120001077523> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 2.4 ;
-    jpfibo:hasShareCount 34056000 ;
-    jpfibo:hasShareholderRank 5 ;
-    jpfibo:holderRole jpfibo:RegisteredHolder ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7120001077523> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 2.4 ;
+    jfibo:hasShareCount 34056000 ;
+    jfibo:hasShareholderRank 5 ;
+    jfibo:holderRole jfibo:RegisteredHolder ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank06> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank06> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 2.2 ;
-    jpfibo:hasShareCount 31200000 ;
-    jpfibo:hasShareholderRank 6 ;
-    jpfibo:holderRole jpfibo:RegisteredHolder ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 2.2 ;
+    jfibo:hasShareCount 31200000 ;
+    jfibo:hasShareholderRank 6 ;
+    jfibo:holderRole jfibo:RegisteredHolder ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank07> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank07> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 2.19 ;
-    jpfibo:hasShareCount 31073000 ;
-    jpfibo:hasShareholderRank 7 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 2.19 ;
+    jfibo:hasShareCount 31073000 ;
+    jfibo:hasShareholderRank 7 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank08> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank08> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 1.72 ;
-    jpfibo:hasShareCount 24439000 ;
-    jpfibo:hasShareholderRank 8 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 1.72 ;
+    jfibo:hasShareCount 24439000 ;
+    jfibo:hasShareholderRank 8 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank09> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank09> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 1.33 ;
-    jpfibo:hasShareCount 18941000 ;
-    jpfibo:hasShareholderRank 9 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 1.33 ;
+    jfibo:hasShareCount 18941000 ;
+    jfibo:hasShareholderRank 9 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/major-shareholder/rank10> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100VYN4/major-shareholder/rank10> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7011101027405> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasOwnershipPercentage 1.32 ;
-    jpfibo:hasShareCount 18720000 ;
-    jpfibo:hasShareholderRank 10 ;
-    jpfibo:holderRole jpfibo:RegisteredHolder ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7011101027405> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasOwnershipPercentage 1.32 ;
+    jfibo:hasShareCount 18720000 ;
+    jfibo:hasShareholderRank 10 ;
+    jfibo:holderRole jfibo:RegisteredHolder ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row10Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row10Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 5389000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 5389000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として第８セグメントにおいてコンビニエンスビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ab70928fe90a25f4> ;
-    jpfibo:hasShareCount 1632000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として第８セグメントにおいてコンビニエンスビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ab70928fe90a25f4> ;
+    jfibo:hasShareCount 1632000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row11Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row11Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 4826000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 4826000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて繊維製品の生産拠点として同社グループ縫製工場を活用しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:010997655bf50617> ;
-    jpfibo:hasShareCount 65000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて繊維製品の生産拠点として同社グループ縫製工場を活用しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:010997655bf50617> ;
+    jfibo:hasShareCount 65000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row12Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row12Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 4042000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 4042000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として住生活セグメントにおいて不動産投資信託（J-REIT）である同社へ物流不動産を供給しております。また、同社より資産運用、物件管理を受託しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、2024年11月１日付で同社を存続会社として、前事業年度に保有していたアドバンス・ロジスティクス投資法人が、吸収合併されたことに伴い割当交付を受けたものです。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:289fd92f3fbc79df> ;
-    jpfibo:hasShareCount 39285 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として住生活セグメントにおいて不動産投資信託（J-REIT）である同社へ物流不動産を供給しております。また、同社より資産運用、物件管理を受託しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、2024年11月１日付で同社を存続会社として、前事業年度に保有していたアドバンス・ロジスティクス投資法人が、吸収合併されたことに伴い割当交付を受けたものです。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:289fd92f3fbc79df> ;
+    jfibo:hasShareCount 39285 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row13Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row13Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 3611000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 3611000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と地場ECオペレーション領域で協業しており、テレビ通販ビジネス、インターネット関連ビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、利益剰余金及び資本剰余金の一部について、新株発行による配当を実施しているため、株式数が増加しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:2998d7e67508ec90> ;
-    jpfibo:hasShareCount 2304051 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と地場ECオペレーション領域で協業しており、テレビ通販ビジネス、インターネット関連ビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、利益剰余金及び資本剰余金の一部について、新株発行による配当を実施しているため、株式数が増加しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:2998d7e67508ec90> ;
+    jfibo:hasShareCount 2304051 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row14Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row14Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 2441000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 2441000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ麦等の原料を納入するとともに、同社の小麦粉等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3747e660bc5d681a> ;
-    jpfibo:hasShareCount 1125000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ麦等の原料を納入するとともに、同社の小麦粉等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3747e660bc5d681a> ;
+    jfibo:hasShareCount 1125000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row15Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row15Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 2364000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 2364000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として機械セグメントにおいて同社が製造するコーティング装置等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:071ddb0d9008d9ab> ;
-    jpfibo:hasShareCount 1450000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として機械セグメントにおいて同社が製造するコーティング装置等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:071ddb0d9008d9ab> ;
+    jfibo:hasShareCount 1450000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row16Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row16Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 2232000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 2232000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として機械セグメントにおいて同社を海外下水道案件向け技術コンサルタントとして起用する等しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、同社は当事業年度に新規上場しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ec8f1aa20946951a> ;
-    jpfibo:hasShareCount 1000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として機械セグメントにおいて同社を海外下水道案件向け技術コンサルタントとして起用する等しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、同社は当事業年度に新規上場しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ec8f1aa20946951a> ;
+    jfibo:hasShareCount 1000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row17Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row17Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 2163000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 2163000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とVTuberをはじめとする先進的な技術を活用したマーケティング支援ビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:d690452dd4e4f013> ;
-    jpfibo:hasShareCount 669630 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とVTuberをはじめとする先進的な技術を活用したマーケティング支援ビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:d690452dd4e4f013> ;
+    jfibo:hasShareCount 669630 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row18Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row18Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1958000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1958000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として住生活セグメントにおいて同社と不動産・物流テック企業を対象としたファンド投資等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:d150bae258fcd78c> ;
-    jpfibo:hasShareCount 2426000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として住生活セグメントにおいて同社と不動産・物流テック企業を対象としたファンド投資等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:d150bae258fcd78c> ;
+    jfibo:hasShareCount 2426000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row19Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row19Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1815000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1815000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社グループへゴルフ関連のアパレル製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:eeb4f5813d286b07> ;
-    jpfibo:hasShareCount 26231715 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社グループへゴルフ関連のアパレル製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:eeb4f5813d286b07> ;
+    jfibo:hasShareCount 26231715 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row1Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row1Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 6333000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 6333000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
@@ -353,210 +353,210 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託株式であり、当該株式に係る議決権行使の指図権限を有しております。なお、当事業年度に一部が現金化されております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:6f5c97c5e3feb47c> ;
-    jpfibo:hasShareCount 2469100 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託株式であり、当該株式に係る議決権行使の指図権限を有しております。なお、当事業年度に一部が現金化されております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:6f5c97c5e3feb47c> ;
+    jfibo:hasShareCount 2469100 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row20Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row20Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1599000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1599000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とリテール向けメディア開発及び広告配信サービスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:cb0b4a34940945ac> ;
-    jpfibo:hasShareCount 2835700 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とリテール向けメディア開発及び広告配信サービスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:cb0b4a34940945ac> ;
+    jfibo:hasShareCount 2835700 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row21Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row21Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1489000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1489000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ店舗向け食材等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:954c75fde5c3add5> ;
-    jpfibo:hasShareCount 1270400 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ店舗向け食材等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:954c75fde5c3add5> ;
+    jfibo:hasShareCount 1270400 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row22Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row22Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1483000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1483000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と統合基幹業務システム、顧客関係管理システム領域を中心に、クラウド環境下でのシステムの企画・導入・運用・保守業務で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1e326f6942e43ef5> ;
-    jpfibo:hasShareCount 900000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と統合基幹業務システム、顧客関係管理システム領域を中心に、クラウド環境下でのシステムの企画・導入・運用・保守業務で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1e326f6942e43ef5> ;
+    jfibo:hasShareCount 900000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row23Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row23Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1394000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1394000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ合繊原料等を納入するとともに、同社の洗剤原料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:2806147d4f1ee01f> ;
-    jpfibo:hasShareCount 800000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ合繊原料等を納入するとともに、同社の洗剤原料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:2806147d4f1ee01f> ;
+    jfibo:hasShareCount 800000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row24Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row24Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1297000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1297000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社の機能性食品素材等を販売しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:256758513343bd0a> ;
-    jpfibo:hasShareCount 1452000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社の機能性食品素材等を販売しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:256758513343bd0a> ;
+    jfibo:hasShareCount 1452000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row25Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row25Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1149000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1149000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ原料を納入するとともに、同社グループの加工食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:dab5b5a73989cab2> ;
-    jpfibo:hasShareCount 9783000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ原料を納入するとともに、同社グループの加工食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:dab5b5a73989cab2> ;
+    jfibo:hasShareCount 9783000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row26Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row26Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1108000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1108000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とデジタルマーケティング事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:e0567aa7c4c9a00a> ;
-    jpfibo:hasShareCount 4000600 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とデジタルマーケティング事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:e0567aa7c4c9a00a> ;
+    jfibo:hasShareCount 4000600 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row27Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row27Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 1085000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 1085000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社と人材マッチングビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、同社は当事業年度に新規上場しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:52ef0dce62cac59d> ;
-    jpfibo:hasShareCount 723000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社と人材マッチングビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、同社は当事業年度に新規上場しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:52ef0dce62cac59d> ;
+    jfibo:hasShareCount 723000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row28Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row28Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 997000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 997000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として機械セグメントにおいて同社と共同で船舶を保有する用船ビジネス等を行っており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:01803cba5e7a2681> ;
-    jpfibo:hasShareCount 1000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として機械セグメントにおいて同社と共同で船舶を保有する用船ビジネス等を行っており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:01803cba5e7a2681> ;
+    jfibo:hasShareCount 1000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row29Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row29Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 901000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 901000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ食肉等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1e62bad1417bbadf> ;
-    jpfibo:hasShareCount 315200 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ食肉等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1e62bad1417bbadf> ;
+    jfibo:hasShareCount 315200 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row2Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row2Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 3423000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 3423000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
@@ -567,986 +567,986 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託株式であり、当該株式に係る議決権行使の指図権限を有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c0ef61ff124a0bd0> ;
-    jpfibo:hasShareCount 1701992 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託株式であり、当該株式に係る議決権行使の指図権限を有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c0ef61ff124a0bd0> ;
+    jfibo:hasShareCount 1701992 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row30Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row30Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 886000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 886000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ油脂等の原料を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3edb91849ccea2df> ;
-    jpfibo:hasShareCount 500000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ油脂等の原料を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3edb91849ccea2df> ;
+    jfibo:hasShareCount 500000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row31Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row31Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 777000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 777000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて音楽コンテンツ流通領域で協業しており、メディア・放送関連ビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、2024年４月１日付での㈱ＳＫＩＹＡＫＩとの経営統合に伴い、㈱スペースシャワーネットワークから商号変更しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:afb1aa93c0095f43> ;
-    jpfibo:hasShareCount 1650500 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて音楽コンテンツ流通領域で協業しており、メディア・放送関連ビジネス等に関する取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、2024年４月１日付での㈱ＳＫＩＹＡＫＩとの経営統合に伴い、㈱スペースシャワーネットワークから商号変更しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:afb1aa93c0095f43> ;
+    jfibo:hasShareCount 1650500 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row32Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row32Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 686000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 686000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とデータを活用したDX支援等のビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:afa6fa5fc6a8fc8d> ;
-    jpfibo:hasShareCount 669000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とデータを活用したDX支援等のビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:afa6fa5fc6a8fc8d> ;
+    jfibo:hasShareCount 669000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row33Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row33Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 640000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 640000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ芳香族化学品等を納入するとともに、同社の合成樹脂等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a5ac4083e616ed80> ;
-    jpfibo:hasShareCount 311500 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ芳香族化学品等を納入するとともに、同社の合成樹脂等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a5ac4083e616ed80> ;
+    jfibo:hasShareCount 311500 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row34Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row34Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 609000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 609000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として機械セグメントにおいて同社が手掛ける衛星データ等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:db2bf7399fba2286> ;
-    jpfibo:hasShareCount 503351 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として機械セグメントにおいて同社が手掛ける衛星データ等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:db2bf7399fba2286> ;
+    jfibo:hasShareCount 503351 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row35Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row35Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 545000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 545000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ合成樹脂等を納入するとともに、同社の合成樹脂コンパウンド等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:5aef0a9ee0c595cd> ;
-    jpfibo:hasShareCount 522400 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ合成樹脂等を納入するとともに、同社の合成樹脂コンパウンド等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:5aef0a9ee0c595cd> ;
+    jfibo:hasShareCount 522400 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row36Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row36Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 468000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 468000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ胡麻等の原料を納入するとともに、同社の胡麻油等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:afd41d26f345418d> ;
-    jpfibo:hasShareCount 130000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ胡麻等の原料を納入するとともに、同社の胡麻油等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:afd41d26f345418d> ;
+    jfibo:hasShareCount 130000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row37Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row37Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 435000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 435000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社グループへ婦人下着製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:f5f418d4441ba943> ;
-    jpfibo:hasShareCount 5365800 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社グループへ婦人下着製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:f5f418d4441ba943> ;
+    jfibo:hasShareCount 5365800 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row38Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row38Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 417000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 417000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ加工食品用の原料を納入するとともに、同社の加工食品・業務用食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1e8281cc9afb281d> ;
-    jpfibo:hasShareCount 224000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ加工食品用の原料を納入するとともに、同社の加工食品・業務用食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1e8281cc9afb281d> ;
+    jfibo:hasShareCount 224000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row39Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row39Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 405000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 405000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ業務用食品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b7ea8e66476bb4e2> ;
-    jpfibo:hasShareCount 206500 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ業務用食品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b7ea8e66476bb4e2> ;
+    jfibo:hasShareCount 206500 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row3Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row3Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 14319000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 14319000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて保険事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に関係会社株式から異動しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:250a61206fb62ca4> ;
-    jpfibo:hasShareCount 18124992 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて保険事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に関係会社株式から異動しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:250a61206fb62ca4> ;
+    jfibo:hasShareCount 18124992 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row40Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row40Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 393000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 393000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ石油製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c1cb52491be78a16> ;
-    jpfibo:hasShareCount 1927000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ石油製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c1cb52491be78a16> ;
+    jfibo:hasShareCount 1927000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row41Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row41Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 276000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 276000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ鰹鮪、コーン等の缶詰用の原料を納入するとともに、同社のツナ缶等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、本目的の更なる強化のため、当事業年度に追加取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b9cee644632f4d08> ;
-    jpfibo:hasShareCount 84807 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ鰹鮪、コーン等の缶詰用の原料を納入するとともに、同社のツナ缶等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、本目的の更なる強化のため、当事業年度に追加取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b9cee644632f4d08> ;
+    jfibo:hasShareCount 84807 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row42Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row42Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 269000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 269000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社所有のブランドに関するライセンスビジネスを展開しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:7769af6f7d199678> ;
-    jpfibo:hasShareCount 750316 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社所有のブランドに関するライセンスビジネスを展開しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:7769af6f7d199678> ;
+    jfibo:hasShareCount 750316 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row43Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row43Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 258000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 258000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメント、エネルギー・化学品セグメントにおいて同社へ基布、合成樹脂製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:9034fbbfce219f09> ;
-    jpfibo:hasShareCount 51000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメント、エネルギー・化学品セグメントにおいて同社へ基布、合成樹脂製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:9034fbbfce219f09> ;
+    jfibo:hasShareCount 51000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row44Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row44Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 255000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 255000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいてメディア・放送関連ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1ab6c35c41552350> ;
-    jpfibo:hasShareCount 100000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいてメディア・放送関連ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1ab6c35c41552350> ;
+    jfibo:hasShareCount 100000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row45Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row45Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 237000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 237000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいてAIを活用した社会インフラや脱炭素領域でのDX事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:cb4c4b39f14edd2d> ;
-    jpfibo:hasShareCount 102000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいてAIを活用した社会インフラや脱炭素領域でのDX事業等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:cb4c4b39f14edd2d> ;
+    jfibo:hasShareCount 102000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row46Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row46Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 207000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 207000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と人材ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:6c383d9e97a7f109> ;
-    jpfibo:hasShareCount 46600 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と人材ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:6c383d9e97a7f109> ;
+    jfibo:hasShareCount 46600 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row47Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row47Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 202000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 202000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として機械セグメントにおいて同社グループへ航空機リース等を提供しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:8d1323df01e96e36> ;
-    jpfibo:hasShareCount 73300 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として機械セグメントにおいて同社グループへ航空機リース等を提供しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:8d1323df01e96e36> ;
+    jfibo:hasShareCount 73300 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row48Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row48Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 186000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 186000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と製薬企業向けマーケティング事業や医療機器代理店へのコンサルティング事業等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a26c2068aff76860> ;
-    jpfibo:hasShareCount 270000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社と製薬企業向けマーケティング事業や医療機器代理店へのコンサルティング事業等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a26c2068aff76860> ;
+    jfibo:hasShareCount 270000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row49Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row49Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 186000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 186000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へペット用品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:7d6c854b8cecffad> ;
-    jpfibo:hasShareCount 220000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へペット用品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:7d6c854b8cecffad> ;
+    jfibo:hasShareCount 220000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row4Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row4Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 11204000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 11204000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ加工食品、生鮮食品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:e198e5979fa3e20f> ;
-    jpfibo:hasShareCount 5179800 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループへ加工食品、生鮮食品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:e198e5979fa3e20f> ;
+    jfibo:hasShareCount 5179800 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row50Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row50Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 173000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 173000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループの加工食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:31169c816d34fe02> ;
-    jpfibo:hasShareCount 100000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社グループの加工食品等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:31169c816d34fe02> ;
+    jfibo:hasShareCount 100000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row51Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row51Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 104000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 104000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社グループへ原料を納入するとともに、繊維セグメントにおいて同社グループの製品であるリサイクルナイロンを販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:5fb84373577f0daa> ;
-    jpfibo:hasShareCount 512000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社グループへ原料を納入するとともに、繊維セグメントにおいて同社グループの製品であるリサイクルナイロンを販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:5fb84373577f0daa> ;
+    jfibo:hasShareCount 512000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row52Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row52Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 84000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 84000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社と食品メーカー向けデータマーケティング支援事業等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ff6855a75bddc470> ;
-    jpfibo:hasShareCount 120000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社と食品メーカー向けデータマーケティング支援事業等で協業しており、取引関係・協業関係の構築・維持強化のため、当事業年度に新規取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ff6855a75bddc470> ;
+    jfibo:hasShareCount 120000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row53Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row53Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 83000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 83000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ芳香族化学品等を納入するとともに、同社の電子材料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:dff1bc0f90347314> ;
-    jpfibo:hasShareCount 30000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ芳香族化学品等を納入するとともに、同社の電子材料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:dff1bc0f90347314> ;
+    jfibo:hasShareCount 30000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row54Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row54Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 75000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 75000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社へ香水製品を納入するとともに、ハンカチ類のOEM供給を受けており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:0f752d910fe7bf25> ;
-    jpfibo:hasShareCount 53180 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社へ香水製品を納入するとともに、ハンカチ類のOEM供給を受けており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:0f752d910fe7bf25> ;
+    jfibo:hasShareCount 53180 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row55Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row55Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 72000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 72000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社へ紳士・婦人服製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:98b4a3eff1e10f27> ;
-    jpfibo:hasShareCount 214000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として繊維セグメントにおいて同社へ紳士・婦人服製品等を納入しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:98b4a3eff1e10f27> ;
+    jfibo:hasShareCount 214000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row56Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row56Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 72000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 72000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社への蓄電池モジュールの納入及び同社が開発する蓄電池システムの販売を進めており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:0ee79b01ed707927> ;
-    jpfibo:hasShareCount 68503375 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社への蓄電池モジュールの納入及び同社が開発する蓄電池システムの販売を進めており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:0ee79b01ed707927> ;
+    jfibo:hasShareCount 68503375 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row57Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row57Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 58000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 58000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として第８セグメントにおいて同社へのコンビニエンスストアの展開及び食品・飲料販売で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:505228725e705df7> ;
-    jpfibo:hasShareCount 16000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として第８セグメントにおいて同社へのコンビニエンスストアの展開及び食品・飲料販売で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:505228725e705df7> ;
+    jfibo:hasShareCount 16000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row58Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row58Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 58000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 58000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ有機化学品等を納入するとともに、同社の樹脂原料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b02c7d9b608feab2> ;
-    jpfibo:hasShareCount 25000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主としてエネルギー・化学品セグメントにおいて同社へ有機化学品等を納入するとともに、同社の樹脂原料等を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b02c7d9b608feab2> ;
+    jfibo:hasShareCount 25000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row59Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row59Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c8b706f43b9ed126> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c8b706f43b9ed126> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row5Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    skos:note "reciprocal-holding-disclosure: 無"@ja ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 11140000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて保証ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:4d87bb7bbb598a03> ;
-    jpfibo:hasShareCount 6336800 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row60Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:e69954820988812d> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row61Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:024623940d85d4ce> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row62Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:5fefd6ee3479a71c> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row63Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3a745c3416925b5f> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row64Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c3c622b92783863a> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row65Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:831e40119b8cc560> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row66Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a1680ea133052574> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row67Member> a jpfibo:PolicyShareholding ;
-    dcterms:valid "2025-03-31"^^xsd:date ;
-    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
-    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
-        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
-        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:944a15b51f310e30> ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
-
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row6Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row5Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 9960000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 11140000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として住生活セグメントにおいて不動産投資信託（J-REIT）である同社へ賃貸マンションを供給しております。また、同社より資産運用、物件管理を受託しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:2e2072b0d381073e> ;
-    jpfibo:hasShareCount 69600 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて保証ビジネス等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:4d87bb7bbb598a03> ;
+    jfibo:hasShareCount 6336800 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row7Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row60Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:e69954820988812d> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row61Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:024623940d85d4ce> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row62Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:5fefd6ee3479a71c> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row63Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3a745c3416925b5f> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row64Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c3c622b92783863a> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row65Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:831e40119b8cc560> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row66Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a1680ea133052574> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row67Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:944a15b51f310e30> ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row6Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 8462000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 9960000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として住生活セグメントにおいて道路インフラにおけるメンテナンス工事等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、本目的の更なる強化のため、当事業年度に追加取得しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b939b93ebb3e7a8f> ;
-    jpfibo:hasShareCount 23119864 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として住生活セグメントにおいて不動産投資信託（J-REIT）である同社へ賃貸マンションを供給しております。また、同社より資産運用、物件管理を受託しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:2e2072b0d381073e> ;
+    jfibo:hasShareCount 69600 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row8Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row7Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 7683000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 8462000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とコンサルティングを起点とするDX支援ビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:334869453c0ff372> ;
-    jpfibo:hasShareCount 8200000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として住生活セグメントにおいて道路インフラにおけるメンテナンス工事等で協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、本目的の更なる強化のため、当事業年度に追加取得しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b939b93ebb3e7a8f> ;
+    jfibo:hasShareCount 23119864 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row9Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row8Member> a jfibo:PolicyShareholding ;
+    dcterms:valid "2025-03-31"^^xsd:date ;
+    skos:note "reciprocal-holding-disclosure: 無"@ja ;
+    prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
+    prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
+    jfibo:hasCarryingAmount 7683000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
+        jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+        jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
+    jfibo:hasHoldingPurpose "主として情報・金融セグメントにおいて同社とコンサルティングを起点とするDX支援ビジネスで協業しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、株式分割のため株式数が増加しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:334869453c0ff372> ;
+    jfibo:hasShareCount 8200000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
+
+<urn:jfibo:claim:S100VYN4/policy-shareholding/SequentialNumbersAxis-Row9Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.029906+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> ;
-    jpfibo:hasCarryingAmount 6492000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
+    jfibo:hasCarryingAmount 6492000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentReportingCompany ;
-    jpfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ飼料原料、麦、菜種等を納入するとともに、同社の小麦粉等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E02497> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:129af2c3ef16ac4b> ;
-    jpfibo:hasShareCount 2290000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "主として食料セグメントにおいて同社へ飼料原料、麦、菜種等を納入するとともに、同社の小麦粉等の製品を販売しており、取引関係・協業関係の構築・維持強化のため、継続して保有しております。なお、当事業年度に保有株式の一部を売却しております。"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E02497> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:129af2c3ef16ac4b> ;
+    jfibo:hasShareCount 2290000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<https://w3id.org/jpfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行株式会社（信託口）"@ja .
+<https://w3id.org/jfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行株式会社（信託口）"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/5010001008846> skos:prefLabel """BNYM AS AGT/CLTS 10 PERCENT
+<https://w3id.org/jfibo/entity/jcn/5010001008846> skos:prefLabel """BNYM AS AGT/CLTS 10 PERCENT
 （常任代理人：株式会社三菱ＵＦＪ銀行）"""@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/7011101027405> skos:prefLabel "朝日生命保険相互会社"@ja .
+<https://w3id.org/jfibo/entity/jcn/7011101027405> skos:prefLabel "朝日生命保険相互会社"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/7120001077523> skos:prefLabel "日本生命保険相互会社"@ja .
+<https://w3id.org/jfibo/entity/jcn/7120001077523> skos:prefLabel "日本生命保険相互会社"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/8010001143625> skos:prefLabel "株式会社日本カストディ銀行（信託口）"@ja .
+<https://w3id.org/jfibo/entity/jcn/8010001143625> skos:prefLabel "株式会社日本カストディ銀行（信託口）"@ja .
 
-<urn:jpfibo:issuer-fallback:010997655bf50617> skos:prefLabel "VIETNAM NATIONAL TEXTILE AND GARMENT GROUP"@ja .
+<urn:jfibo:issuer-fallback:010997655bf50617> skos:prefLabel "VIETNAM NATIONAL TEXTILE AND GARMENT GROUP"@ja .
 
-<urn:jpfibo:issuer-fallback:01803cba5e7a2681> skos:prefLabel "飯野海運㈱"@ja .
+<urn:jfibo:issuer-fallback:01803cba5e7a2681> skos:prefLabel "飯野海運㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:024623940d85d4ce> skos:prefLabel "エイチ・ツー・オーリテイリング㈱"@ja .
+<urn:jfibo:issuer-fallback:024623940d85d4ce> skos:prefLabel "エイチ・ツー・オーリテイリング㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:071ddb0d9008d9ab> skos:prefLabel "㈱ヒラノテクシード"@ja .
+<urn:jfibo:issuer-fallback:071ddb0d9008d9ab> skos:prefLabel "㈱ヒラノテクシード"@ja .
 
-<urn:jpfibo:issuer-fallback:0ee79b01ed707927> skos:prefLabel "Eguana Technologies Inc."@ja .
+<urn:jfibo:issuer-fallback:0ee79b01ed707927> skos:prefLabel "Eguana Technologies Inc."@ja .
 
-<urn:jpfibo:issuer-fallback:0f752d910fe7bf25> skos:prefLabel "川辺㈱"@ja .
+<urn:jfibo:issuer-fallback:0f752d910fe7bf25> skos:prefLabel "川辺㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:129af2c3ef16ac4b> skos:prefLabel "昭和産業㈱"@ja .
+<urn:jfibo:issuer-fallback:129af2c3ef16ac4b> skos:prefLabel "昭和産業㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:1ab6c35c41552350> skos:prefLabel "㈱フジ・メディア・ ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:1ab6c35c41552350> skos:prefLabel "㈱フジ・メディア・ ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:1e326f6942e43ef5> skos:prefLabel "コムチュア㈱"@ja .
+<urn:jfibo:issuer-fallback:1e326f6942e43ef5> skos:prefLabel "コムチュア㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:1e62bad1417bbadf> skos:prefLabel "滝沢ハム㈱"@ja .
+<urn:jfibo:issuer-fallback:1e62bad1417bbadf> skos:prefLabel "滝沢ハム㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:1e8281cc9afb281d> skos:prefLabel "ケンコーマヨネーズ㈱"@ja .
+<urn:jfibo:issuer-fallback:1e8281cc9afb281d> skos:prefLabel "ケンコーマヨネーズ㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:250a61206fb62ca4> skos:prefLabel "㈱オリエント コーポレーション"@ja .
+<urn:jfibo:issuer-fallback:250a61206fb62ca4> skos:prefLabel "㈱オリエント コーポレーション"@ja .
 
-<urn:jpfibo:issuer-fallback:256758513343bd0a> skos:prefLabel "㈱ファーマフーズ"@ja .
+<urn:jfibo:issuer-fallback:256758513343bd0a> skos:prefLabel "㈱ファーマフーズ"@ja .
 
-<urn:jpfibo:issuer-fallback:2806147d4f1ee01f> skos:prefLabel "㈱日本触媒"@ja .
+<urn:jfibo:issuer-fallback:2806147d4f1ee01f> skos:prefLabel "㈱日本触媒"@ja .
 
-<urn:jpfibo:issuer-fallback:289fd92f3fbc79df> skos:prefLabel "三井不動産 ロジスティクス パーク投資法人"@ja .
+<urn:jfibo:issuer-fallback:289fd92f3fbc79df> skos:prefLabel "三井不動産 ロジスティクス パーク投資法人"@ja .
 
-<urn:jpfibo:issuer-fallback:2998d7e67508ec90> skos:prefLabel "momo.com Inc."@ja .
+<urn:jfibo:issuer-fallback:2998d7e67508ec90> skos:prefLabel "momo.com Inc."@ja .
 
-<urn:jpfibo:issuer-fallback:2e2072b0d381073e> skos:prefLabel "アドバンス・ レジデンス投資法人"@ja .
+<urn:jfibo:issuer-fallback:2e2072b0d381073e> skos:prefLabel "アドバンス・ レジデンス投資法人"@ja .
 
-<urn:jpfibo:issuer-fallback:31169c816d34fe02> skos:prefLabel "㈱日清製粉 グループ本社"@ja .
+<urn:jfibo:issuer-fallback:31169c816d34fe02> skos:prefLabel "㈱日清製粉 グループ本社"@ja .
 
-<urn:jpfibo:issuer-fallback:334869453c0ff372> skos:prefLabel "㈱シグマクシス・ ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:334869453c0ff372> skos:prefLabel "㈱シグマクシス・ ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:3747e660bc5d681a> skos:prefLabel "㈱ニップン"@ja .
+<urn:jfibo:issuer-fallback:3747e660bc5d681a> skos:prefLabel "㈱ニップン"@ja .
 
-<urn:jpfibo:issuer-fallback:3a745c3416925b5f> skos:prefLabel "㈱サンマルク ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:3a745c3416925b5f> skos:prefLabel "㈱サンマルク ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:3edb91849ccea2df> skos:prefLabel "ライオン㈱"@ja .
+<urn:jfibo:issuer-fallback:3edb91849ccea2df> skos:prefLabel "ライオン㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:4d87bb7bbb598a03> skos:prefLabel "イー・ギャランティ㈱"@ja .
+<urn:jfibo:issuer-fallback:4d87bb7bbb598a03> skos:prefLabel "イー・ギャランティ㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:505228725e705df7> skos:prefLabel "九州旅客鉄道㈱"@ja .
+<urn:jfibo:issuer-fallback:505228725e705df7> skos:prefLabel "九州旅客鉄道㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:52ef0dce62cac59d> skos:prefLabel "㈱タイミー"@ja .
+<urn:jfibo:issuer-fallback:52ef0dce62cac59d> skos:prefLabel "㈱タイミー"@ja .
 
-<urn:jpfibo:issuer-fallback:5aef0a9ee0c595cd> skos:prefLabel "リケンテクノス㈱"@ja .
+<urn:jfibo:issuer-fallback:5aef0a9ee0c595cd> skos:prefLabel "リケンテクノス㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:5fb84373577f0daa> skos:prefLabel "Aquafil S.p.A."@ja .
+<urn:jfibo:issuer-fallback:5fb84373577f0daa> skos:prefLabel "Aquafil S.p.A."@ja .
 
-<urn:jpfibo:issuer-fallback:5fefd6ee3479a71c> skos:prefLabel "PT Sinar Mas Multiartha Tbk"@ja .
+<urn:jfibo:issuer-fallback:5fefd6ee3479a71c> skos:prefLabel "PT Sinar Mas Multiartha Tbk"@ja .
 
-<urn:jpfibo:issuer-fallback:6c383d9e97a7f109> skos:prefLabel "ＩＮＴＬＯＯＰ㈱"@ja .
+<urn:jfibo:issuer-fallback:6c383d9e97a7f109> skos:prefLabel "ＩＮＴＬＯＯＰ㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:6f5c97c5e3feb47c> skos:prefLabel "雪印メグミルク㈱"@ja .
+<urn:jfibo:issuer-fallback:6f5c97c5e3feb47c> skos:prefLabel "雪印メグミルク㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:7769af6f7d199678> skos:prefLabel "LANVIN GROUP HOLDINGS LIMITED"@ja .
+<urn:jfibo:issuer-fallback:7769af6f7d199678> skos:prefLabel "LANVIN GROUP HOLDINGS LIMITED"@ja .
 
-<urn:jpfibo:issuer-fallback:7d6c854b8cecffad> skos:prefLabel "エコー トレーディング㈱"@ja .
+<urn:jfibo:issuer-fallback:7d6c854b8cecffad> skos:prefLabel "エコー トレーディング㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:831e40119b8cc560> skos:prefLabel "立川ブラインド工業㈱"@ja .
+<urn:jfibo:issuer-fallback:831e40119b8cc560> skos:prefLabel "立川ブラインド工業㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:8d1323df01e96e36> skos:prefLabel "ＡＮＡ ホールディングス㈱"@ja .
+<urn:jfibo:issuer-fallback:8d1323df01e96e36> skos:prefLabel "ＡＮＡ ホールディングス㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:9034fbbfce219f09> skos:prefLabel "オカモト㈱"@ja .
+<urn:jfibo:issuer-fallback:9034fbbfce219f09> skos:prefLabel "オカモト㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:944a15b51f310e30> skos:prefLabel "㈱石川製作所"@ja .
+<urn:jfibo:issuer-fallback:944a15b51f310e30> skos:prefLabel "㈱石川製作所"@ja .
 
-<urn:jpfibo:issuer-fallback:954c75fde5c3add5> skos:prefLabel "㈱フジオフード グループ本社"@ja .
+<urn:jfibo:issuer-fallback:954c75fde5c3add5> skos:prefLabel "㈱フジオフード グループ本社"@ja .
 
-<urn:jpfibo:issuer-fallback:98b4a3eff1e10f27> skos:prefLabel "ヤマト インターナショナル㈱"@ja .
+<urn:jfibo:issuer-fallback:98b4a3eff1e10f27> skos:prefLabel "ヤマト インターナショナル㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:a1680ea133052574> skos:prefLabel "㈱ヒューマン テクノロジーズ"@ja .
+<urn:jfibo:issuer-fallback:a1680ea133052574> skos:prefLabel "㈱ヒューマン テクノロジーズ"@ja .
 
-<urn:jpfibo:issuer-fallback:a26c2068aff76860> skos:prefLabel "ＭＲＴ㈱"@ja .
+<urn:jfibo:issuer-fallback:a26c2068aff76860> skos:prefLabel "ＭＲＴ㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:a5ac4083e616ed80> skos:prefLabel "東ソー㈱"@ja .
+<urn:jfibo:issuer-fallback:a5ac4083e616ed80> skos:prefLabel "東ソー㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:ab70928fe90a25f4> skos:prefLabel "㈱西武 ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:ab70928fe90a25f4> skos:prefLabel "㈱西武 ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:afa6fa5fc6a8fc8d> skos:prefLabel "㈱ブレインパッド"@ja .
+<urn:jfibo:issuer-fallback:afa6fa5fc6a8fc8d> skos:prefLabel "㈱ブレインパッド"@ja .
 
-<urn:jpfibo:issuer-fallback:afb1aa93c0095f43> skos:prefLabel "スペースシャワー SKIYAKI ホールディングス㈱"@ja .
+<urn:jfibo:issuer-fallback:afb1aa93c0095f43> skos:prefLabel "スペースシャワー SKIYAKI ホールディングス㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:afd41d26f345418d> skos:prefLabel "かどや製油㈱"@ja .
+<urn:jfibo:issuer-fallback:afd41d26f345418d> skos:prefLabel "かどや製油㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:b02c7d9b608feab2> skos:prefLabel "三菱瓦斯化学㈱"@ja .
+<urn:jfibo:issuer-fallback:b02c7d9b608feab2> skos:prefLabel "三菱瓦斯化学㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:b1f1cb475956952c> skos:prefLabel "JPモルガン証券株式会社"@ja .
+<urn:jfibo:issuer-fallback:b1f1cb475956952c> skos:prefLabel "JPモルガン証券株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:b7ea8e66476bb4e2> skos:prefLabel "尾家産業㈱"@ja .
+<urn:jfibo:issuer-fallback:b7ea8e66476bb4e2> skos:prefLabel "尾家産業㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:b939b93ebb3e7a8f> skos:prefLabel "オリエンタル白石㈱"@ja .
+<urn:jfibo:issuer-fallback:b939b93ebb3e7a8f> skos:prefLabel "オリエンタル白石㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:b9cee644632f4d08> skos:prefLabel "はごろもフーズ㈱"@ja .
+<urn:jfibo:issuer-fallback:b9cee644632f4d08> skos:prefLabel "はごろもフーズ㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:c0ef61ff124a0bd0> skos:prefLabel "㈱三菱UFJ フィナンシャル・ グループ"@ja .
+<urn:jfibo:issuer-fallback:c0ef61ff124a0bd0> skos:prefLabel "㈱三菱UFJ フィナンシャル・ グループ"@ja .
 
-<urn:jpfibo:issuer-fallback:c1cb52491be78a16> skos:prefLabel "日本精蝋㈱"@ja .
+<urn:jfibo:issuer-fallback:c1cb52491be78a16> skos:prefLabel "日本精蝋㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:c3c622b92783863a> skos:prefLabel "㈱ＵＡＣＪ"@ja .
+<urn:jfibo:issuer-fallback:c3c622b92783863a> skos:prefLabel "㈱ＵＡＣＪ"@ja .
 
-<urn:jpfibo:issuer-fallback:c8b706f43b9ed126> skos:prefLabel "アドバンス・ ロジスティクス 投資法人"@ja .
+<urn:jfibo:issuer-fallback:c8b706f43b9ed126> skos:prefLabel "アドバンス・ ロジスティクス 投資法人"@ja .
 
-<urn:jpfibo:issuer-fallback:cb0b4a34940945ac> skos:prefLabel "㈱フリークアウト・ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:cb0b4a34940945ac> skos:prefLabel "㈱フリークアウト・ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:cb4c4b39f14edd2d> skos:prefLabel "㈱グリッド"@ja .
+<urn:jfibo:issuer-fallback:cb4c4b39f14edd2d> skos:prefLabel "㈱グリッド"@ja .
 
-<urn:jpfibo:issuer-fallback:d150bae258fcd78c> skos:prefLabel "㈱マーキュリア ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:d150bae258fcd78c> skos:prefLabel "㈱マーキュリア ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:d690452dd4e4f013> skos:prefLabel "ANYCOLOR㈱"@ja .
+<urn:jfibo:issuer-fallback:d690452dd4e4f013> skos:prefLabel "ANYCOLOR㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:dab5b5a73989cab2> skos:prefLabel "Nissin Foods Company Limited"@ja .
+<urn:jfibo:issuer-fallback:dab5b5a73989cab2> skos:prefLabel "Nissin Foods Company Limited"@ja .
 
-<urn:jpfibo:issuer-fallback:db2bf7399fba2286> skos:prefLabel "SPIRE GLOBAL,INC."@ja .
+<urn:jfibo:issuer-fallback:db2bf7399fba2286> skos:prefLabel "SPIRE GLOBAL,INC."@ja .
 
-<urn:jpfibo:issuer-fallback:dff1bc0f90347314> skos:prefLabel "㈱クレハ"@ja .
+<urn:jfibo:issuer-fallback:dff1bc0f90347314> skos:prefLabel "㈱クレハ"@ja .
 
-<urn:jpfibo:issuer-fallback:e0567aa7c4c9a00a> skos:prefLabel "㈱アドウェイズ"@ja .
+<urn:jfibo:issuer-fallback:e0567aa7c4c9a00a> skos:prefLabel "㈱アドウェイズ"@ja .
 
-<urn:jpfibo:issuer-fallback:e198e5979fa3e20f> skos:prefLabel "㈱セブン＆アイ・ ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:e198e5979fa3e20f> skos:prefLabel "㈱セブン＆アイ・ ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:e69954820988812d> skos:prefLabel "㈱名村造船所"@ja .
+<urn:jfibo:issuer-fallback:e69954820988812d> skos:prefLabel "㈱名村造船所"@ja .
 
-<urn:jpfibo:issuer-fallback:ec8f1aa20946951a> skos:prefLabel "㈱日水コン"@ja .
+<urn:jfibo:issuer-fallback:ec8f1aa20946951a> skos:prefLabel "㈱日水コン"@ja .
 
-<urn:jpfibo:issuer-fallback:eeb4f5813d286b07> skos:prefLabel "Honma Golf Limited"@ja .
+<urn:jfibo:issuer-fallback:eeb4f5813d286b07> skos:prefLabel "Honma Golf Limited"@ja .
 
-<urn:jpfibo:issuer-fallback:f5f418d4441ba943> skos:prefLabel "MRK ホールディングス㈱"@ja .
+<urn:jfibo:issuer-fallback:f5f418d4441ba943> skos:prefLabel "MRK ホールディングス㈱"@ja .
 
-<urn:jpfibo:issuer-fallback:ff6855a75bddc470> skos:prefLabel "㈱Ｔｒｕｅ Ｄａｔａ"@ja .
+<urn:jfibo:issuer-fallback:ff6855a75bddc470> skos:prefLabel "㈱Ｔｒｕｅ Ｄａｔａ"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/7010001008844> skos:prefLabel "株式会社みずほ銀行"@ja .
+<https://w3id.org/jfibo/entity/jcn/7010001008844> skos:prefLabel "株式会社みずほ銀行"@ja .
 
-<https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> a jpfibo:EDINETDisclosureDocument ;
+<https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100VYN4> a jfibo:EDINETDisclosureDocument ;
     dcterms:identifier "S100VYN4" ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> .
 
-<https://w3id.org/jpfibo/entity/edinet/E02497> a jpfibo:KabushikiKaisha ;
-    owl:sameAs <https://w3id.org/jpfibo/entity/jcn/5120001059660> ;
+<https://w3id.org/jfibo/entity/edinet/E02497> a jfibo:KabushikiKaisha ;
+    owl:sameAs <https://w3id.org/jfibo/entity/jcn/5120001059660> ;
     skos:prefLabel "伊藤忠商事株式会社"@ja .
 

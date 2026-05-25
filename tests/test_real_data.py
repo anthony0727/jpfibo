@@ -9,7 +9,7 @@ from rdflib.namespace import RDF
 
 REPO = Path(__file__).resolve().parents[1]
 CLAIMS_DIR = REPO / "data" / "edinet" / "claims"
-JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 
 
 def _ttls() -> list[Path]:

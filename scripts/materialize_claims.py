@@ -6,15 +6,15 @@ Sources:
 
 Outputs:
   * data/edinet/claims/<docID>.ttl
-      - jpfibo:PolicyShareholding claims (one per disclosed holding)
-      - jpfibo:MajorShareholderClaim claims (one per major-shareholders row)
-      - jpfibo:CrossShareholdingClaim claims when triangulation detects
+      - jfibo:PolicyShareholding claims (one per disclosed holding)
+      - jfibo:MajorShareholderClaim claims (one per major-shareholders row)
+      - jfibo:CrossShareholdingClaim claims when triangulation detects
         an issuer/holder pair that appears as a holding on one side and a
         major-shareholder row on the other side within the loaded corpus.
 
 Entity resolution uses registry/entities.yaml; resolved entities use the
-``https://w3id.org/jpfibo/entity/jcn/<JCN>`` URN, unresolved fall back to
-``urn:jpfibo:issuer-fallback:<sha1-16>``.
+``https://w3id.org/jfibo/entity/jcn/<JCN>`` URN, unresolved fall back to
+``urn:jfibo:issuer-fallback:<sha1-16>``.
 """
 from __future__ import annotations
 
@@ -36,12 +36,12 @@ EXTRACTED_DIR = REPO / "data" / "edinet" / "extracted"
 MS_DIR = REPO / "data" / "edinet" / "major_shareholders"
 CLAIMS_DIR = REPO / "data" / "edinet" / "claims"
 
-JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 JPCRP_COR = Namespace("http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#")
 
 EDINET_FILING_BASE = "https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID="
-EDINET_FILER_BASE = "https://w3id.org/jpfibo/entity/edinet/"
-CLAIM_BASE = "urn:jpfibo:claim:"
+EDINET_FILER_BASE = "https://w3id.org/jfibo/entity/edinet/"
+CLAIM_BASE = "urn:jfibo:claim:"
 
 PURPOSE_LOCAL = (
     "PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfShares"
@@ -131,7 +131,7 @@ def bind_prefixes(g: Graph) -> None:
     g.bind("xsd", XSD)
     g.bind("dcterms", DCTERMS)
     g.bind("prov", PROV)
-    g.bind("jpfibo", JPFIBO)
+    g.bind("jfibo", JPFIBO)
     g.bind("jpcrp_cor", JPCRP_COR)
 
 

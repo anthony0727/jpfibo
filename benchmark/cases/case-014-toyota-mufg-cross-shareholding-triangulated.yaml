@@ -40,7 +40,7 @@ vanilla_fibo_mapping:
     - information_status_evidence_backed_inferred
     - reporting_period_validity
 jfibo_mapping:
-  primary_class: jpfibo:CrossShareholdingClaim
+  primary_class: jfibo:CrossShareholdingClaim
   represents:
     - entity_a
     - entity_b

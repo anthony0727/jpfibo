@@ -31,7 +31,7 @@ but encouraged.
 
 Every shareholding/borrowing/relationship is **a claim about disclosed
 evidence**, not a bare structural edge. Concrete subclasses of
-`jpfibo:DisclosureClaim`:
+`jfibo:DisclosureClaim`:
 
 * `PolicyShareholding` — 政策保有株式
 * `MajorShareholderClaim` — 大株主の状況

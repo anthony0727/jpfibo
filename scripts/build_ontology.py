@@ -30,7 +30,7 @@ from rdflib.namespace import DCTERMS, OWL, PROV, RDF, RDFS, SKOS, XSD
 REPO = Path(__file__).resolve().parents[1]
 REGISTRY = REPO / "registry" / "terms.yaml"
 CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
-AGGREGATE_OUT = REPO / "ontology" / "jpfibo.ttl"
+AGGREGATE_OUT = REPO / "ontology" / "jfibo.ttl"
 
 # Official / upstream prefix table.
 PREFIX_TABLE: dict[str, Namespace] = {
@@ -77,9 +77,9 @@ VALID_STATUS = {"proposed", "reviewed", "stable"}
 VALID_LEVEL = {"reuse", "align", "propose"}
 VALID_KIND = {"class", "object_property", "datatype_property", "annotation_property", "individual"}
 
-JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
-CONTRIBUTOR_BASE = "https://w3id.org/jpfibo/contributor/"
-SESSION_BASE = "https://w3id.org/jpfibo/session/"
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+CONTRIBUTOR_BASE = "https://w3id.org/jfibo/contributor/"
+SESSION_BASE = "https://w3id.org/jfibo/session/"
 
 
 def require(condition: bool, message: str) -> None:
