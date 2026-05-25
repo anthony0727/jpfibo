@@ -181,15 +181,43 @@
       "jfibo_gain": 0.7142857142857143,
       "evidence_traceability": 1.0,
       "information_boundary_marked": true
+    },
+    {
+      "id": "case-014-toyota-mufg-cross-shareholding-triangulated",
+      "domain": "cross_shareholding",
+      "expected": 8,
+      "vanilla_represents": 4,
+      "vanilla_missing": 4,
+      "jfibo_represents": 8,
+      "vanilla_coverage": 0.5,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 0.5,
+      "jfibo_gain": 0.5,
+      "evidence_traceability": 0.0,
+      "information_boundary_marked": true
+    },
+    {
+      "id": "case-015-trustee-vs-beneficial-disambiguation",
+      "domain": "cross_shareholding",
+      "expected": 10,
+      "vanilla_represents": 4,
+      "vanilla_missing": 6,
+      "jfibo_represents": 10,
+      "vanilla_coverage": 0.4,
+      "jfibo_coverage": 1.0,
+      "semantic_loss_rate": 0.6,
+      "jfibo_gain": 0.6,
+      "evidence_traceability": 1.0,
+      "information_boundary_marked": true
     }
   ],
   "cohort": {
-    "cases": 13,
-    "mean_vanilla_coverage": 0.32113164613164613,
+    "cases": 15,
+    "mean_vanilla_coverage": 0.3383140933140933,
     "mean_jfibo_coverage": 1.0,
-    "mean_semantic_loss_rate": 0.6214479964479964,
-    "mean_jfibo_gain": 0.6788683538683539,
-    "share_with_evidence_traceability": 1.0,
+    "mean_semantic_loss_rate": 0.611921596921597,
+    "mean_jfibo_gain": 0.6616859066859068,
+    "share_with_evidence_traceability": 0.9333333333333333,
     "share_with_information_boundary_marked": 1.0,
     "by_domain": {
       "borrowings_evidence": {
@@ -199,10 +227,10 @@
         "mean_jfibo_gain": 0.6833333333333333
       },
       "cross_shareholding": {
-        "cases": 4,
-        "mean_vanilla_coverage": 0.4048611111111111,
+        "cases": 6,
+        "mean_vanilla_coverage": 0.4199074074074074,
         "mean_jfibo_coverage": 1.0,
-        "mean_jfibo_gain": 0.5951388888888889
+        "mean_jfibo_gain": 0.5800925925925926
       },
       "institutional_relationship": {
         "cases": 2,

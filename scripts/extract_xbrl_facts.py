@@ -163,6 +163,7 @@ def extract(xbrl_bytes: bytes) -> dict:
                 "period": period,
                 "dimensions": dims,
                 "text": squash_text(inner),
+                "html": inner,
             })
             continue
 

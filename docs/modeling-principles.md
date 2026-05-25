@@ -14,28 +14,61 @@ Every term in the registry declares its level:
 ## Triples come from rdflib, not f-strings
 
 `scripts/build_ontology.py` constructs every triple through
-`rdflib.Graph.add(...)`. The serializer (`Graph.serialize`) owns prefix and
-escape consistency. We do not template Turtle.
+`rdflib.Graph.add(...)`. The serializer owns prefix / escape consistency.
+
+## Information status × normative status are orthogonal
+
+A single claim may be:
+
+* `informationStatus = Disclosed` (a regulator-disclosed fact)
+* `normativeStatus   = AccountingDisclosure` (because the disclosure rule is
+  the financial-statement-regulation, not corporate governance)
+
+J-FIBO requires explicit information status; normative status is optional
+but encouraged.
 
 ## Disclosure claims, not ownership edges
 
-A policy shareholding is **a claim about disclosed evidence**, not a bare
-ownership edge. A `jfibo:PolicyShareholding` carries investor, issuer,
-share count, carrying amount, holding purpose, reciprocal-holding marker,
-evidence element, information status, evidence locator, and reporting
-period validity.
+Every shareholding/borrowing/relationship is **a claim about disclosed
+evidence**, not a bare structural edge. Concrete subclasses of
+`jpfibo:DisclosureClaim`:
 
-This separation lets J-FIBO represent disclosed *and* hypothesized
-relationships in the same graph without conflating them.
+* `PolicyShareholding` — 政策保有株式
+* `MajorShareholderClaim` — 大株主の状況
+* `BorrowingsClaim` — 借入金等明細表
+* `CrossShareholdingClaim` — triangulated from two underlying claims
+* `MainBankCandidate` — hypothesis-only
+* `InstitutionalRelationshipHypothesis` — hypothesis-only
+
+## Holder role is mandatory on major-shareholder claims
+
+Japanese MajorShareholders tables are dominated by trust banks (信託口) and
+custody banks acting as registered holders. SHACL requires every
+`MajorShareholderClaim` to carry one of:
+
+```
+BeneficialHolder | RegisteredHolder | Trustee | CustodyBank |
+StandingProxy   | ADRDepositary    | IndividualShareholder
+```
+
+This is the single biggest semantic distinction vanilla FIBO erases.
 
 ## SHACL enforces the discipline
 
-Shapes for `DisclosureClaim`, `PolicyShareholding`, `MainBankCandidate`,
-`CrossShareholdingClaim`, and `EvidenceItem` ensure that:
-
-* every claim cites at least one evidence locator;
-* policy shareholdings carry investor, issuer, and an EDINET evidence
+* every `DisclosureClaim` has provenance, validity, generated-at, and an
+  `informationStatus` from the closed vocabulary;
+* `PolicyShareholding` requires investor, issuer, and an EDINET evidence
   element;
-* main-bank candidates carry at least two distinct evidence items and
-  cannot use disclosed/observed status;
-* information status is from the closed vocabulary.
+* `MajorShareholderClaim` requires issuer, holder, holderRole, and rank;
+* `BorrowingsClaim` requires lender and borrower;
+* `MainBankCandidate` cannot use `Disclosed`/`Observed` status and must
+  cite ≥2 evidence items;
+* `CrossShareholdingClaim` requires ≥2 evidence items.
+
+## Building-trajectory provenance
+
+Every minted term may carry `contributed_by` (id from
+`registry/contributors.yaml`) and `session` (id of a session). The builder
+emits these as `prov:wasAttributedTo` + `prov:wasGeneratedBy`. The
+trajectory is queryable as RDF and renderable as a Mermaid timeline via
+`scripts/build_trajectory.py`.

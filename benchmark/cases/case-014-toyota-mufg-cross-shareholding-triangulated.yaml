@@ -1,0 +1,52 @@
+id: case-014-toyota-mufg-cross-shareholding-triangulated
+title: Toyota Motor Corp <-> MUFG cross-shareholding (triangulated from FY2024 disclosures)
+title_ja: トヨタ自動車と三菱ＵＦＪの相互保有（FY2024 開示から三角測量）
+domain: cross_shareholding
+source:
+  filer: Toyota Motor Corporation; Mitsubishi UFJ Financial Group, Inc.
+  filer_edinet_codes: [E02144, E03606]
+  document: Annual securities reports (有価証券報告書), FY2024
+  cited_section: "「株式の保有状況」(both filings)"
+  edinet_doc_ids: [S100VWVY, S100W4FB]
+  notes: |
+    Triangulated automatically by scripts/materialize_claims.py: both Toyota
+    and MUFG independently disclose the other as a non-pure-investment policy
+    shareholding in their FY2024 annual securities reports.
+raw_claim: |
+  Toyota and MUFG each disclose the other as a non-pure-investment policy
+  shareholding in their FY2024 annual securities reports; J-FIBO materializes
+  this as a CrossShareholdingClaim with two evidence documents.
+edinet_elements:
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+expected_semantic_fields:
+  - entity_a
+  - entity_b
+  - holding_a_to_b
+  - holding_b_to_a
+  - dual_evidence_traceability
+  - jcn_identity_resolution
+  - information_status_evidence_backed_inferred
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+  cannot_represent_without_extension:
+    - dual_evidence_traceability
+    - jcn_identity_resolution
+    - information_status_evidence_backed_inferred
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jpfibo:CrossShareholdingClaim
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+    - dual_evidence_traceability
+    - jcn_identity_resolution
+    - information_status_evidence_backed_inferred
+    - reporting_period_validity

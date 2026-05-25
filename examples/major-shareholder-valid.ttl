@@ -1,0 +1,20 @@
+@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<urn:example:claim/major-shareholder/001>
+  a jpfibo:MajorShareholderClaim ;
+  jpfibo:hasIssuer <urn:example:entity/edinet/E02144> ;
+  jpfibo:hasHolder <urn:example:entity/jcn/1010001075076> ;
+  jpfibo:holderRole jpfibo:Trustee ;
+  jpfibo:hasShareholderRank "1"^^xsd:integer ;
+  jpfibo:hasShareCount "1805605000"^^xsd:integer ;
+  jpfibo:hasOwnershipPercentage "13.84"^^xsd:decimal ;
+  jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+  prov:wasDerivedFrom <urn:example:edinet/S100VWVY> ;
+  jpfibo:informationStatus jpfibo:Disclosed ;
+  jpfibo:normativeStatus   jpfibo:AccountingDisclosure ;
+  prov:generatedAtTime "2025-06-18T15:30:00+09:00"^^xsd:dateTime ;
+  dcterms:valid "2025-03-31"^^xsd:date .

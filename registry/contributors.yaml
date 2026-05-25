@@ -1,0 +1,32 @@
+# J-FIBO building-trajectory: contributors and sessions.
+#
+# A "contributor" is any agent (human, sub-agent, organization) whose
+# proposal led to a term being minted.  A "session" is a bounded period of
+# work, identified by date and goal.  The builder emits these as PROV
+# attribution on every term that names them via `contributed_by` and
+# `session` in registry/terms.yaml.
+#
+# This is the seed of a J-FIBO Working Group governance layer: explicit
+# attribution of vocabulary contributions, so that future merges, splits,
+# and ratifications can be traced like FIBO/EDM Council should but doesn't.
+
+contributors:
+  - id: jfibo-wg-bootstrap
+    label_en: J-FIBO Working Group (bootstrap)
+    label_ja: J-FIBOワーキンググループ（初期）
+    role: editor
+    organization: J-FIBO Working Group (provisional)
+    note: |
+      Provisional editorial group seeding v0.x. Replace with named institutional
+      contributors as the working group formalizes (Digital Agency, FSA, JPX,
+      EDM Council Japan Chapter / FDUA / FISC).
+
+sessions:
+  - id: 2026-05-25-v0.1-bootstrap
+    date: 2026-05-25
+    goal: Bootstrap J-FIBO v0.1 with EDINET alignment and information-status vocabulary.
+    contributors: [jfibo-wg-bootstrap]
+  - id: 2026-05-25-v0.2-finalize
+    date: 2026-05-25
+    goal: Finalize ontology with normative-status / reporting-regime / document-type / holder-role vocab, atomic claim types, and the EDINET-family `jpfibo:` prefix.
+    contributors: [jfibo-wg-bootstrap]

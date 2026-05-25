@@ -1,13 +1,14 @@
-@prefix jfibo:   <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:example:claim/main-bank-candidate/001>
-  a jfibo:MainBankCandidate ;
+  a jpfibo:MainBankCandidate ;
   prov:wasDerivedFrom
     <urn:example:edinet/E00001/2025/securities-report#borrowings-table> ,
     <urn:example:edinet/E00001/2025/securities-report#shareholders-table> ;
-  jfibo:informationStatus jfibo:Hypothesized ;
+  jpfibo:informationStatus jpfibo:Hypothesized ;
+  jpfibo:normativeStatus   jpfibo:InferredHypothesis ;
   prov:generatedAtTime "2025-09-01T09:00:00+09:00"^^xsd:dateTime ;
   dcterms:valid "2025-03-31"^^xsd:date .

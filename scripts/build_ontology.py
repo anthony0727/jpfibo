@@ -1,19 +1,22 @@
 """Build J-FIBO OWL/RDFS modules from the controlled registry.
 
-Design constraints:
-  * No string-templated Turtle. Triples are created with rdflib.Graph.add(...).
-  * Official vocabularies are explicit prefixes; J-FIBO only mints local terms
+Discipline:
+  * No string-templated Turtle. Triples flow through rdflib.Graph.add(...).
+  * Official vocabularies are explicit prefixes; J-FIBO mints only local terms
     listed in registry/terms.yaml.
   * Every minted term has bilingual labels, definition, source, status, and
     proposed terms have scope notes.
-  * EDINET XBRL concepts are represented as alignment handles while preserving
-    the official EDINET namespace URI in source metadata.
+  * Properties may declare domain/range; these become rdfs:domain / rdfs:range.
+  * Every term may declare contributed_by and session, which become PROV
+    attribution (prov:wasAttributedTo / prov:wasGeneratedBy) so the J-FIBO
+    building trajectory is queryable as RDF.
 
 Run:
     uv run python scripts/build_ontology.py
 """
 from __future__ import annotations
 
+import datetime as dt
 import re
 import sys
 from collections import defaultdict
@@ -26,10 +29,11 @@ from rdflib.namespace import DCTERMS, OWL, PROV, RDF, RDFS, SKOS, XSD
 
 REPO = Path(__file__).resolve().parents[1]
 REGISTRY = REPO / "registry" / "terms.yaml"
-AGGREGATE_OUT = REPO / "ontology" / "jfibo.ttl"
-LEGACY_AGGREGATE_OUT = REPO / "ontology" / "fibo-jp-core.ttl"
+CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
+AGGREGATE_OUT = REPO / "ontology" / "jpfibo.ttl"
+LEGACY_AGGREGATE_OUT = REPO / "ontology" / "jfibo.ttl"  # back-compat
 
-# Official / upstream prefix table. Add only stable namespace IRIs here.
+# Official / upstream prefix table.
 PREFIX_TABLE: dict[str, Namespace] = {
     "rdf": Namespace(str(RDF)),
     "rdfs": Namespace(str(RDFS)),
@@ -40,6 +44,7 @@ PREFIX_TABLE: dict[str, Namespace] = {
     "prov": Namespace(str(PROV)),
     "time": Namespace("http://www.w3.org/2006/time#"),
     "sh": Namespace("http://www.w3.org/ns/shacl#"),
+    "foaf": Namespace("http://xmlns.com/foaf/0.1/"),
     "cmns-org": Namespace("https://www.omg.org/spec/Commons/Organizations/"),
     "fibo-be-le-cb": Namespace(
         "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/"
@@ -58,9 +63,6 @@ PREFIX_TABLE: dict[str, Namespace] = {
     ),
 }
 
-# XBRL element handles: XBRL names are (namespace URI, local name).  In RDF we
-# mint stable alignment URIs using namespace + '#' + local name, while preserving
-# the source namespace in dcterms:source and docs.
 EDINET_XBRL_NAMESPACES: dict[str, str] = {
     "jpdei_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor",
     "jpcrp_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor",
@@ -76,7 +78,9 @@ VALID_STATUS = {"proposed", "reviewed", "stable"}
 VALID_LEVEL = {"reuse", "align", "propose"}
 VALID_KIND = {"class", "object_property", "datatype_property", "annotation_property", "individual"}
 
-JFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+CONTRIBUTOR_BASE = "https://w3id.org/jfibo/contributor/"
+SESSION_BASE = "https://w3id.org/jfibo/session/"
 
 
 def require(condition: bool, message: str) -> None:
@@ -108,7 +112,6 @@ def edinet_element_iri(qname: str) -> URIRef:
 
 
 def resolve_identifier(identifier: str, registry: dict[str, Any], known_terms: set[str]) -> URIRef:
-    """Resolve upstream QName or local J-FIBO id. Never invent prefixes."""
     if ":" not in identifier:
         require(identifier in known_terms, f"unknown local J-FIBO id {identifier!r}")
         return term_iri(identifier, registry)
@@ -122,12 +125,22 @@ def resolve_identifier(identifier: str, registry: dict[str, Any], known_terms: s
     )
 
 
+def contributor_iri(cid: str) -> URIRef:
+    return URIRef(f"{CONTRIBUTOR_BASE}{cid}")
+
+
+def session_iri(sid: str) -> URIRef:
+    return URIRef(f"{SESSION_BASE}{sid}")
+
+
 def add_common_metadata(
     g: Graph,
     iri: URIRef,
     term: dict[str, Any],
     ontology_iri: URIRef,
     registry: dict[str, Any],
+    contributors: dict[str, dict[str, Any]],
+    sessions: dict[str, dict[str, Any]],
 ) -> None:
     labels = term["labels"]
     g.add((iri, RDFS.isDefinedBy, ontology_iri))
@@ -138,12 +151,21 @@ def add_common_metadata(
         g.add((iri, SKOS.scopeNote, Literal(term["scope_note_en"].strip(), lang="en")))
     for src in term["sources"]:
         g.add((iri, DCTERMS.source, URIRef(src)))
-    g.add((iri, JFIBO.status, Literal(term.get("status", "proposed"))))
-    g.add((iri, JFIBO.level, Literal(term["level"])))
+    g.add((iri, JPFIBO.status, Literal(term.get("status", "proposed"))))
+    g.add((iri, JPFIBO.level, Literal(term["level"])))
     if term.get("edinet_elements"):
         for element in term["edinet_elements"]:
             eiri = edinet_element_iri(element)
-            g.add((iri, JFIBO.mapsToEdinetElement, eiri))
+            g.add((iri, JPFIBO.mapsToEdinetElement, eiri))
+    # Building-trajectory provenance
+    if term.get("contributed_by"):
+        cid = term["contributed_by"]
+        require(cid in contributors, f"{term['id']}: unknown contributor {cid!r}")
+        g.add((iri, PROV.wasAttributedTo, contributor_iri(cid)))
+    if term.get("session"):
+        sid = term["session"]
+        require(sid in sessions, f"{term['id']}: unknown session {sid!r}")
+        g.add((iri, PROV.wasGeneratedBy, session_iri(sid)))
 
 
 def add_edinet_concepts(g: Graph, registry: dict[str, Any], ontology_iri: URIRef, elements: set[str]) -> None:
@@ -151,14 +173,18 @@ def add_edinet_concepts(g: Graph, registry: dict[str, Any], ontology_iri: URIRef
         prefix, local = element.split(":", 1)
         iri = edinet_element_iri(element)
         g.add((iri, RDF.type, SKOS.Concept))
-        g.add((iri, RDF.type, JFIBO.EDINETTaxonomyElement))
+        g.add((iri, RDF.type, JPFIBO.EDINETTaxonomyElement))
         g.add((iri, SKOS.notation, Literal(element)))
         g.add((iri, RDFS.isDefinedBy, ontology_iri))
         g.add((iri, DCTERMS.source, URIRef(EDINET_XBRL_NAMESPACES[prefix])))
         g.add((iri, SKOS.prefLabel, Literal(local, lang="en")))
 
 
-def validate_registry(registry: dict[str, Any]) -> None:
+def validate_registry(
+    registry: dict[str, Any],
+    contributors: dict[str, dict[str, Any]],
+    sessions: dict[str, dict[str, Any]],
+) -> None:
     require("modules" in registry and registry["modules"], "missing modules")
     ids: set[str] = set()
     for term in registry["terms"]:
@@ -185,13 +211,21 @@ def validate_registry(registry: dict[str, Any]) -> None:
         else:
             require("parent" in term, f"{tid}: missing parent")
         for e in term.get("edinet_elements", []):
-            edinet_element_iri(e)  # validates
+            edinet_element_iri(e)
+        if term.get("contributed_by"):
+            require(term["contributed_by"] in contributors, f"{tid}: unknown contributor {term['contributed_by']!r}")
+        if term.get("session"):
+            require(term["session"] in sessions, f"{tid}: unknown session {term['session']!r}")
 
     for term in registry["terms"]:
         if term.get("parent"):
             resolve_identifier(term["parent"], registry, ids)
         if term.get("type"):
             resolve_identifier(term["type"], registry, ids)
+        if term.get("domain"):
+            resolve_identifier(term["domain"], registry, ids)
+        if term.get("range"):
+            resolve_identifier(term["range"], registry, ids)
 
 
 def ontology_header(g: Graph, mod_name: str, mod: dict[str, Any], registry: dict[str, Any]) -> URIRef:
@@ -209,8 +243,47 @@ def ontology_header(g: Graph, mod_name: str, mod: dict[str, Any], registry: dict
     return iri
 
 
-def build(registry: dict[str, Any]) -> dict[str, Graph]:
-    validate_registry(registry)
+def emit_contributors_and_sessions(
+    g: Graph,
+    contributors: dict[str, dict[str, Any]],
+    sessions: dict[str, dict[str, Any]],
+    ontology_iri: URIRef,
+) -> None:
+    foaf = PREFIX_TABLE["foaf"]
+    for cid, c in contributors.items():
+        iri = contributor_iri(cid)
+        g.add((iri, RDF.type, PROV.Agent))
+        g.add((iri, RDF.type, foaf.Agent))
+        g.add((iri, RDFS.isDefinedBy, ontology_iri))
+        g.add((iri, SKOS.prefLabel, Literal(c["label_en"], lang="en")))
+        if c.get("label_ja"):
+            g.add((iri, SKOS.prefLabel, Literal(c["label_ja"], lang="ja")))
+        if c.get("organization"):
+            g.add((iri, foaf.member, Literal(c["organization"])))
+        if c.get("role"):
+            g.add((iri, JPFIBO.contributorRole, Literal(c["role"])))
+        if c.get("note"):
+            g.add((iri, SKOS.scopeNote, Literal(c["note"].strip(), lang="en")))
+    for sid, s in sessions.items():
+        iri = session_iri(sid)
+        g.add((iri, RDF.type, PROV.Activity))
+        g.add((iri, RDFS.isDefinedBy, ontology_iri))
+        if s.get("goal"):
+            g.add((iri, SKOS.definition, Literal(s["goal"], lang="en")))
+        if s.get("date"):
+            g.add((iri, PROV.startedAtTime, Literal(f"{s['date']}T00:00:00+09:00", datatype=XSD.dateTime)))
+            g.add((iri, DCTERMS.date, Literal(str(s["date"]), datatype=XSD.date)))
+        for cid in s.get("contributors", []):
+            g.add((iri, PROV.wasAssociatedWith, contributor_iri(cid)))
+
+
+def build(
+    registry: dict[str, Any],
+    contributors_doc: dict[str, Any],
+) -> dict[str, Graph]:
+    contributors = {c["id"]: c for c in contributors_doc.get("contributors", [])}
+    sessions = {s["id"]: s for s in contributors_doc.get("sessions", [])}
+    validate_registry(registry, contributors, sessions)
     known_terms = {t["id"] for t in registry["terms"]}
 
     graphs: dict[str, Graph] = {}
@@ -251,14 +324,18 @@ def build(registry: dict[str, Any]) -> dict[str, Graph]:
             typ = resolve_identifier(term["type"], registry, known_terms)
             g.add((iri, RDF.type, OWL.NamedIndividual))
             g.add((iri, RDF.type, typ))
-        else:  # pragma: no cover - guarded above
+        else:  # pragma: no cover
             raise AssertionError(kind)
 
-        add_common_metadata(g, iri, term, ontology_iri, registry)
+        if term.get("domain"):
+            g.add((iri, RDFS.domain, resolve_identifier(term["domain"], registry, known_terms)))
+        if term.get("range"):
+            g.add((iri, RDFS.range, resolve_identifier(term["range"], registry, known_terms)))
+
+        add_common_metadata(g, iri, term, ontology_iri, registry, contributors, sessions)
         for e in term.get("edinet_elements", []):
             edinet_elements_by_module["edinet-alignment"].add(e)
 
-    # Add explicit EDINET element SKOS concepts to the alignment module.
     if "edinet-alignment" in graphs:
         add_edinet_concepts(
             graphs["edinet-alignment"],
@@ -267,6 +344,10 @@ def build(registry: dict[str, Any]) -> dict[str, Graph]:
             edinet_elements_by_module["edinet-alignment"],
         )
 
+    # Emit contributors / sessions into the core module for stable findability.
+    emit_contributors_and_sessions(
+        graphs["core"], contributors, sessions, ontology_iris["core"]
+    )
     return graphs
 
 
@@ -285,15 +366,15 @@ def write_outputs(graphs: dict[str, Graph], registry: dict[str, Any]) -> None:
             aggregate.add(triple)
 
     aggregate.serialize(destination=AGGREGATE_OUT, format="turtle")
-    # Compatibility for the original scaffold path; now an aggregate, not just core.
     aggregate.serialize(destination=LEGACY_AGGREGATE_OUT, format="turtle")
     print(f"wrote {AGGREGATE_OUT.relative_to(REPO)} ({len(aggregate)} triples)")
-    print(f"wrote {LEGACY_AGGREGATE_OUT.relative_to(REPO)} ({len(aggregate)} triples; compatibility aggregate)")
+    print(f"wrote {LEGACY_AGGREGATE_OUT.relative_to(REPO)} ({len(aggregate)} triples; back-compat)")
 
 
 def main() -> int:
     registry = yaml.safe_load(REGISTRY.read_text())
-    graphs = build(registry)
+    contributors_doc = yaml.safe_load(CONTRIBUTORS.read_text())
+    graphs = build(registry, contributors_doc)
     write_outputs(graphs, registry)
     return 0
 

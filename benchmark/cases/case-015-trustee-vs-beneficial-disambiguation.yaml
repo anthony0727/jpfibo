@@ -1,0 +1,56 @@
+id: case-015-trustee-vs-beneficial-disambiguation
+title: Trustee vs beneficial holder disambiguation in MajorShareholders tables
+title_ja: 大株主表における信託口名義人と実質株主の区別
+domain: cross_shareholding
+source:
+  filer: Any large reporting company
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「大株主の状況」table"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    日本マスタートラスト信託銀行 (信託口) and 日本カストディ銀行 (信託口)
+    almost always sit at the top of major-shareholders tables; vanilla FIBO
+    has no way to mark these as trustees rather than beneficial owners.
+raw_claim: |
+  The top-ranked entry in a MajorShareholders table is 日本マスタートラスト信託銀行
+  (信託口) which is the registered holder of trust accounts, not a beneficial owner.
+edinet_elements:
+  - jpcrp_cor:MajorShareholdersTextBlock
+expected_semantic_fields:
+  - issuer
+  - holder_name
+  - holder_role
+  - holder_role_trustee
+  - share_count
+  - ownership_percentage
+  - shareholder_rank
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - issuer
+    - holder_name
+    - share_count
+    - ownership_percentage
+  cannot_represent_without_extension:
+    - holder_role
+    - holder_role_trustee
+    - shareholder_rank
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jpfibo:MajorShareholderClaim
+  represents:
+    - issuer
+    - holder_name
+    - holder_role
+    - holder_role_trustee
+    - share_count
+    - ownership_percentage
+    - shareholder_rank
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

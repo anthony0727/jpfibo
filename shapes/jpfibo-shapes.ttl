@@ -1,0 +1,180 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+
+# Every J-FIBO disclosure claim must carry the provenance, time validity, and
+# information-status metadata that makes the claim auditable across the
+# information boundary.
+jpfibo:DisclosureClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:DisclosureClaim ;
+
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "every claim must cite at least one source via prov:wasDerivedFrom" ;
+  ] ;
+
+  sh:property [
+    sh:path jpfibo:informationStatus ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in (
+      jpfibo:Observed
+      jpfibo:Disclosed
+      jpfibo:EvidenceBackedInferred
+      jpfibo:Hypothesized
+      jpfibo:Counterfactual
+      jpfibo:Predicted
+      jpfibo:OutsideInformationBoundary
+    ) ;
+    sh:message "informationStatus must be exactly one of the closed J-FIBO information-status vocabulary values" ;
+  ] ;
+
+  sh:property [
+    sh:path jpfibo:normativeStatus ;
+    sh:maxCount 1 ;
+    sh:in (
+      jpfibo:LegalObligation
+      jpfibo:AccountingDisclosure
+      jpfibo:GovernanceDisclosure
+      jpfibo:InstitutionalExpectation
+      jpfibo:InferredHypothesis
+    ) ;
+    sh:message "normativeStatus, when present, must be one of the closed J-FIBO normative-status vocabulary values" ;
+  ] ;
+
+  sh:property [
+    sh:path prov:generatedAtTime ;
+    sh:minCount 1 ;
+    sh:datatype xsd:dateTime ;
+    sh:message "every claim needs prov:generatedAtTime (when the claim was made/extracted)" ;
+  ] ;
+
+  sh:property [
+    sh:path dcterms:valid ;
+    sh:minCount 1 ;
+    sh:message "every claim needs dcterms:valid (the validity period of the underlying fact)" ;
+  ] .
+
+jpfibo:CrossShareholdingClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:CrossShareholdingClaim ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 2 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "cross-shareholding claims require at least two cited evidence items (one per direction)" ;
+  ] .
+
+jpfibo:PolicyShareholdingShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:PolicyShareholding ;
+  sh:property [
+    sh:path jpfibo:hasEvidenceElement ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must cite at least one EDINET evidence element via jpfibo:hasEvidenceElement" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:hasInvestor ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must identify an investor via jpfibo:hasInvestor" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:hasIssuer ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must identify an issuer via jpfibo:hasIssuer" ;
+  ] .
+
+jpfibo:MajorShareholderClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:MajorShareholderClaim ;
+  sh:property [
+    sh:path jpfibo:hasIssuer ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "major-shareholder claims must identify the issuer (the reporting company) via jpfibo:hasIssuer" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:hasHolder ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "major-shareholder claims must identify the registered holder via jpfibo:hasHolder" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:holderRole ;
+    sh:minCount 1 ;
+    sh:in (
+      jpfibo:BeneficialHolder
+      jpfibo:RegisteredHolder
+      jpfibo:Trustee
+      jpfibo:CustodyBank
+      jpfibo:StandingProxy
+      jpfibo:ADRDepositary
+      jpfibo:IndividualShareholder
+    ) ;
+    sh:message "major-shareholder claims must carry exactly one J-FIBO holderRole" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:hasShareholderRank ;
+    sh:minCount 1 ;
+    sh:datatype xsd:integer ;
+    sh:minInclusive 1 ;
+    sh:message "major-shareholder claims must carry a 1-based shareholder rank" ;
+  ] .
+
+jpfibo:BorrowingsClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:BorrowingsClaim ;
+  sh:property [
+    sh:path jpfibo:hasLender ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "borrowings claims must identify the lender via jpfibo:hasLender" ;
+  ] ;
+  sh:property [
+    sh:path jpfibo:hasBorrower ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "borrowings claims must identify the borrower via jpfibo:hasBorrower" ;
+  ] .
+
+jpfibo:MainBankCandidateShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:MainBankCandidate ;
+  sh:property [
+    sh:path jpfibo:informationStatus ;
+    sh:in (
+      jpfibo:Hypothesized
+      jpfibo:EvidenceBackedInferred
+      jpfibo:Counterfactual
+      jpfibo:OutsideInformationBoundary
+    ) ;
+    sh:message "main-bank candidate must use hypothesized, evidence-backed inferred, counterfactual, or outside-boundary status (never disclosed/observed)" ;
+  ] ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 2 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "main-bank candidate must cite at least two distinct evidence items" ;
+  ] .
+
+jpfibo:EvidenceItemShape
+  a sh:NodeShape ;
+  sh:targetClass jpfibo:EvidenceItem ;
+  sh:property [
+    sh:path dcterms:source ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "evidence items must cite their source URI via dcterms:source" ;
+  ] .

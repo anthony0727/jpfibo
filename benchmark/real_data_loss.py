@@ -1,73 +1,137 @@
-"""Real-EDINET semantic-loss benchmark.
+"""Real-EDINET semantic-loss benchmark for the J-FIBO v0.2 claim families.
 
-For every materialized PolicyShareholding claim, compare what vanilla FIBO
-can represent natively (issuer, investor, share count) against what J-FIBO
-represents (those plus holding purpose, evidence element, reciprocal-
-holding marker, information status, evidence locator, validity).
+Scores three claim families against fixed expected-field schemas:
 
-A claim's vanilla-coverage and jfibo-coverage are computed against a fixed
-expected-field schema; the gap is the per-claim semantic loss.
+  * PolicyShareholding    (investor, issuer, share_count, carrying_amount,
+                           holding_purpose, reciprocal_holding_marker,
+                           evidence_element, information_status,
+                           normative_status, evidence_locator,
+                           reporting_period_validity)
+  * MajorShareholderClaim (issuer, holder, holder_role, share_count,
+                           ownership_percentage, shareholder_rank,
+                           evidence_element, information_status,
+                           normative_status, evidence_locator,
+                           reporting_period_validity)
+  * CrossShareholdingClaim (investor, issuer, dual_evidence_traceability,
+                            jcn_identity_resolution, information_status,
+                            evidence_locator, reporting_period_validity)
 
-The benchmark also aggregates by filer (EDINET code) and emits
-``benchmark/results/real_summary.json``.
+Vanilla FIBO is scored as representing only the structural object fields
+(parties + counts); the institutional/role/provenance fields are J-FIBO-only.
 """
 from __future__ import annotations
 
 import argparse
 import json
-import sys
 import statistics
+import sys
 from collections import defaultdict
 from pathlib import Path
 
-from rdflib import Graph, Literal, Namespace, URIRef
+from rdflib import Graph, Namespace, URIRef
 from rdflib.namespace import DCTERMS, PROV, RDF, SKOS, XSD
 
 REPO = Path(__file__).resolve().parents[1]
 CLAIMS_DIR = REPO / "data" / "edinet" / "claims"
 RESULTS_DIR = REPO / "benchmark" / "results"
 
-JFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 
-EXPECTED_FIELDS = [
-    "investor",
-    "issuer",
-    "share_count",
-    "carrying_amount",
-    "holding_purpose",
-    "reciprocal_holding_marker",
-    "evidence_element",
-    "information_status",
-    "evidence_locator",
+POLICY_EXPECTED = [
+    "investor", "issuer", "share_count", "carrying_amount", "holding_purpose",
+    "reciprocal_holding_marker", "evidence_element", "information_status",
+    "normative_status", "evidence_locator", "reporting_period_validity",
+]
+POLICY_VANILLA = {"investor", "issuer", "share_count"}
+
+MAJOR_EXPECTED = [
+    "issuer", "holder", "holder_role", "share_count", "ownership_percentage",
+    "shareholder_rank", "evidence_element", "information_status",
+    "normative_status", "evidence_locator", "reporting_period_validity",
+]
+MAJOR_VANILLA = {"issuer", "holder", "share_count", "ownership_percentage"}
+
+CROSS_EXPECTED = [
+    "investor", "issuer", "dual_evidence_traceability",
+    "jcn_identity_resolution", "information_status", "evidence_locator",
     "reporting_period_validity",
 ]
-VANILLA_REPRESENTS = {"investor", "issuer", "share_count"}
+CROSS_VANILLA = {"investor", "issuer"}
 
 
-def per_claim_metrics(g: Graph) -> list[dict]:
+def _ratio(a: int, b: int) -> float:
+    return float(a) / float(b) if b else 0.0
+
+
+def policy_metrics(g: Graph) -> list[dict]:
     out: list[dict] = []
-    for claim in g.subjects(RDF.type, JFIBO.PolicyShareholding):
-        fields = set()
-        if g.value(claim, JFIBO.hasInvestor): fields.add("investor")
-        if g.value(claim, JFIBO.hasIssuer): fields.add("issuer")
-        if g.value(claim, JFIBO.hasShareCount) is not None: fields.add("share_count")
-        if g.value(claim, JFIBO.hasCarryingAmount) is not None: fields.add("carrying_amount")
-        if g.value(claim, JFIBO.hasHoldingPurpose): fields.add("holding_purpose")
-        if any(g.objects(claim, SKOS.note)): fields.add("reciprocal_holding_marker")
-        if any(g.objects(claim, JFIBO.hasEvidenceElement)): fields.add("evidence_element")
-        if g.value(claim, JFIBO.informationStatus): fields.add("information_status")
-        if g.value(claim, PROV.wasDerivedFrom): fields.add("evidence_locator")
-        if g.value(claim, DCTERMS.valid): fields.add("reporting_period_validity")
-
-        vanilla = fields & VANILLA_REPRESENTS
-        jrep = fields
+    for c in g.subjects(RDF.type, JPFIBO.PolicyShareholding):
+        f: set[str] = set()
+        if g.value(c, JPFIBO.hasInvestor): f.add("investor")
+        if g.value(c, JPFIBO.hasIssuer): f.add("issuer")
+        if g.value(c, JPFIBO.hasShareCount) is not None: f.add("share_count")
+        if g.value(c, JPFIBO.hasCarryingAmount) is not None: f.add("carrying_amount")
+        if g.value(c, JPFIBO.hasHoldingPurpose): f.add("holding_purpose")
+        if any(g.objects(c, SKOS.note)): f.add("reciprocal_holding_marker")
+        if any(g.objects(c, JPFIBO.hasEvidenceElement)): f.add("evidence_element")
+        if g.value(c, JPFIBO.informationStatus): f.add("information_status")
+        if g.value(c, JPFIBO.normativeStatus): f.add("normative_status")
+        if g.value(c, PROV.wasDerivedFrom): f.add("evidence_locator")
+        if g.value(c, DCTERMS.valid): f.add("reporting_period_validity")
+        v = f & POLICY_VANILLA
         out.append({
-            "claim": str(claim),
-            "fields": sorted(fields),
-            "vanilla_coverage": len(vanilla) / len(EXPECTED_FIELDS),
-            "jfibo_coverage": len(jrep) / len(EXPECTED_FIELDS),
-            "semantic_loss_rate": (len(EXPECTED_FIELDS) - len(vanilla)) / len(EXPECTED_FIELDS),
-            "jfibo_gain": (len(jrep) - len(vanilla)) / len(EXPECTED_FIELDS),
+            "claim": str(c), "kind": "PolicyShareholding",
+            "fields": sorted(f),
+            "vanilla_coverage": _ratio(len(v), len(POLICY_EXPECTED)),
+            "jfibo_coverage":   _ratio(len(f), len(POLICY_EXPECTED)),
+        })
+    return out
+
+
+def major_metrics(g: Graph) -> list[dict]:
+    out: list[dict] = []
+    for c in g.subjects(RDF.type, JPFIBO.MajorShareholderClaim):
+        f: set[str] = set()
+        if g.value(c, JPFIBO.hasIssuer): f.add("issuer")
+        if g.value(c, JPFIBO.hasHolder): f.add("holder")
+        if g.value(c, JPFIBO.holderRole): f.add("holder_role")
+        if g.value(c, JPFIBO.hasShareCount) is not None: f.add("share_count")
+        if g.value(c, JPFIBO.hasOwnershipPercentage) is not None: f.add("ownership_percentage")
+        if g.value(c, JPFIBO.hasShareholderRank) is not None: f.add("shareholder_rank")
+        if any(g.objects(c, JPFIBO.hasEvidenceElement)): f.add("evidence_element")
+        if g.value(c, JPFIBO.informationStatus): f.add("information_status")
+        if g.value(c, JPFIBO.normativeStatus): f.add("normative_status")
+        if g.value(c, PROV.wasDerivedFrom): f.add("evidence_locator")
+        if g.value(c, DCTERMS.valid): f.add("reporting_period_validity")
+        v = f & MAJOR_VANILLA
+        out.append({
+            "claim": str(c), "kind": "MajorShareholderClaim",
+            "fields": sorted(f),
+            "vanilla_coverage": _ratio(len(v), len(MAJOR_EXPECTED)),
+            "jfibo_coverage":   _ratio(len(f), len(MAJOR_EXPECTED)),
+        })
+    return out
+
+
+def cross_metrics(g: Graph) -> list[dict]:
+    out: list[dict] = []
+    for c in g.subjects(RDF.type, JPFIBO.CrossShareholdingClaim):
+        f: set[str] = set()
+        if g.value(c, JPFIBO.hasInvestor): f.add("investor")
+        if g.value(c, JPFIBO.hasIssuer): f.add("issuer")
+        derived = list(g.objects(c, PROV.wasDerivedFrom))
+        if len(derived) >= 2: f.add("dual_evidence_traceability")
+        if g.value(c, JPFIBO.hasInvestor) and g.value(c, JPFIBO.hasIssuer):
+            f.add("jcn_identity_resolution")
+        if g.value(c, JPFIBO.informationStatus): f.add("information_status")
+        if g.value(c, PROV.wasDerivedFrom): f.add("evidence_locator")
+        if g.value(c, DCTERMS.valid): f.add("reporting_period_validity")
+        v = f & CROSS_VANILLA
+        out.append({
+            "claim": str(c), "kind": "CrossShareholdingClaim",
+            "fields": sorted(f),
+            "vanilla_coverage": _ratio(len(v), len(CROSS_EXPECTED)),
+            "jfibo_coverage":   _ratio(len(f), len(CROSS_EXPECTED)),
         })
     return out
 
@@ -77,7 +141,7 @@ def run(claims_dir: Path = CLAIMS_DIR) -> dict:
     all_claims: list[dict] = []
     for p in sorted(claims_dir.glob("*.ttl")):
         g = Graph().parse(p)
-        m = per_claim_metrics(g)
+        m = policy_metrics(g) + major_metrics(g) + cross_metrics(g)
         per_doc[p.stem] = m
         for x in m:
             x["doc_id"] = p.stem
@@ -86,25 +150,23 @@ def run(claims_dir: Path = CLAIMS_DIR) -> dict:
     if not all_claims:
         return {"claims": 0}
 
+    by_kind = defaultdict(list)
+    for c in all_claims:
+        by_kind[c["kind"]].append(c)
+
     summary = {
         "claims": len(all_claims),
         "mean_vanilla_coverage": statistics.fmean(c["vanilla_coverage"] for c in all_claims),
-        "mean_jfibo_coverage": statistics.fmean(c["jfibo_coverage"] for c in all_claims),
-        "mean_semantic_loss_rate": statistics.fmean(c["semantic_loss_rate"] for c in all_claims),
-        "mean_jfibo_gain": statistics.fmean(c["jfibo_gain"] for c in all_claims),
-        "by_doc": {
-            d: {
+        "mean_jfibo_coverage":   statistics.fmean(c["jfibo_coverage"]   for c in all_claims),
+        "mean_jfibo_gain":       statistics.fmean(c["jfibo_coverage"] - c["vanilla_coverage"] for c in all_claims),
+        "by_kind": {
+            k: {
                 "claims": len(ms),
-                "mean_jfibo_coverage": statistics.fmean(m["jfibo_coverage"] for m in ms),
                 "mean_vanilla_coverage": statistics.fmean(m["vanilla_coverage"] for m in ms),
-                "share_with_holding_purpose": statistics.fmean(
-                    1.0 if "holding_purpose" in m["fields"] else 0.0 for m in ms
-                ),
-                "share_with_reciprocal_marker": statistics.fmean(
-                    1.0 if "reciprocal_holding_marker" in m["fields"] else 0.0 for m in ms
-                ),
+                "mean_jfibo_coverage":   statistics.fmean(m["jfibo_coverage"]   for m in ms),
+                "mean_jfibo_gain":       statistics.fmean(m["jfibo_coverage"] - m["vanilla_coverage"] for m in ms),
             }
-            for d, ms in per_doc.items() if ms
+            for k, ms in sorted(by_kind.items())
         },
     }
     return summary
@@ -119,23 +181,21 @@ def main() -> int:
     summary = run(args.claims_dir)
     args.out.write_text(json.dumps(summary, ensure_ascii=False, indent=2))
     if not summary or summary.get("claims", 0) == 0:
-        print("no claims found")
-        return 0
-    print("J-FIBO real-EDINET semantic-loss benchmark")
-    print("=" * 50)
+        print("no claims found"); return 0
+    print("J-FIBO real-EDINET semantic-loss benchmark (v0.2)")
+    print("=" * 52)
     print(f"claims:                          {summary['claims']}")
     print(f"mean vanilla FIBO coverage:      {summary['mean_vanilla_coverage']:.3f}")
     print(f"mean J-FIBO coverage:            {summary['mean_jfibo_coverage']:.3f}")
-    print(f"mean semantic-loss rate:         {summary['mean_semantic_loss_rate']:.3f}")
     print(f"mean J-FIBO gain:                {summary['mean_jfibo_gain']:.3f}")
     print()
-    print("by document:")
-    for d, v in summary["by_doc"].items():
+    print("by claim kind:")
+    for k, v in summary["by_kind"].items():
         print(
-            f"  {d}: claims={v['claims']:>3}  jfibo={v['mean_jfibo_coverage']:.3f}  "
+            f"  {k:24s} claims={v['claims']:>3}  "
             f"vanilla={v['mean_vanilla_coverage']:.3f}  "
-            f"purpose={v['share_with_holding_purpose']:.2f}  "
-            f"reciprocal={v['share_with_reciprocal_marker']:.2f}"
+            f"jfibo={v['mean_jfibo_coverage']:.3f}  "
+            f"gain={v['mean_jfibo_gain']:.3f}"
         )
     return 0
 
