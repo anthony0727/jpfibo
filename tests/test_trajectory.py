@@ -7,7 +7,7 @@ REPO = Path(__file__).resolve().parents[1]
 
 
 def test_trajectory_renders() -> None:
-    out = REPO / "docs" / "building-trajectory.md"
+    out = REPO / "build" / "building-trajectory.md"
     r = subprocess.run(
         ["uv", "run", "python", str(REPO / "scripts" / "build_trajectory.py")],
         cwd=REPO, capture_output=True, text=True,

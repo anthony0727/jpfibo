@@ -23,7 +23,7 @@ REPO = Path(__file__).resolve().parents[1]
 ONT = REPO / "ontology" / "jfibo.ttl"
 CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
 REGISTRY = REPO / "registry" / "terms.yaml"
-OUT = REPO / "docs" / "building-trajectory.md"
+OUT = REPO / "build" / "building-trajectory.md"
 
 JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 
