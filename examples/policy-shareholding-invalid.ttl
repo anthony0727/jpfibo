@@ -1,0 +1,8 @@
+@prefix jfibo:   <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+# Invalid: PolicyShareholding without information status, time, validity,
+# investor, issuer, or EDINET evidence element.
+<urn:example:claim/policy-shareholding/002>
+  a jfibo:PolicyShareholding ;
+  prov:wasDerivedFrom <urn:example:somewhere> .

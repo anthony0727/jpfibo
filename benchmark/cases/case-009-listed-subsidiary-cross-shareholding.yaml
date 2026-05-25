@@ -1,0 +1,55 @@
+id: case-009-listed-subsidiary-cross-shareholding
+title: Listed parent / listed subsidiary mutual disclosure
+title_ja: 上場親会社と上場子会社の相互開示
+domain: cross_shareholding
+source:
+  filer: Listed parent and listed subsidiary, each as reporting company
+  document: Annual securities reports (有価証券報告書), FY2024
+  cited_section: "「大株主の状況」「株式の保有状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Japanese listed parent / listed subsidiary structures are reported on
+    both sides; the parent appears as a major shareholder of the subsidiary,
+    and the subsidiary may appear in the parent's policy shareholdings.
+raw_claim: |
+  A listed parent appears as the largest shareholder in a listed subsidiary's
+  major-shareholders table, and the subsidiary appears as a non-pure-investment
+  policy shareholding in the parent's securities report.
+edinet_elements:
+  - jpcrp_cor:MajorShareholdersTextBlock
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+expected_semantic_fields:
+  - entity_a
+  - entity_b
+  - holding_a_to_b
+  - holding_b_to_a
+  - holding_purpose
+  - parent_subsidiary_status
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+  cannot_represent_without_extension:
+    - holding_purpose
+    - parent_subsidiary_status
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:CrossShareholdingClaim
+  represents:
+    - entity_a
+    - entity_b
+    - holding_a_to_b
+    - holding_b_to_a
+    - holding_purpose
+    - parent_subsidiary_status
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

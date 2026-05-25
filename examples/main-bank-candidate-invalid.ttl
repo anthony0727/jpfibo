@@ -1,0 +1,14 @@
+@prefix jfibo:   <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Invalid: MainBankCandidate cannot use jfibo:Disclosed status (it is by
+# definition a hypothesis), and it is missing the second corroborating
+# evidence item.
+<urn:example:claim/main-bank-candidate/002>
+  a jfibo:MainBankCandidate ;
+  prov:wasDerivedFrom <urn:example:edinet/E00001/2025/securities-report> ;
+  jfibo:informationStatus jfibo:Disclosed ;
+  prov:generatedAtTime "2025-09-01T09:00:00+09:00"^^xsd:dateTime ;
+  dcterms:valid "2025-03-31"^^xsd:date .

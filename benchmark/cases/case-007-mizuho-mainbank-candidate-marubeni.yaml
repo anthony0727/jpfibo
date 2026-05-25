@@ -1,0 +1,54 @@
+id: case-007-mizuho-mainbank-candidate-marubeni
+title: Mizuho Bank as main-bank candidate for a sōgō shōsha
+title_ja: 総合商社向けメインバンク候補としてのみずほ銀行
+domain: main_bank_candidate
+source:
+  filer: Sōgō shōsha reporting company (e.g. Marubeni Corp.)
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」「大株主の状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Multi-year persistence of a single megabank as both lender and major
+    shareholder is treated as a hypothesis, not a contractual fact.
+raw_claim: |
+  Mizuho Bank is hypothesized to act as a main bank for the reporting sōgō
+  shōsha based on multi-year persistence as long-term lender and as an
+  entry in the major-shareholders table.
+edinet_elements:
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jpcrp_cor:MajorShareholdersTextBlock
+expected_semantic_fields:
+  - candidate_bank
+  - reporting_entity
+  - persistence_evidence
+  - borrowings_evidence
+  - shareholding_evidence
+  - relationship_narrative
+  - information_status_hypothesized
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fct-fse:Bank
+  represents:
+    - candidate_bank
+    - reporting_entity
+  cannot_represent_without_extension:
+    - persistence_evidence
+    - borrowings_evidence
+    - shareholding_evidence
+    - relationship_narrative
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:MainBankCandidate
+  represents:
+    - candidate_bank
+    - reporting_entity
+    - persistence_evidence
+    - borrowings_evidence
+    - shareholding_evidence
+    - relationship_narrative
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity

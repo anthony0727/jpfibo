@@ -1,0 +1,49 @@
+id: case-005-keidanren-style-institutional-network
+title: Institutional-network claim about reporting company / industry body
+title_ja: 業界団体メンバーシップに基づく制度的関係仮説
+domain: institutional_relationship
+source:
+  filer: Generic Japanese reporting company
+  document: Corporate governance report (コーポレート・ガバナンス報告書) / Annual securities report
+  cited_section: "governance disclosures referencing industry-body roles"
+  jpx_url: https://www.jpx.co.jp/english/equities/listing/cg/index.html
+  notes: |
+    A reporting company's directors hold posts in industry bodies (e.g.
+    Keidanren committees) or partner companies; this is institutional but
+    not equivalent to a financial obligation. We model it as a hypothesis,
+    not as a disclosed financial fact.
+raw_claim: |
+  The reporting company maintains institutional ties with a partner entity
+  through interlocking directorships and joint policy positions in industry
+  bodies; this is treated as an institutional-relationship hypothesis.
+edinet_elements:
+  - jpcrp_cor:ShareholdingsTextBlock
+expected_semantic_fields:
+  - entity_a
+  - entity_b
+  - relationship_kind
+  - evidence_kind
+  - information_status_hypothesized
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: cmns-org:FormalOrganization
+  represents:
+    - entity_a
+    - entity_b
+  cannot_represent_without_extension:
+    - relationship_kind
+    - evidence_kind
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:InstitutionalRelationshipHypothesis
+  represents:
+    - entity_a
+    - entity_b
+    - relationship_kind
+    - evidence_kind
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity

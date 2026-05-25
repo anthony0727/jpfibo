@@ -1,0 +1,53 @@
+id: case-010-life-insurer-cross-holding
+title: Major Japanese life-insurer cross-holding pattern
+title_ja: 大手生命保険会社による株式持合い
+domain: cross_shareholding
+source:
+  filer: A large reporting company with a life-insurer shareholder
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「大株主の状況」「株式の保有状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Japanese life insurers (e.g. Nippon Life, Dai-ichi Life) frequently
+    appear as long-term holders in major-shareholders tables of large
+    reporting companies; the reciprocal holding rarely appears as a pure
+    investment.
+raw_claim: |
+  A major Japanese life insurer appears as a top-five shareholder of the
+  reporting company, while the reporting company also discloses a
+  non-pure-investment holding in the insurer's listed parent.
+edinet_elements:
+  - jpcrp_cor:MajorShareholdersTextBlock
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+expected_semantic_fields:
+  - insurer_shareholder
+  - reporting_entity
+  - reverse_holding
+  - holding_purpose
+  - long_term_relationship_evidence
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - insurer_shareholder
+    - reporting_entity
+    - reverse_holding
+  cannot_represent_without_extension:
+    - holding_purpose
+    - long_term_relationship_evidence
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:CrossShareholdingClaim
+  represents:
+    - insurer_shareholder
+    - reporting_entity
+    - reverse_holding
+    - holding_purpose
+    - long_term_relationship_evidence
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

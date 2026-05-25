@@ -1,0 +1,57 @@
+id: case-004-sumitomo-mitsui-corporate-borrowings
+title: Reporting company long-term borrowings from SMBC / SMTH
+title_ja: 三井住友銀行・三井住友信託銀行からの長期借入金
+domain: borrowings_evidence
+source:
+  filer: Generic large Japanese reporting company
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    The borrowings schedule (借入金等明細表) lists lender-by-lender
+    long-term and short-term borrowings, with weighted-average rates and
+    repayment schedules. This is one of the strongest direct evidence
+    sources for institutional banking relationships in Japan.
+raw_claim: |
+  The reporting company has long-term borrowings from SMBC and SMTH with
+  disclosed weighted-average interest rates and repayment schedule.
+edinet_elements:
+  - jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jppfs_cor:LongTermLoansPayable
+  - jppfs_cor:ShortTermLoansPayable
+expected_semantic_fields:
+  - lender_name
+  - borrower_name
+  - borrowing_amount
+  - weighted_average_interest_rate
+  - repayment_period
+  - lender_role
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fct-fse:Bank
+  represents:
+    - lender_name
+    - borrower_name
+    - borrowing_amount
+  cannot_represent_without_extension:
+    - lender_role
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:DisclosureClaim
+  edinet_elements:
+    - jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock
+  represents:
+    - lender_name
+    - borrower_name
+    - borrowing_amount
+    - weighted_average_interest_rate
+    - repayment_period
+    - lender_role
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

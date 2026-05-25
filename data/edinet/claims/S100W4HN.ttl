@@ -1,0 +1,11 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4HN> a jfibo:EDINETDisclosureDocument ;
+    dcterms:identifier "S100W4HN" ;
+    dcterms:source <https://disclosure2.edinet-fsa.go.jp/> .
+
+<urn:jfibo:edinet:E02778> a jfibo:KabushikiKaisha ;
+    skos:prefLabel "ソフトバンクグループ株式会社"@ja .
+

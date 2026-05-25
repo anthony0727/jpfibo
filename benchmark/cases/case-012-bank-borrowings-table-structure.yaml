@@ -1,0 +1,62 @@
+id: case-012-bank-borrowings-table-structure
+title: EDINET borrowings schedule structure (lender, balance, weighted rate)
+title_ja: EDINETタクソノミの借入金等明細表構造
+domain: borrowings_evidence
+source:
+  filer: Any non-bank reporting company
+  document: EDINET taxonomy 2026 (jpcrp_cor 2025-11-01)
+  cited_section: "「借入金等明細表」テキストブロックおよび jppfs_cor 借入金関連要素"
+  taxonomy_url: https://www.fsa.go.jp/search/20251111.html
+  notes: |
+    The borrowings schedule is a text block in jpcrp_cor, but the line-item
+    elements (short-term, long-term, current portion, etc.) are in
+    jppfs_cor; the lender-by-lender structure is the strongest direct
+    evidence of bank-corporate institutional relationships.
+raw_claim: |
+  The reporting company discloses borrowings by lender, balance, weighted-
+  average interest rate, and repayment period; vanilla FIBO has Bank and
+  Loan but cannot express the disclosure-structure or the role of the
+  lender in the Japanese institutional context.
+edinet_elements:
+  - jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock
+  - jppfs_cor:LongTermLoansPayable
+  - jppfs_cor:ShortTermLoansPayable
+  - jppfs_cor:CurrentPortionOfLongTermLoansPayable
+expected_semantic_fields:
+  - lender_name
+  - borrower_name
+  - borrowing_balance
+  - weighted_average_interest_rate
+  - repayment_period
+  - borrowings_disclosure_section
+  - lender_role
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fct-fse:Bank
+  represents:
+    - lender_name
+    - borrower_name
+    - borrowing_balance
+  cannot_represent_without_extension:
+    - weighted_average_interest_rate
+    - repayment_period
+    - borrowings_disclosure_section
+    - lender_role
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:DisclosureClaim
+  represents:
+    - lender_name
+    - borrower_name
+    - borrowing_balance
+    - weighted_average_interest_rate
+    - repayment_period
+    - borrowings_disclosure_section
+    - lender_role
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

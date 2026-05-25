@@ -1,0 +1,62 @@
+id: case-001-toyota-policy-shareholding-denso
+title: Toyota Motor Corp policy shareholding in DENSO
+title_ja: トヨタ自動車によるデンソー株式の政策保有
+domain: policy_shareholding
+source:
+  filer: Toyota Motor Corporation
+  filer_edinet_code: E02144
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「株式の保有状況」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Toyota discloses its DENSO holding as a non-pure-investment shareholding
+    under jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+    with purpose "to maintain and strengthen long-term business relationship
+    with a Toyota Group supplier".
+raw_claim: |
+  Toyota holds shares of DENSO as a non-pure-investment policy shareholding;
+  purpose is to maintain and strengthen long-term business relationship with
+  a Toyota Group supplier.
+edinet_elements:
+  - jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable
+  - jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+  - jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+  - jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+  - jpcrp_cor:PurposesOfHoldingDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompany
+expected_semantic_fields:
+  - investor
+  - issuer
+  - share_count
+  - carrying_amount
+  - holding_purpose
+  - non_pure_investment_status
+  - business_alliance_overview
+  - information_status
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-sec-eq-eq:Share
+  represents:
+    - investor
+    - issuer
+    - share_count
+  cannot_represent_without_extension:
+    - holding_purpose
+    - non_pure_investment_status
+    - business_alliance_overview
+    - information_status
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:PolicyShareholding
+  represents:
+    - investor
+    - issuer
+    - share_count
+    - carrying_amount
+    - holding_purpose
+    - non_pure_investment_status
+    - business_alliance_overview
+    - information_status
+    - evidence_locator
+    - reporting_period_validity

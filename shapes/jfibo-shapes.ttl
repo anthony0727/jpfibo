@@ -1,0 +1,122 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix time:    <http://www.w3.org/2006/time#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix jfibo:   <https://w3id.org/jfibo/ontology/JP/core/> .
+
+# Every J-FIBO disclosure claim must carry the provenance, time validity, and
+# information-status metadata that makes the claim auditable across the
+# information boundary.
+jfibo:DisclosureClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:DisclosureClaim ;
+
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "every claim must cite at least one source via prov:wasDerivedFrom" ;
+  ] ;
+
+  sh:property [
+    sh:path jfibo:informationStatus ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:in (
+      jfibo:Observed
+      jfibo:Disclosed
+      jfibo:EvidenceBackedInferred
+      jfibo:Hypothesized
+      jfibo:Counterfactual
+      jfibo:Predicted
+      jfibo:OutsideInformationBoundary
+    ) ;
+    sh:message "informationStatus must be exactly one of the closed J-FIBO information-status vocabulary values" ;
+  ] ;
+
+  sh:property [
+    sh:path prov:generatedAtTime ;
+    sh:minCount 1 ;
+    sh:datatype xsd:dateTime ;
+    sh:message "every claim needs prov:generatedAtTime (when the claim was made/extracted)" ;
+  ] ;
+
+  sh:property [
+    sh:path dcterms:valid ;
+    sh:minCount 1 ;
+    sh:message "every claim needs dcterms:valid (the validity period of the underlying fact)" ;
+  ] .
+
+# Cross-shareholding claims must identify two distinct issuers via the
+# component shareholding claims used as evidence; we enforce that the claim
+# cites at least two evidence items.
+jfibo:CrossShareholdingClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:CrossShareholdingClaim ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 2 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "cross-shareholding claims require at least two cited evidence items (one per direction)" ;
+  ] .
+
+# Policy shareholdings must cite an EDINET evidence element so the link back to
+# the official taxonomy is preserved.
+jfibo:PolicyShareholdingShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:PolicyShareholding ;
+  sh:property [
+    sh:path jfibo:hasEvidenceElement ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must cite at least one EDINET evidence element via jfibo:hasEvidenceElement" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasInvestor ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must identify an investor via jfibo:hasInvestor" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasIssuer ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "policy shareholding claims must identify an issuer via jfibo:hasIssuer" ;
+  ] .
+
+# Main-bank candidates are explicitly hypotheses; SHACL prevents them being
+# misrepresented as evidence-backed inferences without sufficient provenance.
+jfibo:MainBankCandidateShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:MainBankCandidate ;
+  sh:property [
+    sh:path jfibo:informationStatus ;
+    sh:in (
+      jfibo:Hypothesized
+      jfibo:EvidenceBackedInferred
+      jfibo:Counterfactual
+      jfibo:OutsideInformationBoundary
+    ) ;
+    sh:message "main-bank candidate must use hypothesized, evidence-backed inferred, counterfactual, or outside-boundary status (never disclosed/observed)" ;
+  ] ;
+  sh:property [
+    sh:path prov:wasDerivedFrom ;
+    sh:minCount 2 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "main-bank candidate must cite at least two distinct evidence items (e.g., lender record + persistence/governance evidence)" ;
+  ] .
+
+# Evidence items must point to a source.
+jfibo:EvidenceItemShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:EvidenceItem ;
+  sh:property [
+    sh:path dcterms:source ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "evidence items must cite their source URI via dcterms:source" ;
+  ] .

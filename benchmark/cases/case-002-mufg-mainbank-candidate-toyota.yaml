@@ -1,0 +1,56 @@
+id: case-002-mufg-mainbank-candidate-toyota
+title: MUFG Bank as main-bank candidate for a Toyota Group entity
+title_ja: トヨタグループ向けメインバンク候補としての三菱UFJ銀行
+domain: main_bank_candidate
+source:
+  filer: Toyota Group reporting company (example)
+  filer_edinet_code: E02144
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」「大株主の状況」「経営者による財政状態...の分析」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/
+  notes: |
+    Persistence of MUFG as both a top-five long-term lender and a stable
+    presence in the major-shareholders table, combined with narrative
+    descriptions of relationship banking, is treated as evidence for a
+    *hypothesized* main-bank candidate rather than a disclosed legal fact.
+raw_claim: |
+  MUFG Bank is hypothesized to act as a primary lender, monitor, and
+  distress-coordination counterparty for the Toyota Group reporting entity,
+  based on persistence in borrowings schedules and shareholder lists.
+edinet_elements:
+  - jpcrp_cor:AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jpcrp_cor:MajorShareholdersTextBlock
+expected_semantic_fields:
+  - candidate_bank
+  - reporting_entity
+  - persistence_evidence
+  - borrowings_evidence
+  - shareholding_evidence
+  - relationship_narrative
+  - information_status_hypothesized
+  - evidence_locator
+  - reporting_period_validity
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fct-fse:Bank
+  represents:
+    - candidate_bank
+    - reporting_entity
+  cannot_represent_without_extension:
+    - persistence_evidence
+    - relationship_narrative
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity
+jfibo_mapping:
+  primary_class: jfibo:MainBankCandidate
+  represents:
+    - candidate_bank
+    - reporting_entity
+    - persistence_evidence
+    - borrowings_evidence
+    - shareholding_evidence
+    - relationship_narrative
+    - information_status_hypothesized
+    - evidence_locator
+    - reporting_period_validity
