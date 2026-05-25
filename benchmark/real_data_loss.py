@@ -1,4 +1,4 @@
-"""Real-EDINET semantic-loss benchmark for the J-FIBO v0.2 claim families.
+"""Real-EDINET semantic-loss benchmark for the J-FIBO v0.5 claim families.
 
 Scores three claim families against fixed expected-field schemas:
 
@@ -57,6 +57,22 @@ CROSS_EXPECTED = [
     "reporting_period_validity",
 ]
 CROSS_VANILLA = {"investor", "issuer"}
+
+BORROWINGS_EXPECTED = [
+    "borrower", "borrowings_class_label", "opening_balance",
+    "closing_balance", "average_rate", "repayment_deadline",
+    "unit_label", "evidence_element", "information_status",
+    "normative_status", "evidence_locator", "reporting_period_validity",
+]
+BORROWINGS_VANILLA = {"borrower"}
+
+COMMERCIAL_PAPER_EXPECTED = [
+    "borrower", "borrowings_class_label", "opening_balance",
+    "closing_balance", "average_rate", "unit_label",
+    "evidence_element", "information_status", "normative_status",
+    "evidence_locator", "reporting_period_validity",
+]
+COMMERCIAL_PAPER_VANILLA = {"borrower"}
 
 
 def _ratio(a: int, b: int) -> float:
@@ -136,12 +152,63 @@ def cross_metrics(g: Graph) -> list[dict]:
     return out
 
 
+
+def borrowings_metrics(g: Graph) -> list[dict]:
+    out: list[dict] = []
+    for c in g.subjects(RDF.type, JPFIBO.BorrowingsClaim):
+        f: set[str] = set()
+        if g.value(c, JPFIBO.hasBorrower): f.add("borrower")
+        if g.value(c, JPFIBO.hasBorrowingsClassLabel): f.add("borrowings_class_label")
+        if g.value(c, JPFIBO.hasOpeningBalance) is not None: f.add("opening_balance")
+        if g.value(c, JPFIBO.hasClosingBalance) is not None: f.add("closing_balance")
+        if g.value(c, JPFIBO.hasAverageRate) is not None: f.add("average_rate")
+        if g.value(c, JPFIBO.hasRepaymentDeadline): f.add("repayment_deadline")
+        if g.value(c, JPFIBO.hasUnitLabel): f.add("unit_label")
+        if any(g.objects(c, JPFIBO.hasEvidenceElement)): f.add("evidence_element")
+        if g.value(c, JPFIBO.informationStatus): f.add("information_status")
+        if g.value(c, JPFIBO.normativeStatus): f.add("normative_status")
+        if g.value(c, PROV.wasDerivedFrom): f.add("evidence_locator")
+        if g.value(c, DCTERMS.valid): f.add("reporting_period_validity")
+        v = f & BORROWINGS_VANILLA
+        out.append({
+            "claim": str(c), "kind": "BorrowingsClaim",
+            "fields": sorted(f),
+            "vanilla_coverage": _ratio(len(v), len(BORROWINGS_EXPECTED)),
+            "jfibo_coverage":   _ratio(len(f), len(BORROWINGS_EXPECTED)),
+        })
+    return out
+
+
+def commercial_paper_metrics(g: Graph) -> list[dict]:
+    out: list[dict] = []
+    for c in g.subjects(RDF.type, JPFIBO.CommercialPaperClaim):
+        f: set[str] = set()
+        if g.value(c, JPFIBO.hasBorrower): f.add("borrower")
+        if g.value(c, JPFIBO.hasBorrowingsClassLabel): f.add("borrowings_class_label")
+        if g.value(c, JPFIBO.hasOpeningBalance) is not None: f.add("opening_balance")
+        if g.value(c, JPFIBO.hasClosingBalance) is not None: f.add("closing_balance")
+        if g.value(c, JPFIBO.hasAverageRate) is not None: f.add("average_rate")
+        if g.value(c, JPFIBO.hasUnitLabel): f.add("unit_label")
+        if any(g.objects(c, JPFIBO.hasEvidenceElement)): f.add("evidence_element")
+        if g.value(c, JPFIBO.informationStatus): f.add("information_status")
+        if g.value(c, JPFIBO.normativeStatus): f.add("normative_status")
+        if g.value(c, PROV.wasDerivedFrom): f.add("evidence_locator")
+        if g.value(c, DCTERMS.valid): f.add("reporting_period_validity")
+        v = f & COMMERCIAL_PAPER_VANILLA
+        out.append({
+            "claim": str(c), "kind": "CommercialPaperClaim",
+            "fields": sorted(f),
+            "vanilla_coverage": _ratio(len(v), len(COMMERCIAL_PAPER_EXPECTED)),
+            "jfibo_coverage":   _ratio(len(f), len(COMMERCIAL_PAPER_EXPECTED)),
+        })
+    return out
+
 def run(claims_dir: Path = CLAIMS_DIR) -> dict:
     per_doc: dict[str, list[dict]] = {}
     all_claims: list[dict] = []
     for p in sorted(claims_dir.glob("*.ttl")):
         g = Graph().parse(p)
-        m = policy_metrics(g) + major_metrics(g) + cross_metrics(g)
+        m = (policy_metrics(g) + major_metrics(g) + cross_metrics(g) + borrowings_metrics(g) + commercial_paper_metrics(g))
         per_doc[p.stem] = m
         for x in m:
             x["doc_id"] = p.stem
@@ -182,7 +249,7 @@ def main() -> int:
     args.out.write_text(json.dumps(summary, ensure_ascii=False, indent=2))
     if not summary or summary.get("claims", 0) == 0:
         print("no claims found"); return 0
-    print("J-FIBO real-EDINET semantic-loss benchmark (v0.2)")
+    print("J-FIBO real-EDINET semantic-loss benchmark (v0.5)")
     print("=" * 52)
     print(f"claims:                          {summary['claims']}")
     print(f"mean vanilla FIBO coverage:      {summary['mean_vanilla_coverage']:.3f}")

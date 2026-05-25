@@ -1030,3 +1030,166 @@ terms:
     status: proposed
     contributed_by: jfibo-wg-bootstrap
     session: 2026-05-25-v0.1-bootstrap
+
+  # =========================================================================
+  # v0.5 — official EDINET XBRL metadata annotations on alignment concepts
+  # =========================================================================
+  - id: xbrlPeriodType
+    module: edinet-alignment
+    kind: annotation_property
+    level: propose
+    parent: rdfs:comment
+    labels: {ja: XBRL期間区分, en: XBRL period type}
+    definition_en: The XBRL periodType attribute (`instant` or `duration`) declared by the official EDINET taxonomy for an aligned element. Carried verbatim so consumers can validate temporal semantics without re-fetching the XBRL schema.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Read this as evidence about the source element, not as a constraint J-FIBO imposes."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+    scope_note_en: Read this as evidence about the source element, not as a constraint J-FIBO imposes.
+
+  - id: xbrlType
+    module: edinet-alignment
+    kind: annotation_property
+    level: propose
+    parent: rdfs:comment
+    labels: {ja: XBRLデータ型, en: XBRL item type}
+    definition_en: The XBRL `type` attribute (e.g. `xbrli:stringItemType`, `xbrli:monetaryItemType`) declared by the official EDINET taxonomy for an aligned element.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Faithful copy from the EDINET XBRL schema; not interpreted by J-FIBO."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: xbrlAbstract
+    module: edinet-alignment
+    kind: annotation_property
+    level: propose
+    parent: rdfs:comment
+    labels: {ja: XBRL抽象要素, en: XBRL abstract flag}
+    definition_en: Whether the EDINET taxonomy element is marked abstract (a tree node, not directly reportable). Carried verbatim from the official taxonomy.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Abstract elements are organizational headers; consumers should not expect a reported value."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: xbrlPrefix
+    module: edinet-alignment
+    kind: annotation_property
+    level: propose
+    parent: rdfs:comment
+    labels: {ja: XBRLプレフィックス, en: XBRL namespace prefix}
+    definition_en: The EDINET XBRL namespace prefix family (e.g. jpdei_cor, jpcrp_cor, jppfs_cor) of the aligned element.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Use to group elements by EDINET prefix family (jpdei_cor, jpcrp_cor, jppfs_cor, jpsps_cor, jplvh_cor, jpaud_cor, jpctl_cor, jpigp_cor)."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasOfficialJapaneseLabel
+    module: edinet-alignment
+    kind: annotation_property
+    level: propose
+    parent: skos:altLabel
+    labels: {ja: 公式日本語ラベル, en: has official Japanese label}
+    definition_en: The "terse" Japanese label (冗長ラベル) declared by the FSA for an EDINET taxonomy element, carried verbatim so consumers can join on the exact disclosure wording.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Distinct from skos:prefLabel@ja because the terse/redundant Japanese label often differs from the heading-style standard label."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  # =========================================================================
+  # v0.5 — CommercialPaperClaim (depth on bank/funding disclosures)
+  # =========================================================================
+  - id: CommercialPaperClaim
+    module: disclosure-claim
+    kind: class
+    level: propose
+    parent: DisclosureClaim
+    labels: {ja: コマーシャル・ペーパー残高開示, en: commercial paper claim}
+    definition_en: A disclosure claim about commercial-paper issuance, typically the parenthetical schedule appended to the borrowings table for banks and other treasury-active filers. One claim per row (issuance program or period).
+    scope_note_en: For banks, CP issuance is reported alongside but separately from 借入金等明細表; we model it as its own atomic claim so totals are not double-counted.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasOpeningBalance
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 期首残高, en: opening balance}
+    definition_en: Balance at the start of the period (当期首残高), expressed as a literal number whose unit is captured at the claim level.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Pair with hasUnitLabel; do not auto-convert units."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasClosingBalance
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 期末残高, en: closing balance}
+    definition_en: Balance at the end of the period (当期末残高), expressed as a literal number whose unit is captured at the claim level.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: Pair with hasUnitLabel; do not auto-convert units.
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasAverageRate
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 平均利率, en: average interest rate}
+    definition_en: Weighted-average interest rate (平均利率) for a borrowings or commercial-paper class, expressed as a percentage literal.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Percentage as disclosed; consumers must not multiply by 0.01 without checking the disclosure unit."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasRepaymentDeadline
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdf:value
+    labels: {ja: 返済期限, en: repayment deadline}
+    definition_en: Stated repayment-deadline range (返済期限) as a verbatim disclosure literal; structured parsing is intentionally not enforced because the disclosure is often a free-form range.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Often a Japanese-month-range string such as '2024年 1月〜2051年 10月'; intentionally preserved verbatim."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasBorrowingsClassLabel
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdfs:label
+    labels: {ja: 借入金区分ラベル, en: borrowings class label}
+    definition_en: Verbatim 区分 label as it appears in 借入金等明細表 (e.g. 借入金, リース債務, 借用金, 再割引手形, コマーシャル・ペーパー).
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Use to keep BorrowingsClaim rows joinable back to the verbatim 区分 cell."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage
+
+  - id: hasUnitLabel
+    module: disclosure-claim
+    kind: datatype_property
+    level: propose
+    parent: rdfs:label
+    labels: {ja: 単位ラベル, en: has unit label}
+    definition_en: Verbatim unit label as disclosed (e.g. 百万円, ％), preserved without unit conversion so the claim remains auditable against the source row.
+    sources: ["https://www.fsa.go.jp/search/20251111.html"]
+    scope_note_en: "Examples: 百万円, 千円, ％. Stored as a label so claims remain auditable against the source row without silent unit conversion."
+    status: proposed
+    contributed_by: jfibo-wg-bootstrap
+    session: 2026-05-25-v0.5-coverage

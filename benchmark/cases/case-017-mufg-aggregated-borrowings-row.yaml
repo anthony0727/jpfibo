@@ -1,0 +1,52 @@
+id: case-017-mufg-aggregated-borrowings-row
+title: MUFG aggregated 借入金 row from consolidated 借入金等明細表
+title_ja: 三菱ＵＦＪフィナンシャル・グループ 連結借入金等明細表の集計行
+domain: borrowings_evidence
+source:
+  filer: Mitsubishi UFJ Financial Group, Inc.
+  document: Annual securities report (有価証券報告書), FY2024
+  cited_section: "「借入金等明細表」"
+  edinet_url: https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB
+  notes: |
+    Bank borrowings are reported in aggregate (借用金, then itemised into
+    借入金 / 再割引手形 / リース債務). Lender identity is *not* disclosed at
+    the row level — the SHACL shape therefore makes hasLender optional
+    while keeping borrower / class-label / evidence-element mandatory.
+raw_claim: |
+  Consolidated 借入金 opening 25,955,961 百万円, closing 22,101,954 百万円,
+  weighted-average 0.68%, repayment range 2024年 1月～2051年 10月.
+edinet_elements:
+  - jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock
+  - jppfs_cor:BorrowedMoneyLiabilitiesBNK
+expected_semantic_fields:
+  - borrower_name
+  - borrowings_class_label
+  - opening_balance
+  - closing_balance
+  - average_interest_rate
+  - repayment_deadline_text
+  - currency_unit_label
+  - evidence_text_block
+vanilla_fibo_mapping:
+  primary_class: fibo-fbc-fi-fi:Security
+  represents:
+    - borrower_name
+  cannot_represent_without_extension:
+    - borrowings_class_label
+    - opening_balance
+    - closing_balance
+    - average_interest_rate
+    - repayment_deadline_text
+    - currency_unit_label
+    - evidence_text_block
+jfibo_mapping:
+  primary_class: jfibo:BorrowingsClaim
+  represents:
+    - borrower_name
+    - borrowings_class_label
+    - opening_balance
+    - closing_balance
+    - average_interest_rate
+    - repayment_deadline_text
+    - currency_unit_label
+    - evidence_text_block

@@ -23,11 +23,14 @@ from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
+import json
 import yaml
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DCTERMS, OWL, PROV, RDF, RDFS, SKOS, XSD
 
 REPO = Path(__file__).resolve().parents[1]
+FOCUS_JSON = REPO / "data" / "derived" / "edinet_taxonomy_focus.json"
+
 REGISTRY = REPO / "registry" / "terms.yaml"
 CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
 AGGREGATE_OUT = REPO / "ontology" / "jfibo.ttl"
@@ -66,6 +69,11 @@ EDINET_XBRL_NAMESPACES: dict[str, str] = {
     "jpdei_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpdei/2013-08-31/jpdei_cor",
     "jpcrp_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor",
     "jppfs_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jppfs/2025-11-01/jppfs_cor",
+    "jpsps_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpsps/2025-11-01/jpsps_cor",
+    "jplvh_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jplvh/2025-11-01/jplvh_cor",
+    "jpaud_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpaud/2025-11-01/jpaud_cor",
+    "jpctl_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpctl/2025-11-01/jpctl_cor",
+    "jpigp_cor": "http://disclosure.edinet-fsa.go.jp/taxonomy/jpigp/2025-11-01/jpigp_cor",
 }
 EDINET_RDF_PREFIXES: dict[str, Namespace] = {
     p: Namespace(ns + "#") for p, ns in EDINET_XBRL_NAMESPACES.items()
@@ -167,7 +175,53 @@ def add_common_metadata(
         g.add((iri, PROV.wasGeneratedBy, session_iri(sid)))
 
 
+def _load_edinet_focus() -> dict[str, dict[str, Any]]:
+    """Index ``data/derived/edinet_taxonomy_focus.json`` by ``prefix:element``.
+
+    Builds: { "jpcrp_cor:MajorShareholdersTextBlock": {...full row...}, ... }
+    so add_edinet_concepts can emit official EDINET labels and XBRL metadata
+    instead of inventing English from the URI local name.
+    """
+    if not FOCUS_JSON.exists():
+        return {}
+    doc = json.loads(FOCUS_JSON.read_text())
+    out: dict[str, dict[str, Any]] = {}
+    def _score(row: dict[str, Any]) -> int:
+        # Prefer rows that actually carry both bilingual labels and XBRL metadata.
+        return (
+            int(bool(row.get("standard_label_ja"))) +
+            int(bool(row.get("standard_label_en"))) +
+            int(bool(row.get("terse_label_ja"))) +
+            int(bool(row.get("period_type"))) +
+            int(bool(row.get("type")))
+        )
+    for row in doc.get("elements", []):
+        key = f"{row['prefix']}:{row['element']}"
+        prev = out.get(key)
+        if prev is None or _score(row) > _score(prev):
+            out[key] = row
+    return out
+
+
 def add_edinet_concepts(g: Graph, registry: dict[str, Any], ontology_iri: URIRef, elements: set[str]) -> None:
+    """Emit one SKOS Concept per EDINET element with official bilingual labels.
+
+    Label provenance (in order of preference):
+      * ``standard_label_en`` / ``standard_label_ja`` from the FSA's
+        ``1e_ElementList.xlsx`` (official translation).
+      * ``terse_label_ja`` mapped to ``jfibo:hasOfficialJapaneseLabel``.
+      * If the element is not in the focus file, fall back to the URI local
+        name as the English label and emit a build-time warning so the gap is
+        visible (we do NOT silently mint English from camelCase).
+    """
+    focus = _load_edinet_focus()
+    xbrl_period_type = URIRef(str(JPFIBO) + "xbrlPeriodType")
+    xbrl_type = URIRef(str(JPFIBO) + "xbrlType")
+    xbrl_abstract = URIRef(str(JPFIBO) + "xbrlAbstract")
+    xbrl_prefix = URIRef(str(JPFIBO) + "xbrlPrefix")
+    has_official_ja = URIRef(str(JPFIBO) + "hasOfficialJapaneseLabel")
+
+    missing: list[str] = []
     for element in sorted(elements):
         prefix, local = element.split(":", 1)
         iri = edinet_element_iri(element)
@@ -176,7 +230,38 @@ def add_edinet_concepts(g: Graph, registry: dict[str, Any], ontology_iri: URIRef
         g.add((iri, SKOS.notation, Literal(element)))
         g.add((iri, RDFS.isDefinedBy, ontology_iri))
         g.add((iri, DCTERMS.source, URIRef(EDINET_XBRL_NAMESPACES[prefix])))
-        g.add((iri, SKOS.prefLabel, Literal(local, lang="en")))
+        row = focus.get(element)
+        if row:
+            if row.get("standard_label_en"):
+                g.add((iri, SKOS.prefLabel, Literal(row["standard_label_en"], lang="en")))
+            else:
+                g.add((iri, SKOS.prefLabel, Literal(local, lang="en")))
+                missing.append(element + " (missing standard_label_en)")
+            if row.get("standard_label_ja"):
+                g.add((iri, SKOS.prefLabel, Literal(row["standard_label_ja"], lang="ja")))
+            if row.get("terse_label_ja"):
+                g.add((iri, has_official_ja, Literal(row["terse_label_ja"], lang="ja")))
+            if row.get("terse_label_en"):
+                g.add((iri, SKOS.altLabel, Literal(row["terse_label_en"], lang="en")))
+            if row.get("period_type"):
+                g.add((iri, xbrl_period_type, Literal(row["period_type"])))
+            if row.get("type"):
+                g.add((iri, xbrl_type, Literal(row["type"])))
+            if row.get("abstract"):
+                g.add((iri, xbrl_abstract, Literal(row["abstract"])))
+            g.add((iri, xbrl_prefix, Literal(prefix)))
+        else:
+            g.add((iri, SKOS.prefLabel, Literal(local, lang="en")))
+            missing.append(element)
+    if missing:
+        # Visible build warning but not fatal: keeps developer in the loop.
+        import sys as _sys
+        print(
+            "warn: " + str(len(missing)) + " EDINET element(s) missing from focus JSON; "
+            "fell back to camelCase English label: " + ", ".join(missing[:6]) +
+            (" ..." if len(missing) > 6 else ""),
+            file=_sys.stderr,
+        )
 
 
 def validate_registry(
@@ -335,7 +420,13 @@ def build(
         for e in term.get("edinet_elements", []):
             edinet_elements_by_module["edinet-alignment"].add(e)
 
+    # Broaden EDINET coverage: also mint a concept for every official EDINET
+    # element listed in the focus JSON, even if no J-FIBO term explicitly
+    # references it yet. This makes the alignment module a thin SKOS
+    # gateway over the FSA-published taxonomy.
     if "edinet-alignment" in graphs:
+        focus_rows = _load_edinet_focus()
+        edinet_elements_by_module["edinet-alignment"].update(focus_rows.keys())
         add_edinet_concepts(
             graphs["edinet-alignment"],
             registry,

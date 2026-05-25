@@ -137,16 +137,50 @@ jfibo:BorrowingsClaimShape
   a sh:NodeShape ;
   sh:targetClass jfibo:BorrowingsClaim ;
   sh:property [
-    sh:path jfibo:hasLender ;
+    sh:path jfibo:hasBorrower ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRI ;
-    sh:message "borrowings claims must identify the lender via jfibo:hasLender" ;
+    sh:message "borrowings claims must identify the borrower (the reporting company) via jfibo:hasBorrower" ;
   ] ;
+  sh:property [
+    sh:path jfibo:hasBorrowingsClassLabel ;
+    sh:minCount 1 ;
+    sh:message "borrowings claims must carry the verbatim 区分 label (借入金, リース債務, 借用金, ...) as jfibo:hasBorrowingsClassLabel for joinback to the source row" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasEvidenceElement ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "borrowings claims must cite at least one EDINET evidence element (the 借入金等明細表 text block)" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasLender ;
+    sh:nodeKind sh:IRI ;
+    sh:message "lender identification is optional and only meaningful for filer-disclosed lender-by-lender claims; the aggregated 借入金等明細表 does not require it" ;
+  ] .
+
+# Commercial-paper issuance is disclosed alongside but separately from the
+# borrowings schedule (typically as a parenthetical for treasury-active filers
+# such as banks). We model it as its own claim so totals are not double-counted.
+jfibo:CommercialPaperClaimShape
+  a sh:NodeShape ;
+  sh:targetClass jfibo:CommercialPaperClaim ;
   sh:property [
     sh:path jfibo:hasBorrower ;
     sh:minCount 1 ;
     sh:nodeKind sh:IRI ;
-    sh:message "borrowings claims must identify the borrower via jfibo:hasBorrower" ;
+    sh:message "commercial-paper claims must identify the issuer (the reporting company) via jfibo:hasBorrower" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasClosingBalance ;
+    sh:minCount 1 ;
+    sh:message "commercial-paper claims must carry a closing balance (当期末残高)" ;
+  ] ;
+  sh:property [
+    sh:path jfibo:hasEvidenceElement ;
+    sh:minCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:message "commercial-paper claims must cite the 借入金等明細表 (or equivalent) text block as evidence" ;
   ] .
 
 jfibo:MainBankCandidateShape

@@ -1,0 +1,22 @@
+@prefix jfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+# Modelled on Mitsubishi UFJ FG's FY2024 借入金等明細表 ─ aggregated 借入金 row.
+<urn:example:claim/borrowings/001>
+  a jfibo:BorrowingsClaim ;
+  jfibo:hasBorrower <urn:example:entity/edinet/E03606> ;
+  jfibo:hasBorrowingsClassLabel "借入金"@ja ;
+  jfibo:hasOpeningBalance "25955961"^^xsd:decimal ;
+  jfibo:hasClosingBalance "22101954"^^xsd:decimal ;
+  jfibo:hasAverageRate    "0.68"^^xsd:decimal ;
+  jfibo:hasRepaymentDeadline "2024年 1月～ 2051年 10月"@ja ;
+  jfibo:hasUnitLabel "百万円"@ja ;
+  jfibo:hasEvidenceElement jpcrp_cor:AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock ;
+  prov:wasDerivedFrom <urn:example:edinet/S100W4FB> ;
+  jfibo:informationStatus jfibo:Disclosed ;
+  jfibo:normativeStatus   jfibo:AccountingDisclosure ;
+  prov:generatedAtTime "2025-06-25T15:30:00+09:00"^^xsd:dateTime ;
+  dcterms:valid "2025-03-31"^^xsd:date .

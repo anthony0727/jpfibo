@@ -34,6 +34,7 @@ from entity_resolver import resolve as resolve_entity
 REPO = Path(__file__).resolve().parents[1]
 EXTRACTED_DIR = REPO / "data" / "edinet" / "extracted"
 MS_DIR = REPO / "data" / "edinet" / "major_shareholders"
+BORROWINGS_DIR = REPO / "data" / "edinet" / "borrowings"
 CLAIMS_DIR = REPO / "data" / "edinet" / "claims"
 
 JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
@@ -149,6 +150,7 @@ def claim_iri(doc_id: str, kind: str, suffix: str) -> URIRef:
 def materialize(
     extracted: dict,
     major_shareholders: dict | None,
+    borrowings: dict | None = None,
 ) -> tuple[Graph, dict[str, int]]:
     g = Graph()
     bind_prefixes(g)
@@ -236,6 +238,57 @@ def materialize(
             holder_iris_by_filer[str(filer)].add(holder_iri)
             counts["major_shareholder"] += 1
 
+    # ---- BorrowingsClaim + CommercialPaperClaim --------------------------
+    if borrowings:
+        kind = borrowings.get("kind") or "fs"
+        text_block_iri = (
+            JPCRP_COR["AnnexedConsolidatedDetailedScheduleOfBorrowingsTextBlock"]
+            if kind == "consolidated"
+            else JPCRP_COR["AnnexedDetailedScheduleOfBorrowingsFinancialStatementsTextBlock"]
+        )
+        for r in borrowings.get("rows", []):
+            claim = claim_iri(doc_id, "borrowings", f"row{r['row_index']:02d}-{r['class_label_ja']}")
+            g.add((claim, RDF.type, JPFIBO.BorrowingsClaim))
+            g.add((claim, JPFIBO.hasBorrower, filer))
+            g.add((claim, JPFIBO.hasBorrowingsClassLabel, Literal(r["class_label_ja"], lang="ja")))
+            if r.get("opening_balance_million_jpy") is not None:
+                g.add((claim, JPFIBO.hasOpeningBalance, Literal(r["opening_balance_million_jpy"], datatype=XSD.decimal)))
+            if r.get("closing_balance_million_jpy") is not None:
+                g.add((claim, JPFIBO.hasClosingBalance, Literal(r["closing_balance_million_jpy"], datatype=XSD.decimal)))
+            if r.get("average_rate_percent") is not None:
+                g.add((claim, JPFIBO.hasAverageRate, Literal(r["average_rate_percent"], datatype=XSD.decimal)))
+            if r.get("repayment_deadline_ja"):
+                g.add((claim, JPFIBO.hasRepaymentDeadline, Literal(r["repayment_deadline_ja"], lang="ja")))
+            if r.get("unit_label_ja"):
+                g.add((claim, JPFIBO.hasUnitLabel, Literal(r["unit_label_ja"], lang="ja")))
+            g.add((claim, JPFIBO.hasEvidenceElement, text_block_iri))
+            g.add((claim, PROV.wasDerivedFrom, document_iri))
+            g.add((claim, JPFIBO.informationStatus, JPFIBO.Disclosed))
+            g.add((claim, JPFIBO.normativeStatus, JPFIBO.AccountingDisclosure))
+            g.add((claim, PROV.generatedAtTime, Literal(generated.isoformat(), datatype=XSD.dateTime)))
+            g.add((claim, DCTERMS.valid, Literal(fy_end, datatype=XSD.date)))
+            counts["borrowings"] += 1
+        for r in borrowings.get("commercial_paper", []):
+            claim = claim_iri(doc_id, "commercial-paper", f"row{r['row_index']:02d}")
+            g.add((claim, RDF.type, JPFIBO.CommercialPaperClaim))
+            g.add((claim, JPFIBO.hasBorrower, filer))
+            g.add((claim, JPFIBO.hasBorrowingsClassLabel, Literal(r["class_label_ja"], lang="ja")))
+            if r.get("opening_balance_million_jpy") is not None:
+                g.add((claim, JPFIBO.hasOpeningBalance, Literal(r["opening_balance_million_jpy"], datatype=XSD.decimal)))
+            if r.get("closing_balance_million_jpy") is not None:
+                g.add((claim, JPFIBO.hasClosingBalance, Literal(r["closing_balance_million_jpy"], datatype=XSD.decimal)))
+            if r.get("average_rate_percent") is not None:
+                g.add((claim, JPFIBO.hasAverageRate, Literal(r["average_rate_percent"], datatype=XSD.decimal)))
+            if r.get("unit_label_ja"):
+                g.add((claim, JPFIBO.hasUnitLabel, Literal(r["unit_label_ja"], lang="ja")))
+            g.add((claim, JPFIBO.hasEvidenceElement, text_block_iri))
+            g.add((claim, PROV.wasDerivedFrom, document_iri))
+            g.add((claim, JPFIBO.informationStatus, JPFIBO.Disclosed))
+            g.add((claim, JPFIBO.normativeStatus, JPFIBO.AccountingDisclosure))
+            g.add((claim, PROV.generatedAtTime, Literal(generated.isoformat(), datatype=XSD.dateTime)))
+            g.add((claim, DCTERMS.valid, Literal(fy_end, datatype=XSD.date)))
+            counts["commercial_paper"] += 1
+
     return g, dict(counts), issuer_iris_by_filer, holder_iris_by_filer
 
 
@@ -302,14 +355,19 @@ def main() -> int:
         extracted = json.loads(p.read_text())
         ms_path = MS_DIR / f"{doc_id}.json"
         major = json.loads(ms_path.read_text()) if ms_path.exists() else None
-        g, counts, iss, hol = materialize(extracted, major)
+        bp = BORROWINGS_DIR / f"{doc_id}.json"
+        borrowings = json.loads(bp.read_text()) if bp.exists() else None
+        g, counts, iss, hol = materialize(extracted, major, borrowings)
         out = CLAIMS_DIR / f"{doc_id}.ttl"
         g.serialize(destination=out, format="turtle")
         for k, v in counts.items():
             total[k] += v
         print(
             f"{doc_id}: policy={counts.get('policy_shareholding',0)} "
-            f"major_shareholder={counts.get('major_shareholder',0)} -> {out.relative_to(REPO)} ({len(g)} triples)"
+            f"major_shareholder={counts.get('major_shareholder',0)} "
+            f"borrowings={counts.get('borrowings',0)} "
+            f"commercial_paper={counts.get('commercial_paper',0)} "
+            f"-> {out.relative_to(REPO)} ({len(g)} triples)"
         )
         for k, v in iss.items(): all_issuers[URIRef(k)].update(v)
         for k, v in hol.items(): all_holders[URIRef(k)].update(v)
@@ -319,7 +377,12 @@ def main() -> int:
         jcn_iri, src = _resolve(extracted["dei"]["filer_name_ja"]["value"])
         if src == "jcn":
             filer_jcn_iri[filer_iri_v] = URIRef(jcn_iri)
-    print(f"total: policy={total['policy_shareholding']} major_shareholder={total['major_shareholder']}")
+    print(
+        f"total: policy={total['policy_shareholding']} "
+        f"major_shareholder={total['major_shareholder']} "
+        f"borrowings={total['borrowings']} "
+        f"commercial_paper={total['commercial_paper']}"
+    )
 
     # Triangulate cross-shareholding claims from the loaded corpus.
     cs = triangulate_cross_shareholdings(

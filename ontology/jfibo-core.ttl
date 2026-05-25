@@ -72,6 +72,13 @@ jfibo:SougouShousha a owl:Class ;
     jfibo:level "align" ;
     jfibo:status "proposed" .
 
+<https://w3id.org/jfibo/session/2026-05-25-v0.5-coverage> a prov:Activity ;
+    dcterms:date "2026-05-25"^^xsd:date ;
+    rdfs:isDefinedBy jfibo: ;
+    skos:definition "Increase EDINET coverage (width + depth); honor official EDINET bilingual labels and XBRL metadata on alignment concepts; materialize BorrowingsClaim and add CommercialPaperClaim from real MUFG schedule; reframe README around roles / responsibilities / regimes / relationships."@en ;
+    prov:startedAtTime "2026-05-25T00:00:00+09:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> .
+
 <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> a prov:Activity ;
     dcterms:date "2026-05-25"^^xsd:date ;
     rdfs:isDefinedBy jfibo: ;
