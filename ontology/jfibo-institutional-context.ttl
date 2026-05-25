@@ -1,55 +1,55 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-jpfibo:CrossShareholdingClaim a owl:Class ;
+jfibo:CrossShareholdingClaim a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/institutional-context/> ;
-    rdfs:subClassOf jpfibo:DisclosureClaim ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
     skos:definition "An evidence-backed claim that two entities each hold shares or economically meaningful ownership interests in the other."@en ;
     skos:prefLabel "cross-shareholding claim"@en,
         "相互保有主張"@ja ;
     skos:scopeNote "Requires two separately evidenced holding claims (PolicyShareholding or MajorShareholderClaim); do not infer stable alliance, control, or future support solely from mutual holdings."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:InstitutionalRelationshipHypothesis a owl:Class ;
+jfibo:InstitutionalRelationshipHypothesis a owl:Class ;
     dcterms:source <https://www.w3.org/TR/prov-o/> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/institutional-context/> ;
-    rdfs:subClassOf jpfibo:DisclosureClaim ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
     skos:definition "A hypothesis about a Japanese institutional finance relationship, represented separately from disclosed legal, accounting, or ownership facts."@en ;
     skos:prefLabel "institutional relationship hypothesis"@en,
         "制度的関係仮説"@ja ;
     skos:scopeNote "Keep this outside factual disclosure unless evidence thresholds and information status explicitly justify an inferred claim."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-jpfibo:MainBankCandidate a owl:Class ;
+jfibo:MainBankCandidate a owl:Class ;
     dcterms:source <https://www.fsa.go.jp/search/20251111.html>,
         <https://www.nber.org/papers/w23715> ;
-    rdfs:isDefinedBy <https://w3id.org/jpfibo/ontology/JP/institutional-context/> ;
-    rdfs:subClassOf jpfibo:DisclosureClaim ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/institutional-context/> ;
+    rdfs:subClassOf jfibo:DisclosureClaim ;
     skos:definition "An evidence-backed hypothesis that a bank may function as a primary lender, monitor, or distress-coordination counterparty for an entity."@en ;
     skos:prefLabel "main-bank candidate"@en,
         "メインバンク候補"@ja ;
     skos:scopeNote "Not a contractual relation and not a future support guarantee; instantiate only from disclosed borrowing, shareholding, persistence, or explicit narrative evidence."@en ;
-    prov:wasAttributedTo <https://w3id.org/jpfibo/contributor/jpfibo-wg-bootstrap> ;
-    prov:wasGeneratedBy <https://w3id.org/jpfibo/session/2026-05-25-v0.1-bootstrap> ;
-    jpfibo:level "propose" ;
-    jpfibo:status "proposed" .
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.1-bootstrap> ;
+    jfibo:level "propose" ;
+    jfibo:status "proposed" .
 
-<https://w3id.org/jpfibo/ontology/JP/institutional-context/> a owl:Ontology ;
+<https://w3id.org/jfibo/ontology/JP/institutional-context/> a owl:Ontology ;
     rdfs:label "J-FIBO Institutional Context"@en,
         "金融意味基盤・日本版 制度的文脈"@ja ;
     dcterms:license <https://opensource.org/licenses/MIT> ;
     dcterms:source <https://spec.edmcouncil.org/fibo/> ;
-    owl:versionIRI <https://w3id.org/jpfibo/ontology/JP/institutional-context/0.2.0/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/institutional-context/0.2.0/> ;
     owl:versionInfo "0.2.0" .
 

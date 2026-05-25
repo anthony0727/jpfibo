@@ -1,7 +1,11 @@
 [project]
-name = "jpfibo"
-version = "0.1.0"
+name = "jfibo"
+version = "0.4.0"
+description = "Japanese-finance extension of FIBO: ontology, SHACL shapes, EDINET alignment, and benchmark."
+readme = "README.md"
 requires-python = ">=3.13"
+license = { file = "LICENSE" }
+authors = [{ name = "Anthony W. Jung" }]
 dependencies = [
     "lxml>=6.1.1",
     "openpyxl>=3.1.5",

@@ -11,12 +11,12 @@ from rdflib.namespace import OWL, RDF, RDFS, SKOS, PROV
 REPO = Path(__file__).resolve().parents[1]
 ONTOLOGY_DIR = REPO / "ontology"
 REGISTRY = REPO / "registry" / "terms.yaml"
-JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 
 
 def load_aggregate() -> Graph:
     g = Graph()
-    for ttl in sorted(ONTOLOGY_DIR.glob("jpfibo-*.ttl")):
+    for ttl in sorted(ONTOLOGY_DIR.glob("jfibo-*.ttl")):
         g.parse(ttl)
     return g
 
@@ -28,17 +28,17 @@ def aggregate() -> Graph:
 
 def test_modules_present() -> None:
     expected = {
-        "jpfibo-core.ttl",
-        "jpfibo-information-status.ttl",
-        "jpfibo-normative-status.ttl",
-        "jpfibo-reporting-regime.ttl",
-        "jpfibo-document-type.ttl",
-        "jpfibo-holder-role.ttl",
-        "jpfibo-disclosure-claim.ttl",
-        "jpfibo-institutional-context.ttl",
-        "jpfibo-edinet-alignment.ttl",
+        "jfibo-core.ttl",
+        "jfibo-information-status.ttl",
+        "jfibo-normative-status.ttl",
+        "jfibo-reporting-regime.ttl",
+        "jfibo-document-type.ttl",
+        "jfibo-holder-role.ttl",
+        "jfibo-disclosure-claim.ttl",
+        "jfibo-institutional-context.ttl",
+        "jfibo-edinet-alignment.ttl",
     }
-    found = {p.name for p in ONTOLOGY_DIR.glob("jpfibo-*.ttl")}
+    found = {p.name for p in ONTOLOGY_DIR.glob("jfibo-*.ttl")}
     assert expected.issubset(found), f"missing modules: {expected - found}"
 
 
@@ -75,7 +75,7 @@ def test_holder_role_individuals(aggregate: Graph) -> None:
     assert expected == found, found
 
 
-def test_every_jpfibo_class_has_label_def_source(aggregate: Graph) -> None:
+def test_every_jfibo_class_has_label_def_source(aggregate: Graph) -> None:
     for s in set(aggregate.subjects(RDF.type, OWL.Class)):
         if not str(s).startswith(str(JPFIBO)):
             continue

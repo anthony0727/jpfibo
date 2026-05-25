@@ -1,158 +1,158 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
 @prefix jpcrp_cor: <http://disclosure.edinet-fsa.go.jp/taxonomy/jpcrp/2025-11-01/jpcrp_cor#> .
-@prefix jpfibo: <https://w3id.org/jpfibo/ontology/JP/core/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank01> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank01> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/1010001075076> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 16.71 ;
-    jpfibo:hasShareCount 1926957300 ;
-    jpfibo:hasShareholderRank 1 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/1010001075076> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 16.71 ;
+    jfibo:hasShareCount 1926957300 ;
+    jfibo:hasShareholderRank 1 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank02> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank02> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/8010001143625> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 5.85 ;
-    jpfibo:hasShareCount 675597400 ;
-    jpfibo:hasShareholderRank 2 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/8010001143625> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 5.85 ;
+    jfibo:hasShareCount 675597400 ;
+    jfibo:hasShareholderRank 2 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank03> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank03> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/5010001008846> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 2.54 ;
-    jpfibo:hasShareCount 293041314 ;
-    jpfibo:hasShareholderRank 3 ;
-    jpfibo:holderRole jpfibo:ADRDepositary ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/5010001008846> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 2.54 ;
+    jfibo:hasShareCount 293041314 ;
+    jfibo:hasShareholderRank 3 ;
+    jfibo:holderRole jfibo:ADRDepositary ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank04> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank04> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 2.48 ;
-    jpfibo:hasShareCount 286793313 ;
-    jpfibo:hasShareholderRank 4 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 2.48 ;
+    jfibo:hasShareCount 286793313 ;
+    jfibo:hasShareholderRank 4 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank05> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank05> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 2.03 ;
-    jpfibo:hasShareCount 234997891 ;
-    jpfibo:hasShareholderRank 5 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 2.03 ;
+    jfibo:hasShareCount 234997891 ;
+    jfibo:hasShareholderRank 5 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank06> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank06> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/1010001075076> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 1.51 ;
-    jpfibo:hasShareCount 175000000 ;
-    jpfibo:hasShareholderRank 6 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/1010001075076> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 1.51 ;
+    jfibo:hasShareCount 175000000 ;
+    jfibo:hasShareholderRank 6 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank07> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank07> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 1.45 ;
-    jpfibo:hasShareCount 167452730 ;
-    jpfibo:hasShareholderRank 7 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 1.45 ;
+    jfibo:hasShareCount 167452730 ;
+    jfibo:hasShareholderRank 7 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank08> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank08> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/1010001075076> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 1.23 ;
-    jpfibo:hasShareCount 142562953 ;
-    jpfibo:hasShareholderRank 8 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/1010001075076> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 1.23 ;
+    jfibo:hasShareCount 142562953 ;
+    jfibo:hasShareholderRank 8 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank09> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank09> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <https://w3id.org/jpfibo/entity/jcn/7010001008844> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 1.15 ;
-    jpfibo:hasShareCount 133563456 ;
-    jpfibo:hasShareholderRank 9 ;
-    jpfibo:holderRole jpfibo:CustodyBank ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <https://w3id.org/jfibo/entity/jcn/7010001008844> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 1.15 ;
+    jfibo:hasShareCount 133563456 ;
+    jfibo:hasShareholderRank 9 ;
+    jfibo:holderRole jfibo:CustodyBank ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/major-shareholder/rank10> a jpfibo:MajorShareholderClaim ;
+<urn:jfibo:claim:S100W4FB/major-shareholder/rank10> a jfibo:MajorShareholderClaim ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
-    jpfibo:hasHolder <urn:jpfibo:issuer-fallback:5d8328c6c927f4ad> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasOwnershipPercentage 1.07 ;
-    jpfibo:hasShareCount 123634300 ;
-    jpfibo:hasShareholderRank 10 ;
-    jpfibo:holderRole jpfibo:Trustee ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:AccountingDisclosure .
+    jfibo:hasEvidenceElement jpcrp_cor:MajorShareholdersTextBlock ;
+    jfibo:hasHolder <urn:jfibo:issuer-fallback:5d8328c6c927f4ad> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasOwnershipPercentage 1.07 ;
+    jfibo:hasShareCount 123634300 ;
+    jfibo:hasShareholderRank 10 ;
+    jfibo:holderRole jfibo:Trustee ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:AccountingDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row10Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row10Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 13156000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 13156000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -163,20 +163,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:59f55412408d5e83> ;
-    jpfibo:hasShareCount 7135000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:59f55412408d5e83> ;
+    jfibo:hasShareCount 7135000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row11Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row11Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 20096000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 20096000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -187,20 +187,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:00ac548e96d080ae> ;
-    jpfibo:hasShareCount 8000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:00ac548e96d080ae> ;
+    jfibo:hasShareCount 8000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row12Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row12Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 2223000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 2223000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -211,20 +211,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1ef148d74113a6d7> ;
-    jpfibo:hasShareCount 1500000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1ef148d74113a6d7> ;
+    jfibo:hasShareCount 1500000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row13Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row13Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 21210000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 21210000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -235,134 +235,134 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "前事業年度末は、退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3ce0d10ae550168e> ;
-    jpfibo:hasShareCount 16800000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "前事業年度末は、退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3ce0d10ae550168e> ;
+    jfibo:hasShareCount 16800000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row14Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row14Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 56377000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 56377000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b4d82c67a5a90f2b> ;
-    jpfibo:hasShareCount 19314000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b4d82c67a5a90f2b> ;
+    jfibo:hasShareCount 19314000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row15Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row15Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 105112000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 105112000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:06ed36e2e8eb36bc> ;
-    jpfibo:hasShareCount 15964845 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:06ed36e2e8eb36bc> ;
+    jfibo:hasShareCount 15964845 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row16Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row16Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 31696000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 31696000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:559294e3089244b7> ;
-    jpfibo:hasShareCount 7000192 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:559294e3089244b7> ;
+    jfibo:hasShareCount 7000192 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row17Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row17Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 29156000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 29156000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/jcn/5120001059660> ;
-    jpfibo:hasShareCount 4509200 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/jcn/5120001059660> ;
+    jfibo:hasShareCount 4509200 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row18Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row18Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 39487000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 39487000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a50f64a3e7225b20> ;
-    jpfibo:hasShareCount 20750000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a50f64a3e7225b20> ;
+    jfibo:hasShareCount 20750000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row19Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row19Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 41070000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 41070000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:f98d70f6413443ff> ;
-    jpfibo:hasShareCount 20306712 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:f98d70f6413443ff> ;
+    jfibo:hasShareCount 20306712 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row1Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row1Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 345125000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 345125000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -373,210 +373,210 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:087042ff46731bfd> ;
-    jpfibo:hasShareCount 42109000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:087042ff46731bfd> ;
+    jfibo:hasShareCount 42109000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row20Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row20Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 32454000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 32454000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:e4fdcb6f92f1f8da> ;
-    jpfibo:hasShareCount 7672477 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:e4fdcb6f92f1f8da> ;
+    jfibo:hasShareCount 7672477 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row21Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row21Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 28464000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 28464000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1c00f6367bdd2ccc> ;
-    jpfibo:hasShareCount 8391680 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1c00f6367bdd2ccc> ;
+    jfibo:hasShareCount 8391680 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row22Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row22Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 27008000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 27008000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:25193fddf00504fe> ;
-    jpfibo:hasShareCount 6000564 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:25193fddf00504fe> ;
+    jfibo:hasShareCount 6000564 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row23Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row23Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 43285000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 43285000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:f15664edfb041296> ;
-    jpfibo:hasShareCount 18156729 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:f15664edfb041296> ;
+    jfibo:hasShareCount 18156729 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row24Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row24Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 32767000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 32767000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ce04884ac9585a7e> ;
-    jpfibo:hasShareCount 8933281 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ce04884ac9585a7e> ;
+    jfibo:hasShareCount 8933281 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row25Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row25Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 27668000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 27668000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:7633806d378e8f95> ;
-    jpfibo:hasShareCount 8820000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:7633806d378e8f95> ;
+    jfibo:hasShareCount 8820000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row26Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row26Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 43168000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 43168000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有しており、株式分割により株式数が増加"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:63fa2fb1a6828254> ;
-    jpfibo:hasShareCount 6075000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有しており、株式分割により株式数が増加"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:63fa2fb1a6828254> ;
+    jfibo:hasShareCount 6075000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row27Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row27Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 31059000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 31059000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社は東京証券取引所、大阪取引所、証券保管振替機構等を傘下に有する持株会社。取引所金融商品市場の運営から売買の執行や、清算、決済に至るまで、市場参加者に対して総合的なサービスを提供。同社は本邦金融市場における公共インフラとしての位置付けであり、その安定的な運営に寄与することで、本邦金融市場の発展に資するべく保有しており、株式分割により株式数が増加"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:df7c46ed652486fd> ;
-    jpfibo:hasShareCount 7557000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社は東京証券取引所、大阪取引所、証券保管振替機構等を傘下に有する持株会社。取引所金融商品市場の運営から売買の執行や、清算、決済に至るまで、市場参加者に対して総合的なサービスを提供。同社は本邦金融市場における公共インフラとしての位置付けであり、その安定的な運営に寄与することで、本邦金融市場の発展に資するべく保有しており、株式分割により株式数が増加"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:df7c46ed652486fd> ;
+    jfibo:hasShareCount 7557000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row28Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row28Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 24368000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 24368000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:29c85cbd04fe215d> ;
-    jpfibo:hasShareCount 1066459 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:29c85cbd04fe215d> ;
+    jfibo:hasShareCount 1066459 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row29Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row29Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 30046000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 30046000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:13db30c29b6b0bd1> ;
-    jpfibo:hasShareCount 10181739 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:13db30c29b6b0bd1> ;
+    jfibo:hasShareCount 10181739 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row2Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row2Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 132738000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 132738000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -587,210 +587,210 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a5c1fbf35cceda5d> ;
-    jpfibo:hasShareCount 35625000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a5c1fbf35cceda5d> ;
+    jfibo:hasShareCount 35625000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row30Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row30Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 27827000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 27827000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:5cf7b93ff1732983> ;
-    jpfibo:hasShareCount 5142695 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:5cf7b93ff1732983> ;
+    jfibo:hasShareCount 5142695 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row31Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row31Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 19454000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 19454000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b7f83029783d68ea> ;
-    jpfibo:hasShareCount 5411676 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b7f83029783d68ea> ;
+    jfibo:hasShareCount 5411676 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row32Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row32Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 25809000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 25809000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社はブラジルの地場大手総合金融機関。ブラジルにおけるＭＵＦＧの事業を補完し、当地ビジネスを発展させる目的で資本業務提携を締結。日伯投資家の資産運用に係る事業領域では、2008年から同社投信の本邦投資家向け販売を開始。今後も業務提携関係に基づく幅広い事業領域での協働を通じて、顧客・社会の発展に寄与するために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3d90bccb5cbc4053> ;
-    jpfibo:hasShareCount 67080985 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社はブラジルの地場大手総合金融機関。ブラジルにおけるＭＵＦＧの事業を補完し、当地ビジネスを発展させる目的で資本業務提携を締結。日伯投資家の資産運用に係る事業領域では、2008年から同社投信の本邦投資家向け販売を開始。今後も業務提携関係に基づく幅広い事業領域での協働を通じて、顧客・社会の発展に寄与するために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3d90bccb5cbc4053> ;
+    jfibo:hasShareCount 67080985 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row33Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row33Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 27150000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 27150000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:00ac548e96d080ae> ;
-    jpfibo:hasShareCount 10808385 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:00ac548e96d080ae> ;
+    jfibo:hasShareCount 10808385 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row34Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row34Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 62867000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 62867000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:70dcd9f7a52e2865> ;
-    jpfibo:hasShareCount 1504000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:70dcd9f7a52e2865> ;
+    jfibo:hasShareCount 1504000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row35Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row35Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 28734000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 28734000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:8f5494a9e289ef2a> ;
-    jpfibo:hasShareCount 8174715 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:8f5494a9e289ef2a> ;
+    jfibo:hasShareCount 8174715 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row36Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row36Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 17010000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 17010000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:6e768370810d31cc> ;
-    jpfibo:hasShareCount 10786712 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:6e768370810d31cc> ;
+    jfibo:hasShareCount 10786712 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row37Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row37Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 22552000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 22552000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1017c833c12396d5> ;
-    jpfibo:hasShareCount 7601140 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1017c833c12396d5> ;
+    jfibo:hasShareCount 7601140 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row38Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row38Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 20785000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 20785000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:49ded0b7df865d36> ;
-    jpfibo:hasShareCount 9471829 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:49ded0b7df865d36> ;
+    jfibo:hasShareCount 9471829 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row39Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row39Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 17518000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 17518000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有しており、株式分割により株式数が増加"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:964697f8ce08a892> ;
-    jpfibo:hasShareCount 1598438 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有しており、株式分割により株式数が増加"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:964697f8ce08a892> ;
+    jfibo:hasShareCount 1598438 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row3Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row3Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 70896000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 70896000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -801,210 +801,210 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:84df636d421d94c6> ;
-    jpfibo:hasShareCount 48945000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:84df636d421d94c6> ;
+    jfibo:hasShareCount 48945000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row40Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row40Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 23188000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 23188000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:f5092ee8d8701d3c> ;
-    jpfibo:hasShareCount 6469890 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:f5092ee8d8701d3c> ;
+    jfibo:hasShareCount 6469890 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row41Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row41Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 31333000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 31333000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b631d37116a33d61> ;
-    jpfibo:hasShareCount 1569428 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b631d37116a33d61> ;
+    jfibo:hasShareCount 1569428 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row42Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row42Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 14864000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 14864000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:abe196479aacec79> ;
-    jpfibo:hasShareCount 10624873 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:abe196479aacec79> ;
+    jfibo:hasShareCount 10624873 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row43Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row43Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 21208000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 21208000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:d1324bc3d40b435e> ;
-    jpfibo:hasShareCount 8640740 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:d1324bc3d40b435e> ;
+    jfibo:hasShareCount 8640740 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row44Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row44Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 13773000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 13773000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:a2520f5365a6a284> ;
-    jpfibo:hasShareCount 2704414 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:a2520f5365a6a284> ;
+    jfibo:hasShareCount 2704414 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row45Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row45Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 18693000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 18693000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:895ca6797dba39f3> ;
-    jpfibo:hasShareCount 4450794 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:895ca6797dba39f3> ;
+    jfibo:hasShareCount 4450794 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row46Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row46Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 13223000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 13223000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c3445dc9b42fd70e> ;
-    jpfibo:hasShareCount 7204443 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c3445dc9b42fd70e> ;
+    jfibo:hasShareCount 7204443 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row47Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row47Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 12978000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 12978000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:3f5d3dcc9d51cf59> ;
-    jpfibo:hasShareCount 6000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:3f5d3dcc9d51cf59> ;
+    jfibo:hasShareCount 6000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row48Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row48Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 18193000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 18193000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:c587811c29f24e0a> ;
-    jpfibo:hasShareCount 3068000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:c587811c29f24e0a> ;
+    jfibo:hasShareCount 3068000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row49Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row49Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 12020000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 12020000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:8ede2889f3da701b> ;
-    jpfibo:hasShareCount 3087699 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:8ede2889f3da701b> ;
+    jfibo:hasShareCount 3087699 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row4Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row4Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 38908000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 38908000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1015,210 +1015,210 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b549d4131499229e> ;
-    jpfibo:hasShareCount 13758300 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b549d4131499229e> ;
+    jfibo:hasShareCount 13758300 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row50Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row50Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 11882000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 11882000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:aa567ac0b5a573fb> ;
-    jpfibo:hasShareCount 2872954 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:aa567ac0b5a573fb> ;
+    jfibo:hasShareCount 2872954 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row51Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row51Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 11217000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 11217000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:6fbe4dfa38fc6750> ;
-    jpfibo:hasShareCount 3622020 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:6fbe4dfa38fc6750> ;
+    jfibo:hasShareCount 3622020 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row52Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row52Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 10332000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 10332000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ddb80d291d5296fe> ;
-    jpfibo:hasShareCount 2536923 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ddb80d291d5296fe> ;
+    jfibo:hasShareCount 2536923 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row53Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row53Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 10387000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 10387000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1ef148d74113a6d7> ;
-    jpfibo:hasShareCount 7009357 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1ef148d74113a6d7> ;
+    jfibo:hasShareCount 7009357 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row54Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row54Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 16506000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 16506000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:59f55412408d5e83> ;
-    jpfibo:hasShareCount 8951578 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:59f55412408d5e83> ;
+    jfibo:hasShareCount 8951578 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row55Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row55Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 6345000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 6345000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:b549d4131499229e> ;
-    jpfibo:hasShareCount 2243960 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:b549d4131499229e> ;
+    jfibo:hasShareCount 2243960 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row56Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row56Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 12499000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 12499000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:28afa4247677ab5e> ;
-    jpfibo:hasShareCount 4489080 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:28afa4247677ab5e> ;
+    jfibo:hasShareCount 4489080 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row57Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row57Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 4630000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 4630000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:620c0b5de4daf641> ;
-    jpfibo:hasShareCount 1644785 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:620c0b5de4daf641> ;
+    jfibo:hasShareCount 1644785 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row58Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row58Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 35338000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 35338000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:1779b9c77c567f5c> ;
-    jpfibo:hasShareCount 11586393 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:1779b9c77c567f5c> ;
+    jfibo:hasShareCount 11586393 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row59Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row59Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 20909000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 20909000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ae91371a393d32bf> ;
-    jpfibo:hasShareCount 7404102 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ae91371a393d32bf> ;
+    jfibo:hasShareCount 7404102 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row5Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row5Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 47968000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 47968000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1229,153 +1229,153 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <https://w3id.org/jpfibo/entity/jcn/1180301018771> ;
-    jpfibo:hasShareCount 12650000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <https://w3id.org/jfibo/entity/jcn/1180301018771> ;
+    jfibo:hasShareCount 12650000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row60Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row60Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 19598000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 19598000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:10bf737b820aca7b> ;
-    jpfibo:hasShareCount 7731350 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:10bf737b820aca7b> ;
+    jfibo:hasShareCount 7731350 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row61Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row61Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 18264000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 18264000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:048b9d8948b62754> ;
-    jpfibo:hasShareCount 9182814 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:048b9d8948b62754> ;
+    jfibo:hasShareCount 9182814 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row62Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row62Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 17214000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 17214000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:7a83f4a8b64ec6aa> ;
-    jpfibo:hasShareCount 2795079 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:7a83f4a8b64ec6aa> ;
+    jfibo:hasShareCount 2795079 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row63Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row63Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 104061000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 104061000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:6c08203d9d26af89> ;
-    jpfibo:hasShareCount 55029900 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:6c08203d9d26af89> ;
+    jfibo:hasShareCount 55029900 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row64Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row64Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 57374000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 57374000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:957e1ece584938db> ;
-    jpfibo:hasShareCount 7858405 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:957e1ece584938db> ;
+    jfibo:hasShareCount 7858405 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row65Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row65Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 無"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 49007000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 49007000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:593f65706810f644> ;
-    jpfibo:hasShareCount 17958000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:593f65706810f644> ;
+    jfibo:hasShareCount 17958000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row66Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row66Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 3146000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 3146000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:NumberOfSharesHeldDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:fafd54acd4fed8c1> ;
-    jpfibo:hasShareCount 791984 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "前事業年度末は、発行会社グループとの、主に金融取引（預金・貸出・為替等）における総合的な取引関係維持・拡大のために保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:fafd54acd4fed8c1> ;
+    jfibo:hasShareCount 791984 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row6Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row6Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 30629000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 30629000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1386,20 +1386,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:28afa4247677ab5e> ;
-    jpfibo:hasShareCount 11000000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:28afa4247677ab5e> ;
+    jfibo:hasShareCount 11000000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row7Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row7Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 15313000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 15313000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1410,20 +1410,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:620c0b5de4daf641> ;
-    jpfibo:hasShareCount 5440000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:620c0b5de4daf641> ;
+    jfibo:hasShareCount 5440000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row8Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row8Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 11608000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 11608000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1434,20 +1434,20 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:ddb80d291d5296fe> ;
-    jpfibo:hasShareCount 2850000 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:ddb80d291d5296fe> ;
+    jfibo:hasShareCount 2850000 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<urn:jpfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row9Member> a jpfibo:PolicyShareholding ;
+<urn:jfibo:claim:S100W4FB/policy-shareholding/SequentialNumbersAxis-Row9Member> a jfibo:PolicyShareholding ;
     dcterms:valid "2025-03-31"^^xsd:date ;
     skos:note "reciprocal-holding-disclosure: 有"@ja ;
     prov:generatedAtTime "2026-05-25T08:15:00.073568+00:00"^^xsd:dateTime ;
     prov:wasDerivedFrom <https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> ;
-    jpfibo:hasCarryingAmount 16130000000.0 ;
-    jpfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
+    jfibo:hasCarryingAmount 16130000000.0 ;
+    jfibo:hasEvidenceElement jpcrp_cor:BookValueDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:BookValueDetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:DetailsOfSpecifiedInvestmentEquitySecuritiesHeldForPurposesOtherThanPureInvestmentReportingCompanyTable,
         jpcrp_cor:NameOfSecuritiesDetailsOfDeemedHoldingsOfEquitySecuritiesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
@@ -1458,144 +1458,144 @@
         jpcrp_cor:PurposeOfShareholdingOverviewOfBusinessAllianceQuantitativeEffectsOfShareholdingAndReasonForIncreaseInNumberOfSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfDeemedHoldingsOfSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany,
         jpcrp_cor:WhetherIssuerOfAforementionedSharesHoldsReportingCompanysSharesDetailsOfSpecifiedInvestmentSharesHeldForPurposesOtherThanPureInvestmentLargestHoldingCompany ;
-    jpfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
-    jpfibo:hasInvestor <https://w3id.org/jpfibo/entity/edinet/E03606> ;
-    jpfibo:hasIssuer <urn:jpfibo:issuer-fallback:fafd54acd4fed8c1> ;
-    jpfibo:hasShareCount 4060100 ;
-    jpfibo:informationStatus jpfibo:Disclosed ;
-    jpfibo:normativeStatus jpfibo:GovernanceDisclosure .
+    jfibo:hasHoldingPurpose "退職給付信託として保有"@ja ;
+    jfibo:hasInvestor <https://w3id.org/jfibo/entity/edinet/E03606> ;
+    jfibo:hasIssuer <urn:jfibo:issuer-fallback:fafd54acd4fed8c1> ;
+    jfibo:hasShareCount 4060100 ;
+    jfibo:informationStatus jfibo:Disclosed ;
+    jfibo:normativeStatus jfibo:GovernanceDisclosure .
 
-<https://w3id.org/jpfibo/entity/jcn/1180301018771> skos:prefLabel "トヨタ自動車株式会社"@ja .
+<https://w3id.org/jfibo/entity/jcn/1180301018771> skos:prefLabel "トヨタ自動車株式会社"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/5010001008846> skos:prefLabel "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS(常任代理人 株式会社三菱ＵＦＪ銀行)"@ja .
+<https://w3id.org/jfibo/entity/jcn/5010001008846> skos:prefLabel "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS(常任代理人 株式会社三菱ＵＦＪ銀行)"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/5120001059660> skos:prefLabel "伊藤忠商事株式会社"@ja .
+<https://w3id.org/jfibo/entity/jcn/5120001059660> skos:prefLabel "伊藤忠商事株式会社"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/8010001143625> skos:prefLabel "株式会社日本カストディ銀行(信託口)"@ja .
+<https://w3id.org/jfibo/entity/jcn/8010001143625> skos:prefLabel "株式会社日本カストディ銀行(信託口)"@ja .
 
-<urn:jpfibo:issuer-fallback:048b9d8948b62754> skos:prefLabel "中部電力株式会社"@ja .
+<urn:jfibo:issuer-fallback:048b9d8948b62754> skos:prefLabel "中部電力株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:06ed36e2e8eb36bc> skos:prefLabel "信越化学工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:06ed36e2e8eb36bc> skos:prefLabel "信越化学工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:087042ff46731bfd> skos:prefLabel "任天堂株式会社"@ja .
+<urn:jfibo:issuer-fallback:087042ff46731bfd> skos:prefLabel "任天堂株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:1017c833c12396d5> skos:prefLabel "ロート製薬株式会社"@ja .
+<urn:jfibo:issuer-fallback:1017c833c12396d5> skos:prefLabel "ロート製薬株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:10bf737b820aca7b> skos:prefLabel "株式会社小糸製作所"@ja .
+<urn:jfibo:issuer-fallback:10bf737b820aca7b> skos:prefLabel "株式会社小糸製作所"@ja .
 
-<urn:jpfibo:issuer-fallback:13db30c29b6b0bd1> skos:prefLabel "ミネベアミツミ株式会社"@ja .
+<urn:jfibo:issuer-fallback:13db30c29b6b0bd1> skos:prefLabel "ミネベアミツミ株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:1779b9c77c567f5c> skos:prefLabel "株式会社サンリオ"@ja .
+<urn:jfibo:issuer-fallback:1779b9c77c567f5c> skos:prefLabel "株式会社サンリオ"@ja .
 
-<urn:jpfibo:issuer-fallback:1c00f6367bdd2ccc> skos:prefLabel "大阪瓦斯株式会社"@ja .
+<urn:jfibo:issuer-fallback:1c00f6367bdd2ccc> skos:prefLabel "大阪瓦斯株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:25193fddf00504fe> skos:prefLabel "キヤノン株式会社"@ja .
+<urn:jfibo:issuer-fallback:25193fddf00504fe> skos:prefLabel "キヤノン株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:29c85cbd04fe215d> skos:prefLabel "株式会社シマノ"@ja .
+<urn:jfibo:issuer-fallback:29c85cbd04fe215d> skos:prefLabel "株式会社シマノ"@ja .
 
-<urn:jpfibo:issuer-fallback:3ce0d10ae550168e> skos:prefLabel "株式会社ユー・エス・エス"@ja .
+<urn:jfibo:issuer-fallback:3ce0d10ae550168e> skos:prefLabel "株式会社ユー・エス・エス"@ja .
 
-<urn:jpfibo:issuer-fallback:3d90bccb5cbc4053> skos:prefLabel "BANCO BRADESCO S.A."@ja .
+<urn:jfibo:issuer-fallback:3d90bccb5cbc4053> skos:prefLabel "BANCO BRADESCO S.A."@ja .
 
-<urn:jpfibo:issuer-fallback:3f5d3dcc9d51cf59> skos:prefLabel "株式会社セブン＆アイ・ホールディングス"@ja .
+<urn:jfibo:issuer-fallback:3f5d3dcc9d51cf59> skos:prefLabel "株式会社セブン＆アイ・ホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:49ded0b7df865d36> skos:prefLabel "関西電力株式会社"@ja .
+<urn:jfibo:issuer-fallback:49ded0b7df865d36> skos:prefLabel "関西電力株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:559294e3089244b7> skos:prefLabel "大和ハウス工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:559294e3089244b7> skos:prefLabel "大和ハウス工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:593f65706810f644> skos:prefLabel "テルモ株式会社"@ja .
+<urn:jfibo:issuer-fallback:593f65706810f644> skos:prefLabel "テルモ株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:5cf7b93ff1732983> skos:prefLabel "オムロン株式会社"@ja .
+<urn:jfibo:issuer-fallback:5cf7b93ff1732983> skos:prefLabel "オムロン株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:5d8328c6c927f4ad> skos:prefLabel "野村信託銀行株式会社(投信口)"@ja .
+<urn:jfibo:issuer-fallback:5d8328c6c927f4ad> skos:prefLabel "野村信託銀行株式会社(投信口)"@ja .
 
-<urn:jpfibo:issuer-fallback:63fa2fb1a6828254> skos:prefLabel "三井物産株式会社"@ja .
+<urn:jfibo:issuer-fallback:63fa2fb1a6828254> skos:prefLabel "三井物産株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:6c08203d9d26af89> skos:prefLabel "本田技研工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:6c08203d9d26af89> skos:prefLabel "本田技研工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:6e768370810d31cc> skos:prefLabel "株式会社リコー"@ja .
+<urn:jfibo:issuer-fallback:6e768370810d31cc> skos:prefLabel "株式会社リコー"@ja .
 
-<urn:jpfibo:issuer-fallback:6fbe4dfa38fc6750> skos:prefLabel "東京応化工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:6fbe4dfa38fc6750> skos:prefLabel "東京応化工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:70dcd9f7a52e2865> skos:prefLabel "レーザーテック株式会社"@ja .
+<urn:jfibo:issuer-fallback:70dcd9f7a52e2865> skos:prefLabel "レーザーテック株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:7633806d378e8f95> skos:prefLabel "西日本旅客鉄道株式会社"@ja .
+<urn:jfibo:issuer-fallback:7633806d378e8f95> skos:prefLabel "西日本旅客鉄道株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:7a83f4a8b64ec6aa> skos:prefLabel "京成電鉄株式会社"@ja .
+<urn:jfibo:issuer-fallback:7a83f4a8b64ec6aa> skos:prefLabel "京成電鉄株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:84df636d421d94c6> skos:prefLabel "三菱重工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:84df636d421d94c6> skos:prefLabel "三菱重工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:895ca6797dba39f3> skos:prefLabel "日清食品ホールディングス株式会社"@ja .
+<urn:jfibo:issuer-fallback:895ca6797dba39f3> skos:prefLabel "日清食品ホールディングス株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:8ede2889f3da701b> skos:prefLabel "ＴＯＴＯ株式会社"@ja .
+<urn:jfibo:issuer-fallback:8ede2889f3da701b> skos:prefLabel "ＴＯＴＯ株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:8f5494a9e289ef2a> skos:prefLabel "積水ハウス株式会社"@ja .
+<urn:jfibo:issuer-fallback:8f5494a9e289ef2a> skos:prefLabel "積水ハウス株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:957e1ece584938db> skos:prefLabel "株式会社アシックス"@ja .
+<urn:jfibo:issuer-fallback:957e1ece584938db> skos:prefLabel "株式会社アシックス"@ja .
 
-<urn:jpfibo:issuer-fallback:964697f8ce08a892> skos:prefLabel "セコム株式会社"@ja .
+<urn:jfibo:issuer-fallback:964697f8ce08a892> skos:prefLabel "セコム株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:a2520f5365a6a284> skos:prefLabel "株式会社ワコールホールディングス"@ja .
+<urn:jfibo:issuer-fallback:a2520f5365a6a284> skos:prefLabel "株式会社ワコールホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:a50f64a3e7225b20> skos:prefLabel "ＳＧホールディングス株式会社"@ja .
+<urn:jfibo:issuer-fallback:a50f64a3e7225b20> skos:prefLabel "ＳＧホールディングス株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:a5c1fbf35cceda5d> skos:prefLabel "東海旅客鉄道株式会社"@ja .
+<urn:jfibo:issuer-fallback:a5c1fbf35cceda5d> skos:prefLabel "東海旅客鉄道株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:aa567ac0b5a573fb> skos:prefLabel "東邦瓦斯株式会社"@ja .
+<urn:jfibo:issuer-fallback:aa567ac0b5a573fb> skos:prefLabel "東邦瓦斯株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:abe196479aacec79> skos:prefLabel "株式会社千葉銀行"@ja .
+<urn:jfibo:issuer-fallback:abe196479aacec79> skos:prefLabel "株式会社千葉銀行"@ja .
 
-<urn:jpfibo:issuer-fallback:ae91371a393d32bf> skos:prefLabel "株式会社村田製作所"@ja .
+<urn:jfibo:issuer-fallback:ae91371a393d32bf> skos:prefLabel "株式会社村田製作所"@ja .
 
-<urn:jpfibo:issuer-fallback:b4d82c67a5a90f2b> skos:prefLabel "東日本旅客鉄道株式会社"@ja .
+<urn:jfibo:issuer-fallback:b4d82c67a5a90f2b> skos:prefLabel "東日本旅客鉄道株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:b631d37116a33d61> skos:prefLabel "株式会社ＳＣＲＥＥＮホールディングス"@ja .
+<urn:jfibo:issuer-fallback:b631d37116a33d61> skos:prefLabel "株式会社ＳＣＲＥＥＮホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:b7f83029783d68ea> skos:prefLabel "イオン株式会社"@ja .
+<urn:jfibo:issuer-fallback:b7f83029783d68ea> skos:prefLabel "イオン株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:c3445dc9b42fd70e> skos:prefLabel "日本碍子株式会社"@ja .
+<urn:jfibo:issuer-fallback:c3445dc9b42fd70e> skos:prefLabel "日本碍子株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:c587811c29f24e0a> skos:prefLabel "日本空港ビルデング株式会社"@ja .
+<urn:jfibo:issuer-fallback:c587811c29f24e0a> skos:prefLabel "日本空港ビルデング株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:ce04884ac9585a7e> skos:prefLabel "日本製鉄株式会社"@ja .
+<urn:jfibo:issuer-fallback:ce04884ac9585a7e> skos:prefLabel "日本製鉄株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:d1324bc3d40b435e> skos:prefLabel "小野薬品工業株式会社"@ja .
+<urn:jfibo:issuer-fallback:d1324bc3d40b435e> skos:prefLabel "小野薬品工業株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:df7c46ed652486fd> skos:prefLabel "株式会社日本取引所グループ"@ja .
+<urn:jfibo:issuer-fallback:df7c46ed652486fd> skos:prefLabel "株式会社日本取引所グループ"@ja .
 
-<urn:jpfibo:issuer-fallback:e4fdcb6f92f1f8da> skos:prefLabel "株式会社島津製作所"@ja .
+<urn:jfibo:issuer-fallback:e4fdcb6f92f1f8da> skos:prefLabel "株式会社島津製作所"@ja .
 
-<urn:jpfibo:issuer-fallback:f15664edfb041296> skos:prefLabel "株式会社クボタ"@ja .
+<urn:jfibo:issuer-fallback:f15664edfb041296> skos:prefLabel "株式会社クボタ"@ja .
 
-<urn:jpfibo:issuer-fallback:f5092ee8d8701d3c> skos:prefLabel "株式会社ダイフク"@ja .
+<urn:jfibo:issuer-fallback:f5092ee8d8701d3c> skos:prefLabel "株式会社ダイフク"@ja .
 
-<urn:jpfibo:issuer-fallback:f98d70f6413443ff> skos:prefLabel "京セラ株式会社"@ja .
+<urn:jfibo:issuer-fallback:f98d70f6413443ff> skos:prefLabel "京セラ株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:00ac548e96d080ae> skos:prefLabel "三菱電機株式会社"@ja .
+<urn:jfibo:issuer-fallback:00ac548e96d080ae> skos:prefLabel "三菱電機株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:1ef148d74113a6d7> skos:prefLabel "株式会社ニコン"@ja .
+<urn:jfibo:issuer-fallback:1ef148d74113a6d7> skos:prefLabel "株式会社ニコン"@ja .
 
-<urn:jpfibo:issuer-fallback:28afa4247677ab5e> skos:prefLabel "三菱地所株式会社"@ja .
+<urn:jfibo:issuer-fallback:28afa4247677ab5e> skos:prefLabel "三菱地所株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:59f55412408d5e83> skos:prefLabel "東急株式会社"@ja .
+<urn:jfibo:issuer-fallback:59f55412408d5e83> skos:prefLabel "東急株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:620c0b5de4daf641> skos:prefLabel "スタンレー電気株式会社"@ja .
+<urn:jfibo:issuer-fallback:620c0b5de4daf641> skos:prefLabel "スタンレー電気株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:b549d4131499229e> skos:prefLabel "株式会社バンダイナムコホールディングス"@ja .
+<urn:jfibo:issuer-fallback:b549d4131499229e> skos:prefLabel "株式会社バンダイナムコホールディングス"@ja .
 
-<urn:jpfibo:issuer-fallback:ddb80d291d5296fe> skos:prefLabel "日本郵船株式会社"@ja .
+<urn:jfibo:issuer-fallback:ddb80d291d5296fe> skos:prefLabel "日本郵船株式会社"@ja .
 
-<urn:jpfibo:issuer-fallback:fafd54acd4fed8c1> skos:prefLabel "久光製薬株式会社"@ja .
+<urn:jfibo:issuer-fallback:fafd54acd4fed8c1> skos:prefLabel "久光製薬株式会社"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行株式会社(信託口)"@ja .
+<https://w3id.org/jfibo/entity/jcn/1010001075076> skos:prefLabel "日本マスタートラスト信託銀行株式会社(信託口)"@ja .
 
-<https://w3id.org/jpfibo/entity/jcn/7010001008844> skos:prefLabel "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)"@ja .
+<https://w3id.org/jfibo/entity/jcn/7010001008844> skos:prefLabel "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)"@ja .
 
-<https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> a jpfibo:EDINETDisclosureDocument ;
+<https://disclosure2.edinet-fsa.go.jp/WEEK0030.aspx?docID=S100W4FB> a jfibo:EDINETDisclosureDocument ;
     dcterms:identifier "S100W4FB" ;
     dcterms:source <https://disclosure2.edinet-fsa.go.jp/> .
 
-<https://w3id.org/jpfibo/entity/edinet/E03606> a jpfibo:KabushikiKaisha ;
-    owl:sameAs <https://w3id.org/jpfibo/entity/jcn/1010001008846> ;
+<https://w3id.org/jfibo/entity/edinet/E03606> a jfibo:KabushikiKaisha ;
+    owl:sameAs <https://w3id.org/jfibo/entity/jcn/1010001008846> ;
     skos:prefLabel "株式会社 三菱ＵＦＪフィナンシャル・グループ"@ja .
 

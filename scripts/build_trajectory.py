@@ -20,12 +20,12 @@ from rdflib import Graph, Namespace
 from rdflib.namespace import PROV, RDF
 
 REPO = Path(__file__).resolve().parents[1]
-ONT = REPO / "ontology" / "jpfibo.ttl"
+ONT = REPO / "ontology" / "jfibo.ttl"
 CONTRIBUTORS = REPO / "registry" / "contributors.yaml"
 REGISTRY = REPO / "registry" / "terms.yaml"
 OUT = REPO / "docs" / "building-trajectory.md"
 
-JPFIBO = Namespace("https://w3id.org/jpfibo/ontology/JP/core/")
+JPFIBO = Namespace("https://w3id.org/jfibo/ontology/JP/core/")
 
 
 def main() -> int:
@@ -53,7 +53,7 @@ def main() -> int:
         "Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) "
         "and `registry/contributors.yaml`. Every minted term carries the same "
         "attribution as `prov:wasAttributedTo` + `prov:wasGeneratedBy` triples "
-        "in `ontology/jpfibo.ttl`, so this view is also queryable via SPARQL."
+        "in `ontology/jfibo.ttl`, so this view is also queryable via SPARQL."
     )
     lines.append("")
     lines.append(

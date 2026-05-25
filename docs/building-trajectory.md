@@ -1,6 +1,6 @@
 # J-FIBO Building Trajectory
 
-Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `registry/contributors.yaml`. Every minted term carries the same attribution as `prov:wasAttributedTo` + `prov:wasGeneratedBy` triples in `ontology/jpfibo.ttl`, so this view is also queryable via SPARQL.
+Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `registry/contributors.yaml`. Every minted term carries the same attribution as `prov:wasAttributedTo` + `prov:wasGeneratedBy` triples in `ontology/jfibo.ttl`, so this view is also queryable via SPARQL.
 
 > **Governance status**: J-FIBO is currently a single-author research seed. No Japanese institutional body has endorsed, reviewed, or participated. See [governance-status.md](governance-status.md).
 
@@ -17,14 +17,14 @@ Derived from `registry/terms.yaml` (per-term `contributed_by` + `session`) and `
 ### 2026-05-25-v0.2-finalize
 
 - date: 2026-05-25
-- goal: Finalize ontology with normative-status / reporting-regime / document-type / holder-role vocab, atomic claim types, and the EDINET-family `jpfibo:` prefix.
+- goal: Finalize ontology with normative-status / reporting-regime / document-type / holder-role vocab, atomic claim types, and the EDINET-family `jfibo:` prefix.
 - terms contributed: 40
 - modules: holder-role=9, reporting-regime=8, document-type=8, normative-status=7, disclosure-claim=7, core=1
 - kinds: individual=24, class=7, object_property=7, datatype_property=2
 
 ## Contributors
 
-### jpfibo-wg-bootstrap
+### jfibo-wg-bootstrap
 
 - role: editor
 - organization: J-FIBO Working Group (provisional)
