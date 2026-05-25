@@ -1,0 +1,8 @@
+@prefix jpfibo:  <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+
+# Missing hasHolder, hasShareholderRank, holderRole, time, validity, info-status
+<urn:example:claim/major-shareholder/002>
+  a jpfibo:MajorShareholderClaim ;
+  jpfibo:hasIssuer <urn:example:entity/edinet/E02144> ;
+  prov:wasDerivedFrom <urn:example:somewhere> .

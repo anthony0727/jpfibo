@@ -1,0 +1,121 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jpfibo: <https://w3id.org/jfibo/ontology/JP/core/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+jpfibo:BankingActOfJapan a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3403> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "The Banking Act (銀行法) regime, governing licensed banks, holding-company structures, and disclosures specific to depository institutions."@en ;
+    skos:prefLabel "Banking Act of Japan"@en,
+        "銀行法"@ja ;
+    skos:scopeNote "Use for bank-only disclosure paths (e.g., 銀行業の業種別表 in EDINET)."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:CabinetOfficeOrdinanceOnCorporateDisclosure a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://elaws.e-gov.go.jp/document?lawid=348M50000040005> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "The cabinet-office ordinance that operationalizes FIEL corporate disclosure, including the form-by-form disclosure schemas used by EDINET (jpcrp_cor 様式)."@en ;
+    skos:prefLabel "Cabinet Office Ordinance on Disclosure of Corporate Affairs"@en,
+        "企業内容等の開示に関する内閣府令"@ja ;
+    skos:scopeNote "Use to anchor specific form/section evidence; many EDINET concepts cite a specific 様式 of this ordinance."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:CompaniesAct a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/3206> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "The Companies Act (会社法) regime, governing kabushiki kaisha and other corporate forms."@en ;
+    skos:prefLabel "Companies Act of Japan"@en,
+        "会社法"@ja ;
+    skos:scopeNote "Use for corporate-form claims, statutory-officer claims, AGM resolutions, share-issuance authorizations."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:FinancialInstrumentsAndExchangeAct a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://www.japaneselawtranslation.go.jp/en/laws/view/2355> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "The 金商法 regime, governing securities reports (有価証券報告書), quarterly reports, large-shareholding reports, and extraordinary reports."@en ;
+    skos:prefLabel "Financial Instruments and Exchange Act (FIEL)"@en,
+        "金融商品取引法"@ja ;
+    skos:scopeNote "Use for EDINET-filed disclosures driven by FIEL and Cabinet Office Ordinance on Disclosure of Corporate Affairs."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:JPXListingRules a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://www.jpx.co.jp/english/equities/listing/index.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "Tokyo Stock Exchange listing rules and timely-disclosure rules under which listed-company-only disclosure obligations arise."@en ;
+    skos:prefLabel "JPX/TSE Listing Rules"@en,
+        "東証上場規程"@ja ;
+    skos:scopeNote "Use only for TSE-listing-driven disclosures; non-listed entity disclosures should not cite this regime."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:JapanCGCode a owl:NamedIndividual,
+        jpfibo:ReportingRegime ;
+    dcterms:source <https://www.jpx.co.jp/english/equities/listing/cg/index.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    skos:definition "The Japan Corporate Governance Code, including Principle 1.4 (policy shareholdings) and surrounding governance principles."@en ;
+    skos:prefLabel "Japan Corporate Governance Code"@en,
+        "コーポレートガバナンス・コード"@ja ;
+    skos:scopeNote "Comply-or-explain in nature; pair with normativeStatus = GovernanceDisclosure or InstitutionalExpectation."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:reportingRegime a owl:ObjectProperty ;
+    dcterms:source <https://www.w3.org/TR/skos-reference/> ;
+    rdfs:domain jpfibo:DisclosureClaim ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    rdfs:range jpfibo:ReportingRegime ;
+    rdfs:subPropertyOf dcterms:type ;
+    skos:definition "Relates a claim to the Japanese reporting regime that required or governs it."@en ;
+    skos:prefLabel "reporting regime"@en,
+        "報告規制"@ja ;
+    skos:scopeNote "May be omitted when the regime is implied by the document type."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+jpfibo:ReportingRegime a owl:Class ;
+    dcterms:source <https://www.fsa.go.jp/search/20251111.html> ;
+    rdfs:isDefinedBy <https://w3id.org/jfibo/ontology/JP/reporting-regime/> ;
+    rdfs:subClassOf skos:Concept ;
+    skos:definition "Closed vocabulary identifying the Japanese reporting regime under which a claim is required or disclosed."@en ;
+    skos:prefLabel "reporting regime"@en,
+        "報告規制"@ja ;
+    skos:scopeNote "Sourced from the FSA EDINET taxonomy and supporting cabinet-office ordinances and JPX listing rules."@en ;
+    prov:wasAttributedTo <https://w3id.org/jfibo/contributor/jfibo-wg-bootstrap> ;
+    prov:wasGeneratedBy <https://w3id.org/jfibo/session/2026-05-25-v0.2-finalize> ;
+    jpfibo:level "propose" ;
+    jpfibo:status "proposed" .
+
+<https://w3id.org/jfibo/ontology/JP/reporting-regime/> a owl:Ontology ;
+    rdfs:label "J-FIBO Reporting Regime"@en,
+        "金融意味基盤・日本版 報告規制"@ja ;
+    dcterms:license <https://opensource.org/licenses/MIT> ;
+    dcterms:source <https://spec.edmcouncil.org/fibo/> ;
+    owl:versionIRI <https://w3id.org/jfibo/ontology/JP/reporting-regime/0.2.0/> ;
+    owl:versionInfo "0.2.0" .
+

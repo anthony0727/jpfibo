@@ -1,0 +1,100 @@
+{
+  "doc_id": "S100W4HN",
+  "edinet_code": "E02778",
+  "filer_name_ja": "ソフトバンクグループ株式会社",
+  "fy_end": "2025-03-31",
+  "rows": [
+    {
+      "rank": 1,
+      "name": "孫　正義",
+      "address": "東京都港区",
+      "shares": 426661000,
+      "shares_unit": "shares",
+      "ownership_pct": 29.68,
+      "holder_role": "IndividualShareholder"
+    },
+    {
+      "rank": 2,
+      "name": "日本マスタートラスト信託銀行㈱（信託口）",
+      "address": "東京都港区赤坂一丁目８番１号",
+      "shares": 246540000,
+      "shares_unit": "shares",
+      "ownership_pct": 17.15,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 3,
+      "name": "㈱日本カストディ銀行（信託口）",
+      "address": "東京都中央区晴海一丁目８番12号",
+      "shares": 103235000,
+      "shares_unit": "shares",
+      "ownership_pct": 7.18,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 4,
+      "name": "JP MORGAN CHASE BANK 380763\n（常任代理人 ㈱みずほ銀行決済営業部）",
+      "address": "25 BANK STREET, CANARY WHARF, LONDON, E14 5JP, UNITED KINGDOM\n（東京都港区港南二丁目15番１号）",
+      "shares": 29066000,
+      "shares_unit": "shares",
+      "ownership_pct": 2.02,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 5,
+      "name": "HSBC HONG KONG-TREASURY SERVICES A/C ASIAN EQUITIES DERIVATIVES\n（常任代理人 香港上海銀行東京支店）",
+      "address": "１ QUEEN'S ROAD CENTRAL, HONG KONG\n（東京都中央区日本橋三丁目11番１号）",
+      "shares": 25889000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.8,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 6,
+      "name": "孫コーポレーション合同会社",
+      "address": "東京都港区海岸一丁目16番１号",
+      "shares": 19060000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.33,
+      "holder_role": "RegisteredHolder"
+    },
+    {
+      "rank": 7,
+      "name": "STATE STREET BANK WEST CLIENT - TREATY 505234\n（常任代理人 ㈱みずほ銀行決済営業部）",
+      "address": "1776 HERITAGE DRIVE, NORTH QUINCY, MA 02171, U.S.A.\n（東京都港区港南二丁目15番１号）",
+      "shares": 18817000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.31,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 8,
+      "name": "孫アセットマネージメント合同会社",
+      "address": "東京都港区海岸一丁目16番１号",
+      "shares": 18504000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.29,
+      "holder_role": "RegisteredHolder"
+    },
+    {
+      "rank": 9,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001\n（常任代理人 ㈱みずほ銀行決済営業部）",
+      "address": "ONE CONGRESS STREET, SUITE １, BOSTON, MASSACHUSETTS\n（東京都港区港南二丁目15番１号）",
+      "shares": 17659000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.23,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 10,
+      "name": "GOVERNMENT OF NORWAY\n（常任代理人 シティバンク、エヌ・エイ東京支店）",
+      "address": "BANKPLASSEN ２, 0107 OSLO １ OSLO  0107 NO\n（東京都新宿区新宿六丁目27番30号）",
+      "shares": 16072000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.12,
+      "holder_role": "CustodyBank"
+    }
+  ],
+  "shares_unit": "shares",
+  "shares_multiplier": 1000
+}

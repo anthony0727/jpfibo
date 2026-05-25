@@ -1,0 +1,100 @@
+{
+  "doc_id": "S100W4FB",
+  "edinet_code": "E03606",
+  "filer_name_ja": "株式会社 三菱ＵＦＪフィナンシャル・グループ",
+  "fy_end": "2025-03-31",
+  "rows": [
+    {
+      "rank": 1,
+      "name": "日本マスタートラスト信託銀行株式会社(信託口)",
+      "address": "東京都港区赤坂1丁目8-1",
+      "shares": 1926957300,
+      "shares_unit": "shares",
+      "ownership_pct": 16.71,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 2,
+      "name": "株式会社日本カストディ銀行(信託口)",
+      "address": "東京都中央区晴海1丁目8-12",
+      "shares": 675597400,
+      "shares_unit": "shares",
+      "ownership_pct": 5.85,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 3,
+      "name": "THE BANK OF NEW YORK MELLON AS DEPOSITARY BANK FOR DR HOLDERS(常任代理人 株式会社三菱ＵＦＪ銀行)",
+      "address": "240 GREENWICH STREET, 8TH FL WEST, NEW YORK, NY 10286 U.S.A(東京都千代田区丸の内1丁目4番5号)",
+      "shares": 293041314,
+      "shares_unit": "shares",
+      "ownership_pct": 2.54,
+      "holder_role": "ADRDepositary"
+    },
+    {
+      "rank": 4,
+      "name": "STATE STREET BANK AND TRUST COMPANY 505001(常任代理人 株式会社みずほ銀行決済営業部)",
+      "address": "ONE CONGRESS STREET, SUITE 1,　BOSTON, MASSACHUSETTS(東京都港区港南2丁目15-1)",
+      "shares": 286793313,
+      "shares_unit": "shares",
+      "ownership_pct": 2.48,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 5,
+      "name": "STATE STREET BANK WEST CLIENT - TREATY 505234(常任代理人 株式会社みずほ銀行決済営業部)",
+      "address": "1776 HERITAGE DRIVE, NORTH QUINCY, MA 02171,U.S.A.(東京都港区港南2丁目15-1)",
+      "shares": 234997891,
+      "shares_unit": "shares",
+      "ownership_pct": 2.03,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 6,
+      "name": "日本マスタートラスト信託銀行株式会社(明治安田生命保険相互会社・退職給付信託口)",
+      "address": "東京都港区赤坂1丁目8番1号",
+      "shares": 175000000,
+      "shares_unit": "shares",
+      "ownership_pct": 1.51,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 7,
+      "name": "JP MORGAN CHASE BANK 385781(常任代理人 株式会社みずほ銀行決済営業部)",
+      "address": "25 BANK STREET, CANARY WHARF,　LONDON, E14 5JP, UNITED KINGDOM(東京都港区港南2丁目15-1)",
+      "shares": 167452730,
+      "shares_unit": "shares",
+      "ownership_pct": 1.45,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 8,
+      "name": "日本生命保険相互会社(常任代理人 日本マスタートラスト信託銀行株式会社)",
+      "address": "東京都千代田区丸の内1丁目6番6号(東京都港区赤坂1丁目8番1号)",
+      "shares": 142562953,
+      "shares_unit": "shares",
+      "ownership_pct": 1.23,
+      "holder_role": "Trustee"
+    },
+    {
+      "rank": 9,
+      "name": "THE BANK OF NEW YORK MELLON140042(常任代理人 株式会社みずほ銀行決済営業部)",
+      "address": "240 GREENWICH STREET, NEW YORK, NY 10286, U.S.A.(東京都港区港南2丁目15-1)",
+      "shares": 133563456,
+      "shares_unit": "shares",
+      "ownership_pct": 1.15,
+      "holder_role": "CustodyBank"
+    },
+    {
+      "rank": 10,
+      "name": "野村信託銀行株式会社(投信口)",
+      "address": "東京都千代田区大手町2丁目2-2",
+      "shares": 123634300,
+      "shares_unit": "shares",
+      "ownership_pct": 1.07,
+      "holder_role": "Trustee"
+    }
+  ],
+  "shares_unit": "shares",
+  "shares_multiplier": 1
+}

@@ -17,15 +17,15 @@ hypothesized | counterfactual | predicted | outside information boundary
 
 ## The principle
 
-> Backtracer may reason beyond the information boundary, but must not
+> A consumer of J-FIBO claims may reason beyond the information boundary, but must not
 > present beyond-boundary reasoning as auditable explanation.
 
 The SHACL shapes enforce this:
 
-* `jfibo:DisclosureClaim` requires exactly one `jfibo:informationStatus`
+* `jpfibo:DisclosureClaim` requires exactly one `jpfibo:informationStatus`
   from the closed vocabulary above.
-* `jfibo:MainBankCandidate` is forbidden from using `jfibo:Disclosed` or
-  `jfibo:Observed`; it must use `Hypothesized`,
+* `jpfibo:MainBankCandidate` is forbidden from using `jpfibo:Disclosed` or
+  `jpfibo:Observed`; it must use `Hypothesized`,
   `EvidenceBackedInferred`, `Counterfactual`, or
   `OutsideInformationBoundary`.
 
@@ -39,4 +39,4 @@ The SHACL shapes enforce this:
   to disclosed evidence is sufficient and honest.
 
 When prediction is required, predicted claims must be tagged with
-`jfibo:Predicted` so consumers cannot conflate them with disclosed facts.
+`jpfibo:Predicted` so consumers cannot conflate them with disclosed facts.

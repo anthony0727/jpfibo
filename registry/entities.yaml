@@ -1,0 +1,221 @@
+# Curated identity registry for J-FIBO entity resolution.
+#
+# Each entry binds together: a stable J-FIBO entity URN, the National Tax Agency
+# Corporate Number (法人番号 / JCN), the EDINET code when the entity is itself a
+# disclosing filer, and the Japanese-name aliases that we expect to see in
+# MajorShareholders tables and policy-shareholding rows.
+#
+# Sources:
+#   - JCN: https://www.houjin-bangou.nta.go.jp/  (verified by user when adding)
+#   - EDINET codes: EDINET document lists (https://disclosure2.edinet-fsa.go.jp/)
+#
+# This is a controlled file: the builder validates JCN length (13 digits) and
+# uniqueness; only entities the maintainers have actually verified should appear.
+
+source_notes:
+  jcn_source: https://www.houjin-bangou.nta.go.jp/
+  edinet_source: https://disclosure2.edinet-fsa.go.jp/
+
+entities:
+  - id: toyota-motor-corporation
+    jcn: "1180301018771"
+    edinet_code: E02144
+    security_code: "72030"
+    labels:
+      ja: トヨタ自動車株式会社
+      en: Toyota Motor Corporation
+    aliases:
+      - トヨタ自動車㈱
+      - トヨタ自動車
+
+  - id: toyota-industries
+    jcn: "9180301018726"
+    edinet_code: E02148
+    labels:
+      ja: 株式会社豊田自動織機
+      en: Toyota Industries Corporation
+    aliases:
+      - ㈱豊田自動織機
+      - 豊田自動織機㈱
+      - 豊田自動織機
+
+  - id: denso
+    jcn: "9180301018114"
+    edinet_code: E01777
+    labels:
+      ja: 株式会社デンソー
+      en: DENSO Corporation
+    aliases:
+      - ㈱デンソー
+      - デンソー㈱
+      - デンソー
+
+  - id: toyota-real-estate
+    jcn: "6010401073956"
+    labels:
+      ja: トヨタ不動産株式会社
+      en: Toyota Real Estate Co., Ltd.
+    aliases:
+      - トヨタ不動産㈱
+      - トヨタ不動産
+
+  - id: itochu
+    jcn: "5120001059660"
+    edinet_code: E02497
+    security_code: "80010"
+    labels:
+      ja: 伊藤忠商事株式会社
+      en: ITOCHU Corporation
+    aliases:
+      - 伊藤忠商事
+      - 伊藤忠
+
+  - id: mitsubishi-ufj-financial-group
+    jcn: "1010001008846"
+    edinet_code: E03606
+    security_code: "83060"
+    labels:
+      ja: 株式会社三菱ＵＦＪフィナンシャル・グループ
+      en: Mitsubishi UFJ Financial Group, Inc.
+    aliases:
+      - 三菱ＵＦＪフィナンシャル・グループ
+      - ㈱三菱ＵＦＪフィナンシャル・グループ
+      - 株式会社三菱ＵＦＪフィナンシャル・グループ
+      - MUFG
+
+  - id: mufg-bank
+    jcn: "5010001008846"
+    labels:
+      ja: 株式会社三菱ＵＦＪ銀行
+      en: MUFG Bank, Ltd.
+    aliases:
+      - 三菱ＵＦＪ銀行
+      - ㈱三菱ＵＦＪ銀行
+
+  - id: mizuho-bank
+    jcn: "7010001008844"
+    labels:
+      ja: 株式会社みずほ銀行
+      en: Mizuho Bank, Ltd.
+    aliases:
+      - みずほ銀行
+      - ㈱みずほ銀行
+      - 株式会社みずほ銀行
+      - 株式会社みずほ銀行決済営業部
+
+  - id: smbc
+    jcn: "5010001008838"
+    labels:
+      ja: 株式会社三井住友銀行
+      en: Sumitomo Mitsui Banking Corporation
+    aliases:
+      - 三井住友銀行
+      - ㈱三井住友銀行
+
+  - id: softbank-group
+    jcn: "9010401052465"
+    edinet_code: E02778
+    security_code: "99840"
+    labels:
+      ja: ソフトバンクグループ株式会社
+      en: SoftBank Group Corp.
+    aliases:
+      - ソフトバンクグループ㈱
+      - ソフトバンクグループ
+
+  - id: nippon-life
+    jcn: "7120001077523"
+    labels:
+      ja: 日本生命保険相互会社
+      en: Nippon Life Insurance Company
+    aliases:
+      - 日本生命保険（相）
+      - 日本生命保険相互会社
+      - 日本生命
+
+  - id: asahi-mutual-life
+    jcn: "7011101027405"
+    labels:
+      ja: 朝日生命保険相互会社
+      en: Asahi Mutual Life Insurance Company
+    aliases:
+      - 朝日生命
+
+  - id: ms-and-ad-insurance-group-holdings
+    jcn: "8010001143620"
+    edinet_code: E03833
+    labels:
+      ja: ＭＳ＆ＡＤインシュアランスグループホールディングス株式会社
+      en: MS&AD Insurance Group Holdings, Inc.
+    aliases:
+      - ＭＳ＆ＡＤインシュアランスグループホールディングス㈱
+      - ＭＳ＆ＡＤインシュアランスグループホールディングス
+
+  - id: ms-and-ad-mitsui-sumitomo-insurance
+    jcn: "8010001066718"
+    labels:
+      ja: 三井住友海上火災保険株式会社
+      en: Mitsui Sumitomo Insurance Company, Limited
+    aliases:
+      - 三井住友海上火災保険㈱
+      - 三井住友海上火災保険
+
+  - id: kddi
+    jcn: "9011001031552"
+    edinet_code: E04425
+    security_code: "94330"
+    labels:
+      ja: ＫＤＤＩ株式会社
+      en: KDDI Corporation
+    aliases:
+      - ＫＤＤＩ㈱
+      - ＫＤＤＩ
+
+  - id: ntt
+    jcn: "2010001110829"
+    edinet_code: E04430
+    security_code: "94320"
+    labels:
+      ja: 日本電信電話株式会社
+      en: Nippon Telegraph and Telephone Corporation
+    aliases:
+      - 日本電信電話㈱
+      - 日本電信電話
+      - ＮＴＴ
+
+  - id: suzuki
+    jcn: "9180301019071"
+    edinet_code: E02158
+    security_code: "72690"
+    labels:
+      ja: スズキ株式会社
+      en: Suzuki Motor Corporation
+    aliases:
+      - スズキ㈱
+      - スズキ
+
+  - id: japan-trustee-services-bank
+    jcn: "8010001143625"
+    labels:
+      ja: 株式会社日本カストディ銀行
+      en: Custody Bank of Japan, Ltd.
+    aliases:
+      - ㈱日本カストディ銀行
+      - 株式会社日本カストディ銀行
+      - 日本カストディ銀行
+      - 株式会社日本カストディ銀行(信託口)
+      - 株式会社日本カストディ銀行（信託口）
+      - ㈱日本カストディ銀行（信託口）
+
+  - id: master-trust-bank-of-japan
+    jcn: "1010001075076"
+    labels:
+      ja: 日本マスタートラスト信託銀行株式会社
+      en: The Master Trust Bank of Japan, Ltd.
+    aliases:
+      - 日本マスタートラスト信託銀行㈱
+      - 日本マスタートラスト信託銀行株式会社
+      - 日本マスタートラスト信託銀行㈱（信託口）
+      - 日本マスタートラスト信託銀行株式会社（信託口）
+      - 日本マスタートラスト信託銀行株式会社(信託口)
+      - 日本マスタートラスト信託銀行

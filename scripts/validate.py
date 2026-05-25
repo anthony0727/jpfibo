@@ -23,7 +23,7 @@ def load_shapes(shape_paths: list[Path]) -> Graph:
 def load_ontology(extra_paths: list[Path] | None = None) -> Graph:
     g = Graph()
     onto_dir = REPO / "ontology"
-    for ttl in sorted(onto_dir.glob("jfibo-*.ttl")):
+    for ttl in sorted(onto_dir.glob("jpfibo-*.ttl")):
         g.parse(ttl)
     if extra_paths:
         for p in extra_paths:

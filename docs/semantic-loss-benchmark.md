@@ -2,68 +2,59 @@
 
 ## Purpose
 
-To quantitatively justify J-FIBO over vanilla FIBO by measuring what
-fraction of disclosed Japanese-finance semantics each ontology can
-represent natively, per claim and per domain.
+Quantitatively justify J-FIBO over vanilla FIBO by measuring what fraction
+of disclosed Japanese-finance semantics each ontology can represent
+natively, per claim and per claim kind.
 
 ## Inputs
 
 ### Curated cases
 
-`benchmark/cases/*.yaml` (13 cases) — each names the disclosed semantic
+`benchmark/cases/*.yaml` (15 cases). Each names the disclosed semantic
 fields, the vanilla-FIBO mapping (and the fields it cannot represent
 without extension), and the J-FIBO mapping.
 
 ### Real EDINET claims
 
-`data/edinet/claims/*.ttl` — every PolicyShareholding row extracted from a
-real annual securities report and materialized as a J-FIBO RDF claim.
+`data/edinet/claims/*.ttl` — materialized from FY2024 securities reports:
+
+* PolicyShareholding   (176 claims)
+* MajorShareholderClaim (40 claims)
+* CrossShareholdingClaim (1 triangulated claim — Toyota Motor Corp ↔ MUFG)
 
 ## Metrics
 
-* `vanilla_coverage`        — `|vanilla.represents| / |expected|`
-* `jfibo_coverage`          — `|jfibo.represents|   / |expected|`
-* `semantic_loss_rate`      — fields vanilla FIBO cannot represent
-                              natively
-* `jfibo_gain`              — `jfibo_coverage − vanilla_coverage`
-* `evidence_traceability`   — share of claims that cite an evidence
-                              locator
-* `information_boundary_marked` — share of claims with explicit
-                                  information status
+* `vanilla_coverage`   — fraction of expected fields representable in
+  vanilla FIBO
+* `jfibo_coverage`     — fraction representable in J-FIBO
+* `jfibo_gain`         — `jfibo_coverage − vanilla_coverage`
 
 ## Run
 
 ```bash
-uv run python benchmark/semantic_loss.py       # curated cases
-uv run python benchmark/real_data_loss.py      # real EDINET claims
+uv run python benchmark/semantic_loss.py    # curated cases
+uv run python benchmark/real_data_loss.py   # real EDINET claims
 ```
 
-Outputs land in `benchmark/results/`.
+## Results (v0.2)
 
-## Results (v0.1)
-
-Curated cases (n=13):
+Curated cases (n=15):
 
 ```
-mean vanilla FIBO coverage:  0.321
+mean vanilla FIBO coverage:  0.338
 mean J-FIBO coverage:        1.000
-mean semantic-loss rate:     0.621
-mean J-FIBO gain:            0.679
+mean J-FIBO gain:            0.662
 ```
 
-Real EDINET FY2024 disclosures (n=176 PolicyShareholding claims from
-Toyota Motor Corporation, Mitsubishi Corporation, Mitsubishi UFJ Financial
-Group):
+Real EDINET FY2024 disclosures (n=217 claims):
 
 ```
-mean vanilla FIBO coverage:  0.294
-mean J-FIBO coverage:        0.966
-mean semantic-loss rate:     0.706
-mean J-FIBO gain:            0.672
-```
+mean vanilla FIBO coverage:  0.285
+mean J-FIBO coverage:        0.975
+mean J-FIBO gain:            0.690
 
-The 3 percentage points the real-data benchmark is below 1.0 reflect
-Toyota's choice to omit some narrative purpose fields and the
-sequential-numbers-axis structure of MUFG's largest-holding-company
-disclosures; both are legitimate disclosure variants that J-FIBO records
-faithfully rather than papering over.
+by claim kind:
+  CrossShareholdingClaim   claims=  1  vanilla=0.286  jfibo=1.000  gain=0.714
+  MajorShareholderClaim    claims= 40  vanilla=0.364  jfibo=1.000  gain=0.636
+  PolicyShareholding       claims=176  vanilla=0.268  jfibo=0.969  gain=0.701
+```
